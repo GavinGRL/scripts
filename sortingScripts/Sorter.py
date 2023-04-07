@@ -376,6 +376,38 @@ def complete_pallet(pallet_name):
 def undo():
     # TODO:[] make this so when the undo button is pressed it will undo the last function, whether that be hitting
     #  complete on the complete_pallet or scanned the wrong product or scanned the wrong category when no asin was found
+
+    # remove from truckload.csv
+    with open(truck_items, 'r') as truck_load, open('temp.csv', 'w', newline='') as output_file:
+        reader = csv.reader(truck_load)
+        writer = csv.writer(output_file)
+
+        for row in reader:
+            if row[0] == lpn:
+                continue
+            else:
+                writer.writerow(row)
+
+    os.remove(truck_items)
+    os.rename('temp.csv', truck_items)
+
+    # check if LPN is in any manifest files, if yes remove
+    for name in file_name:
+        with open(file_name[name], 'r') as label_file, open('temp.csv', 'w', newline='') as output_file:
+            reader = csv.reader(label_file)
+            writer = csv.writer(output_file)
+
+            for row in reader:
+                if row[0] == lpn:
+                    continue
+                else:
+                    writer.writerow(row)
+
+        os.remove(file_name[name])
+        os.rename('temp.csv', file_name[name])
+
+    # go to not found in master.csv
+
     return
 
 
