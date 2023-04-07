@@ -11,6 +11,7 @@ import asinFinder
 # TODO:[] Lookup UPC searching API and if that would work for category
 
 truck_items = ''
+lpn = ''
 label_names = [
     "over75", "under75", "keyboards_mice_g_headphones", "keyboards_mice_under", "g_headphones_under",
     "earbuds_selected", "earbuds_not_selected", "modems"
@@ -34,7 +35,6 @@ Categories = ["Miscellaneous", "Keyboard", "Mice", "Gaming Headphone", "Earbuds"
               "Lock", "Router", "CPU", "Microphone", "CPU Cooler", "Monitor", "Desktop", "Keyboard Folio"]
 
 file_name = {name: name for name in label_names}
-
 
 
 def set_undefined():
@@ -69,7 +69,7 @@ def file_changer(found_file_name, pallet_type):
 
 # TODO:[x] Update the csv file that is taken in and outputted to have the product category information 
 def search_asin(*args):
-    global title_label, price_label, asin_label, pallet_label
+    global title_label, price_label, asin_label, pallet_label, lpn
     for name in label_names:
         # ! Fix this, does not work correctly in current state
         if labels[name].get == name + '_0':
