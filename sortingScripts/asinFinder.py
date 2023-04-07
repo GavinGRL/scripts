@@ -31,7 +31,8 @@ def asin_lookup(asin):
 
     # Create a BeautifulSoup object from the response content
     soup = BeautifulSoup(response.content, 'html.parser')
-
+    name = ''
+    price = ''
     # Extract the product title and price from the page
     name_element = soup.find('span', id='productTitle')
     if name_element is not None:

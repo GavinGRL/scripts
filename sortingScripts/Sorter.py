@@ -3,21 +3,20 @@ import os
 import tkinter as tk
 from tkinter import messagebox, Scrollbar, Canvas
 from tkinter import ttk
-from ttkthemes import ThemedTk
+
 import Subcategory_checker
 import asinFinder
 
 # TODO:[] Add a function to save what file you left off on
 # TODO:[] Lookup UPC searching API and if that would work for category
 
-truck_number = ''
 truck_items = ''
 label_names = [
     "over75", "under75", "keyboards_mice_g_headphones", "keyboards_mice_under", "g_headphones_under",
     "earbuds_selected", "earbuds_not_selected", "modems"
 ]
 
-# TODO:[x] Update all_pallet_names to have all of the product catigories sorted
+# TODO:[x] Update all_pallet_names to have all of the product categories sorted
 all_pallet_names = ["over75", "under75", "keyboards_mice_g_headphones", "keyboards_mice_under", "g_headphones_under",
                     "earbuds_selected", "earbuds_not_selected", "modems", "Drawing Tablets/Portable Monitors",
                     "Graphics Cards",
@@ -37,9 +36,11 @@ Categories = ["Miscellaneous", "Keyboard", "Mice", "Gaming Headphone", "Earbuds"
 file_name = {name: name for name in label_names}
 
 
+
 def set_undefined():
     for name in label_names:
         labels[name].set(value=name.upper() + ": " + name + "_0")
+        file_name[name] = (name + ".csv")
         print(file_name[name])
 
 
@@ -90,15 +91,9 @@ def search_asin(*args):
                 title_label_text.set("TITLE: {}".format(item_desc))
                 price_label_text.set("PRICE: {}".format(price))
                 asin_label_text.set("ASIN: {}".format(asin))
-                category = Subcategory_checker.checker.category_finder(asin)
-                with open(file_name['under75'], 'a', encoding='utf-8', newline='') as under_75_file, \
-                        open(truck_items, 'a', encoding='utf-8', newline='') as truck_items_file:
-                    under_75_writer = csv.writer(under_75_file)
-                    # ! Find what category the product is and put it below in the Misc section
-                    row_values = [lpn, upc, row['Asin'], item_desc, price, category]
-                    under_75_writer.writerow(row_values)
-                    truckload_file_write(row_values)
-                    pallet_label_text.set("PALLET: Under 75")
+                category = Subcategory_checker.Checker.category_finder(asin)
+                row_values = [lpn, upc, row['Asin'], item_desc, price, category]
+                file_writer(row_values, file_name['under75'])
                 clear_fields()
                 return
     # open input file and search for ASIN
@@ -110,7 +105,78 @@ def search_asin(*args):
     # * keyboards over 150 go to high keyboard/mice/headset, 75-150 go to the keyboards auction pallet, under 75 go to low misc
     # * bin routers gos in modems pallet, take from csv sheet that checks for these products
     # TODO:[x] Implement the system to change truckloads and csv file for all in that truckload
+    if BOW(asin, lpn):
+        return
 
+    # TODO:[] If asin is not found, it should search the internet for the information
+    if not asin_found:
+        row_val = asinFinder.asin_lookup(asin)  # [found_TF,name,price,upc]
+        if not (row_val[0]):
+            yesno = messagebox.askyesno(title="NO ASIN FOUND", message="Does this product have a UPC?")
+            # TODO:[x] Get UPC from user
+            if yesno:
+                upc_found_tf = ask_for_upc(lpn)
+                if upc_found_tf:
+                    return
+                else:
+                    ask_for_category(lpn)
+                    return
+            else:
+                ask_for_category(lpn)
+                return
+            # if asinFinder found the asinD
+        ask_for_asin_category(lpn, asin, row_val)
+    return
+
+
+def ask_for_asin_category(lpn, asin, row_val):
+    ask_category_window = tk.Toplevel(root)
+    ask_category_window.geometry("700x300")
+    ask_category_frame = ttk.Frame(ask_category_window)
+    ask_category_frame.grid(column=0, row=0, sticky='nsew')
+    ask_category_frame.focus_set()
+    # Create a label and entry widget for asin input
+    title = ttk.Label(ask_category_frame, text="Title:")
+    title.grid(column=0, row=0, padx=10, pady=10)
+
+    title_name = ttk.Label(ask_category_frame, text=row_val[1])
+    title_name.grid(column=1, row=0, padx=10, pady=10)
+
+    price = ttk.Label(ask_category_frame, text="Price:")
+    price.grid(column=0, row=1, padx=10, pady=10)
+
+    price_name = ttk.Label(ask_category_frame, text=row_val[2])
+    price_name.grid(column=1, row=1, padx=10, pady=10)
+
+    category_entry_label = ttk.Label(ask_category_frame, text="Scan Category:")
+    category_entry_label.grid(column=0, row=2, padx=10, pady=10)
+
+    category_entry2 = ttk.Entry(ask_category_frame)
+    category_entry2.grid(column=1, row=2, padx=10, pady=10)
+
+    def submit():
+        # row_val = [found_TF, name, price, upc]
+        """submit: submits the upc entered"""
+        # TODO:[x] Fix to make this work like a submit button
+        category = category_entry2.get()
+        ask_category_window.destroy()
+
+        with open('input.csv', 'a+', encoding='utf-8', newline='') as f:
+            writer = csv.writer(f)
+            # input.csv = [category, Asin, UPC,ItemDesc,Total Price]
+            row = [category, asin, row_val[3], row_val[1], row_val[2]]
+            writer.writerow(row)
+        return BOW(asin, lpn)
+
+    submit_button = ttk.Button(ask_category_frame, text="Submit", command=submit())
+    submit_button.grid(column=1, row=3, padx=10, pady=10)
+    ask_category_frame.lift()
+    category_entry2.focus()
+
+    return
+
+
+def BOW(asin, lpn):
     with open('input.csv', 'r', encoding='utf-8') as csvfile:
         reader = csv.DictReader(csvfile)
         for row in reader:
@@ -124,7 +190,7 @@ def search_asin(*args):
                 price_label_text.set("PRICE: {}".format(price))
                 asin_label_text.set("ASIN: {}".format(asin))
                 # check if price is under or over $75 and write to respective CSV file
-                # TODO:[x] Have a separate class called here to check if the asin product belongs to a specific box, check all_pallet_names  
+                # TODO:[x] Have a separate class called here to check if the asin product belongs to a specific box, check all_pallet_names
                 # checks the sub-category
                 category = Subcategory_checker.Checker.category_finder(asin)
                 special_bin_tf = Subcategory_checker.Checker.special_bins_check(asin)
@@ -132,88 +198,98 @@ def search_asin(*args):
 
                 # looks at price and subcategory_checker.py fuction to see if the item belongs in this pallet
                 if price < 75 & special_bin_tf:
-                    with open(file_name['under75'], 'a', encoding='utf-8', newline='') as under_75_file:
-                        under_75_writer = csv.writer(under_75_file)
-
-                        row_values = [lpn, upc, row['Asin'], item_desc, price, category]
-                        under_75_writer.writerow(row_values)
-                        truckload_file_write(row_values)
-                        pallet_label_text.set("PALLET: Under 75")
+                    row_values = [lpn, upc, row['Asin'], item_desc, price, category]
+                    file_writer(row_values, file_name['under75'])
 
                 else:
                     # TODO:[x] Make a function to return if the item is misc or if it belongs in a certain box
-                    # ? use subcategory_checker.py file to achive this HERE
+                    # ? use subcategory_checker.py file to achieve this HERE
                     sorting_category_tf = Subcategory_checker.Checker.sorting_category_check(asin)
 
                     if sorting_category_tf:
-                        # figureout what pallet to put it into
+                        # figure what pallet to put it into
                         if label_names.__contains__(category):
-                            with open(file_name[category], 'a', encoding='utf-8', newline='') as cat_file:
-                                cat_file_writer = csv.writer(cat_file)
-                                row_values = [lpn, upc, row['Asin'], item_desc, price, category]
-                                truckload_file_write(row_values)
-                                cat_file_writer.writerow(row_values)
-                                pallet_label_text.set(f"PALLET: {category}")
+                            # pallet that is manifested
+                            row_values = [lpn, upc, row['Asin'], item_desc, price, category]
+                            file_writer(row_values, file_name[category])
                         else:
-                            row_values = [lpn, asin, upc, item_desc, price, category]
+                            # pallet that is not manifested
+                            row_values = [lpn, upc, asin, item_desc, price, category]
                             truckload_file_write(row_values)
                             pallet_label_text.set(f"PALLET: {category}")
-
                     else:
                         # this is the misc over 75 pallet
-                        with open(file_name['over75'], 'a', encoding='utf-8', newline='') as over_75_file:
-                            over_75_writer = csv.writer(over_75_file)
-                            row_values = [lpn, upc, row['Asin'], item_desc, price]
-                            truckload_file_write(row_values)
-                            over_75_writer.writerow(row_values)
-                            pallet_label_text.set("PALLET: Over 75")
+                        row_values = [lpn, upc, row['Asin'], item_desc, price]
+                        file_writer(row_values, file_name['over75'])
 
                 clear_fields()
-                return
+    return asin_found
 
-    # TODO:[] If asin is not found, it should search the internet for the information
-    if not asin_found:
-        row_val = asinFinder.asin_lookup(asin)  # [found_TF,name,price,upc]
-        if not (row_val[0]):
-            yesno = messagebox.askyesno(title="NO ASIN FOUND", message="Does this product have a UPC?")
-            # TODO:[x] Get UPC from user
-            if yesno:
-                upc_found_tf = ask_for_upc(lpn)
-                if upc_found_tf:
-                    return
-            # TODO:[] if upc is not given/not found, what to do
-            # TODO:[] Scan Category gui 
-        else:
-            # if asinFinder found the asin
 
-            with open(file_name[category], 'a', encoding='utf-8', newline='') as cat_file:
-                cat_file_writer = csv.writer(cat_file)
-                row_values = [lpn, upc, row['Asin'], item_desc, price, category]
-                truckload_file_write(row_values)
-                cat_file_writer.writerow(row_values)
-                pallet_label_text.set(f"PALLET: {category}")
+def file_writer(row_values, file_name_writer):
+    """row_values = lpn, upc, ASIN, item_desc, price, category"""
+    with open(file_name_writer, 'a', encoding='utf-8', newline='') as write_file:
+        write_file_writer = csv.writer(write_file)
+        write_file_writer.writerow(row_values)
+        truckload_file_write(row_values)
+    return
 
-                # ! Most of this code below will NOT be reused  
-        # ? need something like this twice I think, once for if the item has no upc and another for if the UPC is not found
-        # ? (might do something else with it like call set_product_to_category)
-        title_label_text.set("TITLE: N/A")
-        price_label_text.set("PRICE: N/A")
-        asin_label_text.set("ASIN: {}".format(asin))
-        with open(under75, 'a', encoding='utf-8', newline='') as under_75_file, \
-                open(over75, 'a', encoding='utf-8', newline='') as over_75_file:
-            under_75_writer = csv.writer(under_75_file)
-            over_75_writer = csv.writer(over_75_file)
-            if yesno:
-                row_values = [lpn, asin, "N/A", "N/A"]
-                over_75_writer.writerow(row_values)
-                truckload_file_write(row_values)
-                pallet_label_text.set("PALLET: over 75")
 
-            else:
-                row_values = [lpn, asin, "N/A", "N/A"]
-                under_75_writer.writerow(row_values)
-                truckload_file_write(row_values)
-                pallet_label_text.set("PALLET: under 75")
+def ask_for_category(lpn):
+    ask_for_category_window = tk.Toplevel(root)
+    ask_for_category_window.geometry("350x120")
+    ask_for_category_frame = ttk.Frame(ask_for_category_window)
+    ask_for_category_frame.grid(column=0, row=0, sticky='nsew')
+    ask_for_category_frame.focus_set()
+    # Create a label and entry widget for asin input
+    category_label = ttk.Label(ask_for_category_frame, text="Enter Category:")
+    category_label.grid(column=0, row=0, padx=10, pady=10)
+    category_entry = ttk.Entry(ask_for_category_frame)
+    category_entry.grid(column=1, row=0, padx=10, pady=10)
+
+    def submit_category():
+        """submit: submits the upc entered"""
+        category = category_entry.get()
+        ask_for_category_window.destroy()
+
+        return upc_asin_not_found(lpn, category)
+
+    submit_button = ttk.Button(ask_for_category_frame, text="Submit", command=submit_category())
+    submit_button.grid(column=1, row=1, padx=10, pady=10)
+    ask_for_category_frame.lift()
+    category_entry.focus()
+    return
+
+
+# If no ASIN or UPC
+def upc_asin_not_found(lpn, category):
+    row_values = [lpn, "N/A", "N/A", "N/A", "N/A", category]
+    total_price = 0
+    num_items = 0
+
+    # If category is a manifest
+    if category in label_names:
+        # Find the average price of catagory
+        with open(file_name[category], 'r') as f:
+            reader = csv.reader(f)
+            for row in reader:
+                total_price += float(row[4].replace(',', '').replace('$', ''))
+                num_items += 1
+
+        avg_price_of_cat = total_price / num_items
+        avg_price_string = f"${avg_price_of_cat}"
+
+        # Set price to avg price, and set name to "Misc"
+        row_values = [lpn, "N/A", "N/A", "MISC", avg_price_string, category]
+
+        # Add to category manifest and truckload
+        file_writer(row_values, file_name[category])
+
+    # If category is not a manifest, add to truckload
+    else:
+        truckload_file_write(row_values)
+        pallet_label_text.set(f"PALLET: {category}")
+
     return
 
 
@@ -246,13 +322,8 @@ def upc_search(lpn, upc):
 
                 # looks at price and subcategory_checker.py fuction to see if the item belongs in this pallet
                 if price < 75 & special_bin_tf:
-                    with open(file_name['under75'], 'a', encoding='utf-8', newline='') as under_75_file:
-                        under_75_writer = csv.writer(under_75_file)
-                        row_values = [lpn, row['Asin'], upc, item_desc, price, category]
-                        truckload_file_write(row_values)
-                        under_75_writer.writerow(row_values)
-                        pallet_label_text.set("PALLET: Under 75")
-
+                    row_values = [lpn, upc, row['Asin'], item_desc, price, category]
+                    file_writer(row_values, file_name['under75'])
                 else:
                     # TODO:[x] Make a function to return if the item is misc or if it belongs in a certain box
                     # ? use subcategory_checker.py file to achive this HERE
@@ -261,25 +332,18 @@ def upc_search(lpn, upc):
                     if sorting_category_tf:
                         # figure what pallet to put it into
                         if label_names.__contains__(category):
-                            with open(file_name[category], 'a', encoding='utf-8', newline='') as cat_file:
-                                cat_file_writer = csv.writer(cat_file)
-                                row_values = [lpn, asin, upc, item_desc, price, category]
-                                truckload_file_write(row_values)
-                                cat_file_writer.writerow(row_values)
-                                pallet_label_text.set(f"PALLET: {category}")
+                            # pallet that is manifested
+                            row_values = [lpn, upc, row['Asin'], item_desc, price, category]
+                            file_writer(row_values, file_name[category])
                         else:
-                            row_values = [lpn, asin, upc, item_desc, price, category]
+                            # pallet that is not manifested
+                            row_values = [lpn, upc, asin, item_desc, price, category]
                             truckload_file_write(row_values)
                             pallet_label_text.set(f"PALLET: {category}")
                     else:
                         # this is the misc over 75 pallet
-                        with open(file_name['over75'], 'a', encoding='utf-8', newline='') as over_75_file:
-                            over_75_writer = csv.writer(over_75_file)
-                            row_values = [lpn, asin, upc, item_desc, price, category]
-                            truckload_file_write(row_values)
-                            over_75_writer.writerow(row_values)
-                            pallet_label_text.set("PALLET: Over 75")
-
+                        row_values = [lpn, upc, row['Asin'], item_desc, price]
+                        file_writer(row_values, file_name['over75'])
                 clear_fields()
     return upc_found
 
@@ -291,15 +355,11 @@ def set_product_to_category(lpn):
     yesno = messagebox.askyesno(title="NO ASIN FOUND", message="Does this product have a UPC?")
 
     if yesno:
-        # TODO:[x] Get UPC from user
         upc_found_tf = ask_for_upc(lpn)
         if upc_found_tf:
             return
-        else:
-            row_values = [lpn, "N/A", "N/A", "N/A", "N/A", category_name]
-    else:
-        row_values = [lpn, "N/A", "N/A", "N/A", "N/A", category_name]
 
+    ask_for_category(lpn)
     return
 
 
@@ -334,7 +394,7 @@ def on_asin_enter(*args):
 
 
 def on_lpn_enter(*args):
-    """on_lpn_enter: checks if the lpn entry field is an lpn and calls search_asin function."""
+    """on_lpn_enter: checks if the lpn entry field is a lpn and calls search_asin function."""
     if lpn_entry.get().startswith("L"):
         search_asin()  # searches 
         asin_entry.focus()
@@ -360,22 +420,50 @@ def ask_for_upc(lpn):
 
     def submit():
         """submit: submits the upc entered"""
-        # TODO:[] Fix to make this work like a submit button
+        # TODO:[x] Fix to make this work like a submit button
         upc = upc_entry.get()
         ask_for_upc_window.destroy()
 
         return upc_search(lpn, upc)
 
-    submit_button = ttk.Button(ask_for_upc_frame, text="Submit", command=submit)
+    submit_button = ttk.Button(ask_for_upc_frame, text="Submit", command=submit())
     submit_button.grid(column=1, row=1, padx=10, pady=10)
     ask_for_upc_frame.lift()
     upc_entry.focus()
 
 
+def change_truck_file():
+    change_truck_file_window = tk.Toplevel(root)
+    change_truck_file_window.geometry("350x120")
+    change_truck_file_frame = ttk.Frame(change_truck_file_window)
+    change_truck_file_frame.grid(column=0, row=0, sticky='nsew')
+    change_truck_file_frame.focus_set()
+    # Create a label and entry widget for asin input
+    truck_number_label = ttk.Label(change_truck_file_frame, text="Enter Truck Number:")
+    truck_number_label.grid(column=0, row=0, padx=10, pady=10)
+    truck_number_entry = ttk.Entry(change_truck_file_frame)
+    truck_number_entry.grid(column=1, row=0, padx=10, pady=10)
+
+    def submit():
+        global truck_items
+        """Submit: Submits the Truck Number"""
+        truck_number = truck_number_entry.get()
+        truck_items = f"EL_Load_{truck_number}"
+        change_truck_file_window.destroy()
+
+        return
+
+    submit_button = ttk.Button(change_truck_file_frame, text="Submit", command=submit())
+    submit_button.grid(column=1, row=1, padx=10, pady=10)
+    change_truck_file_frame.lift()
+    truck_number_entry.focus()
+
+
+
 def open_options():
     """open_options: Creates the New Pallet GUI screen and the logic behind it. Creates two tabs 'New Pallet'
      and 'Change Pallet' in which you can either create a new pallet by selecting a new type of pallet and 
-     setting the new pallet number or pick from a an existing pallet that is in the same directory as this code"""
+     setting the new pallet number or pick from an existing pallet that is in the same directory as this code"""
     options_window = tk.Toplevel(root)
     options_window.title("Change Pallet")
     options_window.geometry("500x200")
@@ -482,8 +570,17 @@ def no_asin_funct():
     def on_lpn_enter2(*args):
         """on_lpn_enter2: checks if the lpn entry field is an lpn."""
         if lpn_entry2.get().startswith("L"):
-            set_product_to_category(lpn_entry2.get())
+            lpn = lpn_entry2.get()
             no_asin_window.destroy()
+            yesno = messagebox.askyesno(title="NO ASIN FOUND", message="Does this product have a UPC?")
+
+            if yesno:
+                upc_found_tf = ask_for_upc(lpn)
+                if upc_found_tf:
+                    return
+
+            ask_for_category(lpn)
+            return
         else:
             lpn_entry2.delete(0, tk.END)
             lpn_entry2.focus()
@@ -492,7 +589,6 @@ def no_asin_funct():
 
     def submit():
         """submit: submits the asin and category location"""
-        # TODO:[x] Fix to make this work like a submit button
         on_lpn_enter2()
 
     submit_button = ttk.Button(no_asin_frame, text="Submit", command=submit)
@@ -607,11 +703,14 @@ if fold:
     options_button = ttk.Button(main_frame, text="Change Pallet", command=open_options)
     options_button.grid(column=2, row=1, padx=10, pady=10)
 
+    change_truck_button = ttk.Button(main_frame, text="Change\nTruck", command=change_truck_file)
+    change_truck_button.grid(column=2, row=3, padx=10, pady=10)
+
     no_asin_button = ttk.Button(main_frame, text="No ASIN", command=no_asin_funct)
-    no_asin_button.grid(column=2, row=2, padx=10, pady=10)
+    no_asin_button.grid(column=2, row=4, padx=10, pady=10)
 
     quit_button = ttk.Button(main_frame, text="Quit", command=main_frame.quit)
-    quit_button.grid(column=2, row=3, padx=10, pady=10)
+    quit_button.grid(column=2, row=5, padx=10, pady=10)
 
     title_label_text.set("TITLE:")
     price_label_text.set("PRICE:")
