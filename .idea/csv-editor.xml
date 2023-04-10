@@ -17,6 +17,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\sortingScripts\saved_files.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
       </map>
     </option>
   </component>

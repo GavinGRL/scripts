@@ -20,15 +20,13 @@ label_names = [
 # TODO:[] Update all_pallet_names to have all of the product categories sorted
 all_pallet_names = ["over75", "under75", "keyboards_mice_g_headphones", "keyboards_mice_under", "g_headphones_under",
                     "earbuds_selected", "earbuds_not_selected", "modems", "Drawing Tablets/Portable Monitors",
-                    "Graphics Cards",
-                    "Power Supplies", "Motherboards", "Ram", "SSD", "Cameras", "Audio Products", "Gaming Systems",
-                    "NAS", "Hard Drives",
-                    "Mini Computers", "Watches", "Phone/Tablet Cases", "Apple Accessories", "PCIE Cards",
-                    "Phones/Tablets", "Headphone", "Laptop", ]
+                    "Graphics Cards", "Power Supplies", "Motherboards", "Ram", "SSD", "Cameras", "Audio Products",
+                    "Gaming Systems", "NAS", "Hard Drives", "Mini Computers", "Watches", "Phone/Tablet Cases",
+                    "Apple Accessories", "PCIE Cards", "Phones/Tablets", "Headphone", "Laptop"]
 
 Categories = ["Miscellaneous", "Keyboard", "Mice", "Gaming Headphone", "Earbuds", "Modem", "Thermostat",
               "Drawing Tablet/Portable Monitor", "Graphics Card", "Power Supply", "Motherboard", "Ram",
-              "Solid State Drive", "Camera", "Audio Product", "Gaming System", "NAS", "Hard Drive", "Mini Computer",
+              "Solid State Drive", "Camera", "Audio Product", " Gaming System", "NAS", "Hard Drive", "Mini Computer",
               "Smart Watch", "Case",
               "Apple Accessory", "PCIE Card", "Phone", "Tablet", "Headphone", "Laptop", "Chromebook", "Switch",
               "Docking Station",
@@ -37,11 +35,29 @@ Categories = ["Miscellaneous", "Keyboard", "Mice", "Gaming Headphone", "Earbuds"
 file_name = {name: name for name in label_names}
 
 
+def save_current_file_setup():
+    with open("saved_files.csv", 'a', encoding='utf-8', newline='') as saved_file_file:
+        saved_file_writer = csv.writer(saved_file_file)
+        for name in file_name:
+            row_values = [name, file_name[name]]
+            saved_file_writer.writerow(row_values)
+        saved_file_writer.writerow(['truck_items', truck_items])
+
+    main_frame.quit()
+
+    return
+
+
+def load_saved_file_setup():
+    # TODO:[] finish load file and implement
+    with open("saved_files.csv", 'r', encoding='utf-8', newline='') as saved_file_file:
+        return
+
+
 def set_undefined():
     for name in label_names:
         labels[name].set(value=name.upper() + ": " + name + "_0")
         file_name[name] = (name + ".csv")
-        print(file_name[name])
 
 
 def file_creator(pallet_number, pallet_type):
@@ -476,6 +492,39 @@ def change_truck_file():
     truck_number_entry.focus()
 
 
+def change_category():
+    """no_asin_funct: creates the new asin tab that takes in the lpn and the category it should go in"""
+    change_category_window = tk.Toplevel(root)
+    change_category_window.geometry("350x100")
+    change_category_frame = ttk.Frame(change_category_window)
+    change_category_frame.grid(column=0, row=0, sticky='nsew')
+    change_category_frame.focus_set()
+    # Create a label and entry widget for asin input
+    change_category_label2 = ttk.Label(change_category_frame, text="Scan Category:")
+    change_category_label2.grid(column=0, row=0, padx=10, pady=10)
+    change_category_entry2 = ttk.Entry(change_category_frame)
+    change_category_entry2.grid(column=1, row=0, padx=10, pady=10)
+
+    def on_category_enter():
+        # TODO:[x] if item has a category already it will change the category of the item that was previously scanned
+        Subcategory_checker.Checker.set_category(change_category_entry2.get(), lpn) # TODO:[] make sure it gets the LPN
+        change_category_window.destroy()
+        return
+
+    change_category_entry2.bind("<Return>", on_category_enter)
+
+    def submit():
+        """submit: submits the asin and category location"""
+        on_category_enter()
+
+    submit_button = ttk.Button(change_category_frame, text="Submit", command=submit)
+    submit_button.grid(column=1, row=2, padx=10, pady=10)
+    change_category_frame.lift()
+    change_category_entry2.focus()
+
+    return
+
+
 def open_options():
     """open_options: Creates the New Pallet GUI screen and the logic behind it. Creates two tabs 'New Pallet'
      and 'Change Pallet' in which you can either create a new pallet by selecting a new type of pallet and 
@@ -619,7 +668,7 @@ fold = True
 if fold:
     root = tk.Tk()
     root.title("ASIN Search")
-    root.attributes('-fullscreen', False)
+    root.attributes('-fullscreen', True)
     font = ("Helvetica", 18)
     # Create main_frame to hold all other widgets
     main_frame = ttk.Frame(root)
@@ -646,16 +695,19 @@ if fold:
 
     # create frames
     label_frame = ttk.Frame(main_frame, padding=10, relief="groove")
-    label_frame.grid(column=0, row=5, rowspan=10, padx=10, pady=10, columnspan=3, sticky='w')
+    label_frame.grid(column=0, row=4, rowspan=10, padx=10, pady=10, columnspan=3, sticky='w')
     # create labels and entry fields
     asin_label = ttk.Label(main_frame, text="Enter ASIN:")
     asin_label.grid(column=0, row=0, padx=10, pady=10)
     # create a scrolling frame
-    label3_frame = ttk.Frame(main_frame, padding=10, relief="groove", borderwidth=2, width=600, height=600)
-    label3_frame.grid(column=5, row=0, rowspan=80, padx=10, pady=10, sticky='w')
+    label3_frame = ttk.Frame(main_frame, padding=10, relief="groove", borderwidth=2)
+    label3_frame.grid(column=5, row=1, rowspan=80, padx=10, pady=10, sticky='w')
 
-    canvas = Canvas(label3_frame, width=850, height=1500)
-    scrollable_frame = ttk.Frame(canvas, width=850, height=1500)
+    truck_items_frame = ttk.Frame(main_frame, padding=10, relief="groove", borderwidth=2, width=850)
+    truck_items_frame.grid(column=5, row=0, padx=10, pady=10, sticky='w')
+
+    canvas = Canvas(label3_frame, width=850, height=800)
+    scrollable_frame = ttk.Frame(canvas, width=850, height=800)
     scrollbar = Scrollbar(label3_frame, orient="vertical", command=canvas.yview)
     canvas.configure(yscrollcommand=scrollbar.set)
 
@@ -689,10 +741,11 @@ if fold:
     # add labels to label_frame
     fixed_width = 45
 
-    truck_name_label = ttk.Label(scrollable_frame, textvariable=truck_items_label_text)
-    truck_name_label.grid(column=1, row=0, padx=1, pady=30, sticky='w')
-    change_truck_button = ttk.Button(scrollable_frame, text="Change Truck", command=change_truck_file)
-    change_truck_button.grid(column=0, row=0, padx=1, pady=30)
+    truck_name_label = ttk.Label(truck_items_frame, textvariable=truck_items_label_text)
+    truck_name_label.grid(column=1, row=0, padx=10, pady=10, sticky='w')
+
+    change_truck_button = ttk.Button(truck_items_frame, text="Change Truck", command=change_truck_file)
+    change_truck_button.grid(column=0, row=0, padx=10, pady=10)
 
     title_label = ttk.Label(label_frame, textvariable=title_label_text, anchor="w", width=fixed_width)
     title_label.grid(column=0, row=0, padx=5, pady=5, columnspan=15, sticky='w')
@@ -705,7 +758,13 @@ if fold:
 
     pallet_label = ttk.Label(label_frame, textvariable=pallet_label_text, width=fixed_width, font=("Helvetica", 18),
                              relief="solid")
-    pallet_label.grid(column=2, row=4, padx=5, pady=50, columnspan=35)
+    pallet_label.grid(column=0, row=4, padx=5, pady=50, columnspan=35)
+
+    undo_button = ttk.Button(label_frame, text="Undo/Wrong Item", command=undo)
+    undo_button.grid(column=0, row=5, padx=1, pady=1)
+
+    change_category_button = ttk.Button(label_frame, text="Change Category", command=change_category)
+    change_category_button.grid(column=1, row=5, padx=1, pady=1)
 
     asin_entry = ttk.Entry(main_frame, font=font)
     asin_entry.grid(column=1, row=0, padx=5, pady=5)
@@ -718,9 +777,6 @@ if fold:
     lpn_entry.grid(column=1, row=1, padx=5, pady=5)
     lpn_entry.bind("<Return>", on_lpn_enter)
 
-    undo_button = ttk.Button(main_frame, text="Undo/Wrong Item", command=undo)
-    undo_button.grid(column=1, row=2, padx=1, pady=1)
-
     search_button = ttk.Button(main_frame, text="Search", command=search_asin)
     search_button.grid(column=2, row=0, padx=1, pady=1)
 
@@ -730,13 +786,12 @@ if fold:
     no_asin_button = ttk.Button(main_frame, text="No ASIN", command=no_asin_funct)
     no_asin_button.grid(column=2, row=2, padx=1, pady=1)
 
-    quit_button = ttk.Button(main_frame, text="Quit", command=main_frame.quit)
+    quit_button = ttk.Button(main_frame, text="Quit", command=save_current_file_setup)
     quit_button.grid(column=2, row=3, padx=1, pady=1)
 
     title_label_text.set("TITLE:")
     price_label_text.set("PRICE:")
     asin_label_text.set("ASIN:")
     pallet_label_text.set("PALLET:")
-    truck_items_label_text.set("TRUCK NUMBER:")
-
+    truck_items_label_text.set("TRUCK FILE:")
     root.mainloop()

@@ -44,6 +44,7 @@ def asin_lookup(asin):
         price = price_element.get_text().strip()
 
     # TODO:[] find the UPC too
+    upc = "N/A"
 
     product_info = [found_TF, name, price, upc]
 

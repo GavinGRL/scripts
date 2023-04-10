@@ -20,3 +20,7 @@ class Checker:
     # TODO: finish function that finds what category the product belongs in
     def category_finder(self):
         return
+
+    def set_category(self,category,lpn):
+        # TODO:[] takes in the lpn and category and sets the LPN and asin to that new category
+        return
