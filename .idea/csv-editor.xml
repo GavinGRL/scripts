@@ -10,7 +10,7 @@
             </Attribute>
           </value>
         </entry>
-        <entry key="C:\Users\grand\Nas Backup\3262023\Scripts\GME Sorting\Scripts\Sorting\input.csv">
+        <entry key="\csv_files\input.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
