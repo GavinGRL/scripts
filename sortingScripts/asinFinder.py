@@ -11,7 +11,7 @@ def asin_lookup(asin):
     try:
         path = sys._MEIPASS
     except:
-        path = os.path.abspath('.')
+        path = os.path.abspath('')
 
     csv_path = os.path.join(path, "proxies.txt")
     with open(csv_path, 'r') as f:

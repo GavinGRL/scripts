@@ -8,12 +8,14 @@ import Subcategory_checker
 import asinFinder
 
 # TODO:[] Add a function to save what file you left off on
-# TODO:[] Lookup UPC searching API and if that would work for category
 
+csv_file_location = "../csv_files/"
+pallet_folder = "../pallets/"
+truck_folder = "../truck_items/"
 truck_items = ''
 lpn = ''
 label_names = [
-    "over75", "under75", "keyboards_mice_g_headphones", "keyboards_mice_under", "g_headphones_under",
+    "over75", "under75", "keyboards_mice_under", "g_headphones_under",
     "earbuds_selected", "earbuds_not_selected", "modems"
 ]
 
@@ -36,7 +38,7 @@ file_name = {name: name for name in label_names}
 
 
 def save_current_file_setup():
-    with open("saved_files.csv", 'a', encoding='utf-8', newline='') as saved_file_file:
+    with open(csv_file_location + "saved_files.csv", 'a', encoding='utf-8', newline='') as saved_file_file:
         saved_file_writer = csv.writer(saved_file_file)
         for name in file_name:
             row_values = [name, file_name[name]]
@@ -50,7 +52,7 @@ def save_current_file_setup():
 
 def load_saved_file_setup():
     # TODO:[] finish load file and implement
-    with open("saved_files.csv", 'r', encoding='utf-8', newline='') as saved_file_file:
+    with open(csv_file_location + "saved_files.csv", 'r', encoding='utf-8', newline='') as saved_file_file:
         return
 
 
@@ -92,11 +94,12 @@ def search_asin():
             messagebox.showerror(title="No Pallet Selected", message="Please select pallets")
             return
 
+
     os.system('cls' if os.name == 'nt' else 'clear')
     asin = asin_entry.get()
     lpn = lpn_entry.get()
     asin_found = False
-    with open('KnownBinItems', 'r', encoding='utf-8') as csvfile:
+    with open(csv_file_location + 'KnownBinItems.csv', 'r', encoding='utf-8') as csvfile:
         reader = csv.DictReader(csvfile)
         for row in reader:
             if row["Asin"] == asin:
@@ -173,7 +176,7 @@ def ask_for_asin_category(lpn, asin, row_val):
         category = category_entry2.get()
         ask_category_window.destroy()
 
-        with open('input.csv', 'a+', encoding='utf-8', newline='') as f:
+        with open(csv_file_location + 'input.csv', 'a+', encoding='utf-8', newline='') as f:
             writer = csv.writer(f)
             # input.csv = [category, Asin, UPC,ItemDesc,Total Price]
             row = [category, asin, row_val[3], row_val[1], row_val[2]]
@@ -189,10 +192,13 @@ def ask_for_asin_category(lpn, asin, row_val):
 
 
 def BOW(asin, lpn):
-    with open('input.csv', 'r', encoding='utf-8') as csvfile:
+    with open(csv_file_location + 'input.csv', 'r', encoding='utf-8') as csvfile:
         reader = csv.DictReader(csvfile)
         for row in reader:
             if row['Asin'] == asin:
+                if row['Category'] == '':
+                    change_category()
+
                 asin_found = True
                 # remove commas from item description and display title and price
                 item_desc = row['ItemDesc'].replace(',', '')
@@ -207,7 +213,7 @@ def BOW(asin, lpn):
                 # ? use subcategory_checker.py file to achieve this HERE
 
                 # looks at price and subcategory_checker.py function to see if the item belongs in this pallet
-                if price < 75 & special_bin_tf:
+                if price < 75 or special_bin_tf:
                     row_values = [lpn, upc, row['Asin'], item_desc, price, category]
                     file_writer(row_values, file_name['under75'])
 
@@ -237,7 +243,7 @@ def BOW(asin, lpn):
 
 def file_writer(row_values, file_name_writer):
     """row_values = lpn, upc, ASIN, item_desc, price, category"""
-    with open(file_name_writer, 'a', encoding='utf-8', newline='') as write_file:
+    with open(pallet_folder + file_name_writer, 'a', encoding='utf-8', newline='') as write_file:
         write_file_writer = csv.writer(write_file)
         write_file_writer.writerow(row_values)
         truckload_file_write(row_values)
@@ -279,7 +285,7 @@ def upc_asin_not_found(lpn, category):
     # If category is a manifest
     if category in label_names:
         # Find the average price of category
-        with open(file_name[category], 'r') as f:
+        with open(pallet_folder + file_name[category], 'r') as f:
             reader = csv.reader(f)
             for row in reader:
                 total_price += float(row[4].replace(',', '').replace('$', ''))
@@ -303,14 +309,14 @@ def upc_asin_not_found(lpn, category):
 
 
 def truckload_file_write(row_values):
-    with open(truck_items, 'a', encoding='utf-8', newline='') as truck_items_file:
+    with open(truck_folder + truck_items, 'a', encoding='utf-8', newline='') as truck_items_file:
         truck_items_writer = csv.writer(truck_items_file)
         truck_items_writer.writerow(row_values)
 
 
 def upc_search(lpn, upc):
     upc_found = False
-    with open('input.csv', 'r', encoding='utf-8') as csvfile:
+    with open(csv_file_location + 'input.csv', 'r', encoding='utf-8') as csvfile:
         reader = csv.DictReader(csvfile)
         for row in reader:
             if row['UPC'] == upc:
@@ -378,7 +384,7 @@ def complete_pallet(pallet_name):
 
 def undo():
     # remove from truckload.csv
-    with open(truck_items, 'r') as truck_load, open('temp.csv', 'w', newline='') as output_file:
+    with open(truck_folder + truck_items, 'r') as truck_load, open('temp.csv', 'w', newline='') as output_file:
         reader = csv.reader(truck_load)
         writer = csv.writer(output_file)
 
@@ -393,7 +399,7 @@ def undo():
 
     # check if LPN is in any manifest files, if yes remove
     for name in file_name:
-        with open(file_name[name], 'r') as label_file, open('temp.csv', 'w', newline='') as output_file:
+        with open(pallet_folder + file_name[name], 'r') as label_file, open('temp.csv', 'w', newline='') as output_file:
             reader = csv.reader(label_file)
             writer = csv.writer(output_file)
 
@@ -418,7 +424,7 @@ def clear_fields():
     lpn_entry.delete(0, tk.END)
 
 
-def on_asin_enter():
+def on_asin_enter(event):
     """on_asin_enter: checks if the asin entry field is an asin"""
     if asin_entry.get().startswith("B"):
         lpn_entry.focus()
@@ -426,7 +432,7 @@ def on_asin_enter():
         asin_entry.delete(0, tk.END)
 
 
-def on_lpn_enter():
+def on_lpn_enter(event):
     """on_lpn_enter: checks if the lpn entry field is a lpn and calls search_asin function."""
     if lpn_entry.get().startswith("L"):
         search_asin()  # searches 
@@ -633,7 +639,7 @@ def no_asin_funct():
     lpn_entry2 = ttk.Entry(no_asin_frame)
     lpn_entry2.grid(column=1, row=0, padx=10, pady=10)
 
-    def on_lpn_enter2():
+    def on_lpn_enter2(event):
         """on_lpn_enter2: checks if the lpn entry field is a lpn."""
         if lpn_entry2.get().startswith("L"):
             lpn = lpn_entry2.get()
