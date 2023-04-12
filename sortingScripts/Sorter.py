@@ -7,8 +7,6 @@ import re
 import Subcategory_checker
 import asinFinder
 
-# TODO:[] Add a function to save what file you left off on
-
 csv_file_location = "../csv_files/"
 pallet_folder = "../pallets/"
 truck_folder = "../truck_items/"
@@ -16,7 +14,8 @@ truck_items = ''
 lpn = ''
 label_names = [
     "over75", "under75", "keyboards_mice_under", "g_headphones_under",
-    "earbuds_selected", "earbuds_not_selected", "modems"
+    "earbuds_selected", "earbuds_not_selected", "modems", "airpods",
+"switches"
 ]
 
 # TODO:[] Update all_pallet_names to have all of the product categories sorted
@@ -106,7 +105,6 @@ def file_changer(found_file_name, pallet_type):
     return
 
 
-# TODO:[x] Update the csv file that is taken in and outputted to have the product category information 
 def search_asin():
     global title_label, price_label, asin_label, pallet_label, lpn
     for name in label_names:
@@ -287,7 +285,7 @@ def BOW(asin, lpn):
                         pallet_label_text.set(f"PALLET: {category}")
                     else:
                         # this is the misc over 75 pallet
-                        row_values = [lpn, upc, row['Asin'], item_desc, price]
+                        row_values = [lpn, upc, row['Asin'], item_desc, price, category]
                         file_writer(row_values, file_name['over75'])
                         pallet_label_text.set('PALLET: Over 75')
 
@@ -408,7 +406,7 @@ def upc_search(lpn, upc):
                             pallet_label_text.set(f"PALLET: {category}")
                     else:
                         # this is the misc over 75 pallet
-                        row_values = [lpn, upc, row['Asin'], item_desc, price]
+                        row_values = [lpn, upc, row['Asin'], item_desc, price, 'over75']
                         file_writer(row_values, file_name['over75'])
                 clear_fields()
     return upc_found
@@ -427,7 +425,6 @@ def set_product_to_category(lpn):
 
 
 def complete_pallet(pallet_name):
-    # TODO:[] take the pallet_name and count it up one and set it to a new csv file
     tf_mistake = messagebox.askokcancel(title="Create New Box/Pallet",
                                         message=f"Are you sure you want to create a new Pallet/Box for: {pallet_name}")
     if tf_mistake:
@@ -571,15 +568,12 @@ def change_category():
 
     def on_category_enter():
 
-        # TODO:[] Fix what is outputted to the csv files as right now it outputs the statment below
-        # CORRECT: LPNPMUA8516802,718037891811,B094JH6H77,SanDisk Professional 2TB G-DRIVE ArmorATD - Rugged Durable Portable External Hard Drive HDD USB-C USB 3.1 Gen 1 - SDPH81G-002T-GBAND,98.96,over75
-        # WHAT I GET: LPNPMUA8516802,,ASIN: B094JH6H77,modems,,over75
-
         category = change_category_entry2.get()
-        asin = asin_label_text.get()
+        asin = re.sub(r'^ASIN: ', '', asin_label_text.get())
         upc = ''
         price = ''
-        name = ''
+        product_name = ''
+        old_category = ''
 
         # Changes the category of the product in the truck load file
         temp_file = truck_folder + 'temp.csv'
@@ -590,12 +584,21 @@ def change_category():
             writer = csv.writer(temp_truck)
             for row in reader:
                 if row[0] == lpn:
-                    row = [row[0], row[1], row[2], row[3], row[4], category]
-                writer.writerow(row)
+                    old_category = row[5]
+                    updated_row = [lpn, row[1], asin, row[3], row[4], category]
+                    upc = row[1]
+                    product_name = row[3]
+                    price = row[4]
+                    writer.writerow(updated_row)
+                else:
+                    writer.writerow(row)
+
+        # Close both truck_load and temp_truck files
+        truck_load.close()
+        temp_truck.close()
 
         os.remove(truck_folder + truck_items)
         os.rename(temp_file, truck_folder + truck_items)
-
         # Changes the category of the product in the input file
         temp_file = csv_file_location + 'temp.csv'
         with open(csv_file_location + 'input.csv', 'r', newline='', encoding='utf-8') as input_file, open(temp_file,
@@ -606,10 +609,7 @@ def change_category():
             writer = csv.writer(temp_input)
             for row in reader:
                 if row[1] == asin:
-                    row = [category, row[1], row[2], row[3], row[4]]
-                    name = row[3]
-                    upc = row[2]
-                    price = row[4]
+                    row = [category, asin, upc, product_name, price]
                 writer.writerow(row)
 
         os.remove(csv_file_location + 'input.csv')
@@ -627,16 +627,23 @@ def change_category():
                 writer = csv.writer(temp_label)
                 for row in reader:
                     if row[0] == lpn:
-                        continue
+                        # Remove the old entry only if the old category is different from the new one
+                        if old_category != category:
+                            continue
+                        row = [lpn, upc, asin, product_name, price, category]
                     writer.writerow(row)
+
             os.remove(file_path)
             os.rename(temp_file, file_path)
 
         # Sets the new category in the new file
         if label_names.__contains__(category):
-            row_values = [lpn, upc, asin, name, price, category]
-            file_writer(row_values, file_name[category])
+            with open(pallet_folder + file_name[category], 'a', encoding='utf-8', newline='') as write_file:
+                write_file_writer = csv.writer(write_file)
+                row_values = [lpn, upc, asin, product_name, price, category]
+                write_file_writer.writerow(row_values)
 
+        pallet_label_text.set(f"PALLET: {category}")
         change_category_window.destroy()
         return
 

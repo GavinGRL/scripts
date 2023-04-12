@@ -440,7 +440,7 @@ Category,Asin,UPC,ItemDesc,Total Price
 ,B09G3LDYKV,195174025543,"LG Gram 17Z95P Laptop 17"" Ultra-Lightweight, IPS, (2560 x 1600), Intel Evo 11th gen CORE i7 , 16GB RAM, 1TB SSD, Windows 11 Home, 80Wh Battery, Alexa Built-in, 2X USB-C, HDMI, USB-A – Black"," $ 1,580.91 "
 ,B099XB1D3B,811698034921,"SkyTech Shadow 3.0 Gaming Computer PC Desktop - Ryzen 5 3600 6-Core 3.6GHz, RTX 2060 6G, 500GB SSD, 16GB DDR4 3000, RGB Fans, AC WiFi, Windows 10 Home 64-bit, Black"," $ 1,579.61 "
 ,B09PHJMF9K,884116394372,"Dell XPS 8950 Desktop Computer - 12th Gen Intel Core i7-12700K, 16GB DDR5 RAM, 512GB SSD + 1TB HDD, NVIDIA GeForce RTX 3060 12GB, Wi-Fi 6, VR Ready, Air Cooled, Bluetooth, Windows 11 Home - Black"," $ 1,570.00 "
-,B07JBQJ1D9,730143309400,"AMD YD297XAZAFWOF Ryzen Threadripper 2970WX 24 Core, 48 Thread Processor, Pack of 1"," $ 1,569.98 "
+modems,B07JBQJ1D9,730143309400,AMD YD297XAZAFWOF Ryzen Threadripper 2970WX 24 Core 48 Thread Processor Pack of 1,1569.98
 ,B01MY2YYKB,813567024866,"Gigabyte Aero 14Wv7-BK4 14"" Notebook QHD IPS 7th Gen Intel Kabylake i7-7700HQ NVIDIA GeForce GTX 1060 GDDR5 6GB VRAM DDR4 2400 16Gx1 RAM M.2 SATA 512GB SSD HDD Windows 10 Gaming Laptop (Black)"," $ 1,569.95 "
 ,B08N5LFLC3,194252048962,"2020 Apple MacBook Air Laptop: Apple M1 Chip, 13” Retina Display, 8GB RAM, 512GB SSD Storage, Backlit Keyboard, FaceTime HD Camera, Touch ID. Works with iPhone/iPad; Space Gray"," $ 1,568.70 "
 ,B08N5R2GQW,194252048993,"2020 Apple MacBook Air Laptop: Apple M1 Chip, 13” Retina Display, 8GB RAM, 512GB SSD Storage, Backlit Keyboard, FaceTime HD Camera, Touch ID. Works with iPhone/iPad; Silver"," $ 1,568.70 "
@@ -2048,7 +2048,7 @@ Category,Asin,UPC,ItemDesc,Total Price
 ,B09RNCN3YV,196379978016,"Lenovo - 2022 - IdeaPad Flex 5i - 2-in-1 Chromebook Laptop Computer - Intel Core i3-1115G4 - 13.3"" FHD Touch Display - 8GB Memory - 128GB Storage - Chrome OS", $ 459.99
 ,B09WCNQVZS,840023226441,Moto G Stylus 5G | 2022 | Unlocked | Made for US by Motorola | 8/256 GB | 50MP Camera | Steel Blue, $ 459.99
 ,B09WCRF1RQ,840023231612,Motorola Moto G Stylus 5G | 2022 | Made for US 8/256GB | 50MP Camera | Seafoam Green, $ 459.99
-,B09R7S7PXC,840006661245,"Corsair Vengeance DDR5 64GB (2x32GB) 5200MHz C40 Intel Optimized Desktop Memory (Onboard Voltage Regulation, Custom XMP 3.0 Profiles, Compact Form-Factor, Solid Aluminum Heatspreader) Black", $ 459.80
+modem,B09R7S7PXC,840006661245,Corsair Vengeance DDR5 64GB (2x32GB) 5200MHz C40 Intel Optimized Desktop Memory (Onboard Voltage Regulation Custom XMP 3.0 Profiles Compact Form-Factor Solid Aluminum Heatspreader) Black,209.99
 ,B09PHYDXCW,195891878033,"Lenovo Ideapad 5i Pro Laptop, 16"" QHD 2.5K IPS Display, Intel Core i5-11300H, GeForce MX450, 8GB RAM, 512GB SSD, IR Camera, Backlit Keyboard, WiFi 6, Windows 11 Home", $ 459.48
 ,B08DRQ6KLL,27242914537,Sony CEA-G160T 160GB CFexpress Type A Memory Card (CEAG160T), $ 458.99
 ,B074Z2BN17,717753034687,"2017 Newest Lenovo Tablet TP 10.1 Inch IPS Full HD High Performance Laptop PC, Intel Atom x7 Z8750, 4GB Memory, 64GB SSD, Bluetooth 4.0, USB 3.0, HDMI, Windows 10 Professional", $ 457.65
@@ -2769,7 +2769,7 @@ Category,Asin,UPC,ItemDesc,Total Price
 ,B07ZJZTT5R,824142198766,MSI Gaming Intel X299 LGA 2066 Twin Turbo M.2 Gigabit LAN DDR4 USB3.2 Gen 2 SLI CFX Extended ATX Motherboard (X299 PRO), $ 332.10
 ,B083GGYNQ6,843368065485,"EVGA 06G-P4-2068-KR GeForce RTX 2060 KO Ultra Gaming, 6GB GDDR6, Dual Fans, Metal Backplate", $ 332.00
 ,B07KY83DPV,680392816924,"Dell Inspiron 5481 2-in-1 Laptop, 14.0"" HD (1366 x 768) Touchscreen, 8th Gen Intel® Core i3-8145U, 4GB DDR4, 128GB Solid State Drive, Windows 10 Home", $ 331.80
-,B08GV4YYV7,619659181314,"SanDisk 2TB Extreme PRO Portable SSD - Up to 2000MB/s - USB-C, USB 3.2 Gen 2x2 - External Solid State Drive - SDSSDE81-2T00-G25", $ 331.72
+over75,B08GV4YYV7,619659181314,SanDisk 2TB Extreme PRO Portable SSD - Up to 2000MB/s - USB-C USB 3.2 Gen 2x2 - External Solid State Drive - SDSSDE81-2T00-G25,331.72
 ,B07XLTRJ72,615798404888,Winegard GW-1000 Gateway 4G LTE WiFi Router for AIR 360+ Antenna, $ 331.02
 ,B088KMMGNC,884962310205,"HP Chromebook 14"" Touchscreen Laptop Computer for Student_ Intel Celeron N3350 up to 2.4GHz_ 4GB DDR4 RAM_ 32GB eMMC_ AC WiFi_ Type-C_ Webcam_ Chrome OS_ BROAGE 64GB Flash Stylus_ Online Class Ready", $ 330.99
 ,B095PY85HG,810029930154,Google Pixel 4a - Unlocked Android Smartphone - 128 GB of Storage - Up to 24 Hour Battery - Barely Blue, $ 330.91
@@ -6743,7 +6743,7 @@ over75,B083X4VCLB,840006619505,Corsair QL Series iCUE QL120 RGB 120mm RGB LED PW
 ,B09VYHFS3N,17229189775,"Poly Sync 20 USB-A Personal Portable Smart Speakerphone (Plantronics) - Connect to Mobile via Bluetooth, PC/Mac via Included USB-A Cable - Noise/Echo Reduction - Works w/Teams, Zoom - Amazon Exclusive", $ 98.99
 ,B085PM3PTZ,,Polaroid Originals Now I-Type Instant Camera - White (9027), $ 98.99
 ,B07G3JBMKZ,811071030571,"AfterShokz Air Bone Conduction Wireless Bluetooth Headphones with Reflective Strips, Canyon Red", $ 98.99
-modems,B094JH6H77,718037891811,SanDisk Professional 2TB G-DRIVE ArmorATD - Rugged Durable Portable External Hard Drive HDD USB-C USB 3.1 Gen 1 - SDPH81G-002T-GBAND,98.96
+over75,B094JH6H77,718037891811,SanDisk Professional 2TB G-DRIVE ArmorATD - Rugged Durable Portable External Hard Drive HDD USB-C USB 3.1 Gen 1 - SDPH81G-002T-GBAND,98.96
 ,B08KRPNGZG,840056112117,"ZAGG Rugged Book Detachable Case and Magnetic-Hinged Keyboard for iPad Air 3, iPad Pro 10.2"" and iPad Pro 10.5"" (9th Generation), Multi-Device Bluetooth Pairing, Backlit Keyboard, Durable", $ 98.95
 ,B08ZSD4MHF,,"QGeeM USB 3.0 Docking Station, Triple Display USB Hub Dual Monitor, USB C Laptop Docking Station Compatible with MacBook M1 Dell HP Lenovo(2HDMI VGA SD TF Card Reader Ethernet Audio 2USB 3.0)", $ 98.87
 ,B08B8XJMB2,706487020035,"Jabra Evolve2 40 MS Wired Headphones, USB-C, Stereo, Black – Telework Headset for Calls and Music, Enhanced All-Day Comfort, Passive Noise Cancelling Headphones, MS-Optimized with USB-C Connection", $ 98.70

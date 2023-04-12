@@ -18,13 +18,9 @@ class Checker:
 
         return
 
-    def set_category(self, category, lpn,asin):
-        # TODO:[] takes in the lpn and category and sets the LPN and asin to that new category
-        return
-
     def keyboard(self, name, price):
         keyboard_key_words = ['keyboard']
-        not_keyboard_key_words = ['iPad', 'Case', 'Laptop']
+        not_keyboard_key_words = ['iPad', 'Case', 'Laptop','Magic Keyboard']
         if any(word in name for word in keyboard_key_words) and \
                 not any(word in name for word in not_keyboard_key_words):
             if price < 150:
@@ -33,3 +29,13 @@ class Checker:
                 return "keyboards_mice_g_headphones"
 
         return
+
+    def airpods(self, name, price, asin):
+        asin_list = [ 'B07PXGQC1Q', 'B0BDHB9Y8H', 'B09JQL3NWT', 'B07H6QCGGZ', 'B08PZDSP2Z', 'B08PZJ8FZ8', 'B08PZD76NP',
+                      'B08PZJN7BD', 'B08PZHYWJS', 'B07ZPC9QD4', 'B07PXGQC1Q', 'B09JQMJHXY', 'B0BDHWDR12', 'B07731Y1CC',
+                      'B01MQWUXZS', 'B07PYLT6DN']
+
+        return
+
+    #wifi 5, escept synology
+
