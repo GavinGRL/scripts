@@ -267,7 +267,7 @@ def ask_for_asin_category(tf_already_in, lpn, asin, upc, name, price):
 
 
 def set_input_file_category(category, asin, upc, name, price):
-    # TODO:[] make work, deletes all data in input.csv
+    # TODO:[x] make work, deletes all data in input.csv
     with open(csv_file_location + 'input.csv', 'r', encoding='utf-8') as input_file, \
             open(csv_file_location + 'temp.csv', 'w', encoding='utf-8', newline='') as output:
         reader = csv.reader(input_file)
