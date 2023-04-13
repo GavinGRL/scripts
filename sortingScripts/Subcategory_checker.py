@@ -3,20 +3,49 @@ import os
 
 
 class Checker:
+
+    # * g-headsets over 150 go to high keyboard,mice,headset, 75-150 go to the auction pallet, under 75 go to low misc
+    # * earbuds select go to a box, earbuds non-select go to a box
+    # * mice over 75 go to high headsets, under 75 go to low misc
+    # * phone/tablet cases go to own box
+    # * keyboards over 150 go to high keyboard/mice/headset,
+    # 75-150 go to the keyboards auction pallet, under 75 go to low misc
+    # * bin routers gos in modems pallet, take from csv sheet that checks for these products
+
     def __init__(self, all_pallet_names, label_names, categories):
         pallet_names = all_pallet_names
         manifested_pallet_name = label_names
         category_names = categories
+        self.sorting_specifics_folder = '../sorting_specifics/'
         return
-
-    # TODO: Finish function that returns a boolean value based on if the product meets special rules for a bin item
-    def special_bins_check(self, asin, title):
-        return False
 
     # TODO: finish function that finds what category the product belongs in
-    def category_finder(self):
+    def category_finder(self, name, price):
 
-        return
+        if not self.keyboard(name, price) == "":
+            return self.keyboard(name, price)
+
+        elif not self.mice(name) == "":
+            return self.mice(name)
+
+        elif not self.earbuds(name) == "":
+            return self.earbuds(name)
+
+        elif not self.airpods(name) == "":
+            return self.airpods(name)
+
+        elif not self.headphones(name, price) == "":
+            return self.headphones(name, price)
+
+        elif not self.cpu_coolers(name) == "":
+            return self.cpu_coolers(name)
+
+        elif not self.modems(name, price) == "":
+            return self.modems(name, price)
+
+        return ''
+
+
 
     def keyboard(self, name, price):
         keyboard_key_words = ['keyboard']

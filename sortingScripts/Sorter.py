@@ -10,13 +10,12 @@ import asinFinder
 csv_file_location = "../csv_files/"
 pallet_folder = "../pallets/"
 truck_folder = "../truck_items/"
+completed_pallet_folder = "../completed_pallets/"
 truck_items = ''
 lpn = ''
 label_names = [
     "over75", "under75", "keyboards_mice_under", "g_headphones_under",
-    "earbuds_selected", "earbuds_not_selected", "modems", "airpods",
-"switches"
-]
+    "earbuds_selected", "earbuds_not_selected", "modems", "cpu_coolers"]
 
 # TODO:[] Update all_pallet_names to have all of the product categories sorted
 all_pallet_names = ["over75", "under75", "keyboards_mice_g_headphones", "keyboards_mice_under", "g_headphones_under",
@@ -131,17 +130,11 @@ def search_asin():
                 row_values = [lpn, upc, row['Asin'], item_desc, price, category]
                 file_writer(row_values, file_name['under75'])
                 pallet_label_text.set('PALLET: Under 75')
+                set_input_file_category('under75', asin, upc, item_desc, price)
                 clear_fields()
                 return
     # open input file and search for ASIN
 
-    # * g-headsets over 150 go to high keyboard,mice,headset, 75-150 go to the auction pallet, under 75 go to low misc
-    # * earbuds select go to a box, earbuds non-select go to a box
-    # * mice over 75 go to high headsets, under 75 go to low misc
-    # * phone/tablet cases go to own box
-    # * keyboards over 150 go to high keyboard/mice/headset,
-    # 75-150 go to the keyboards auction pallet, under 75 go to low misc
-    # * bin routers gos in modems pallet, take from csv sheet that checks for these products
     if BOW(asin, lpn):
         return
     else:
@@ -163,7 +156,7 @@ def search_asin():
         name = row_val[1]
         upc = row_val[3]
 
-        ask_for_asin_category(lpn, asin, upc, name, price)
+        ask_for_asin_category(False, lpn, asin, upc, name, price)
     return
 
 
@@ -198,28 +191,23 @@ def ask_for_asin_category(tf_already_in, lpn, asin, upc, name, price):
         category = category_entry2.get()
         ask_category_window.destroy()
         if tf_already_in:
-            # open the CSV file for reading
-            with open(csv_file_location + 'input.csv', 'r', encoding='utf-8', newline='') as f:
-                reader = csv.reader(f)
-                rows = list(reader)  # read the existing rows into a list of lists
+            # Open the CSV file in write mode and create a csv.writer object
 
-            # find the index of the row with the matching ASIN, if any
-            index = next((i for i, row in enumerate(rows) if row[1] == asin), None)
+            with open(csv_file_location + 'input.csv', 'r', encoding='utf-8') as input_file, open(
+                    csv_file_location + 'temp.csv', 'w', encoding='utf-8',
+                    newline='') as output:
+                reader = csv.reader(input_file)
+                writer = csv.writer(output)
 
-            # create a new row to insert or update
-            new_row = [category, asin, upc, name, price]
+                for row in reader:
+                    if row[1] == asin:
+                        new_row = [category, asin, upc, name, price]
+                        writer.writerow(new_row)
+                    else:
+                        writer.writerow(row)
 
-            if index is not None:
-                # update the existing row with the new data
-                rows[index] = new_row
-            else:
-                # insert the new row at the end of the list
-                rows.append(new_row)
-
-            # write the updated rows back to the file
-            with open(csv_file_location + 'input.csv', 'w', encoding='utf-8', newline='') as f:
-                writer = csv.writer(f)
-                writer.writerows(rows)
+            os.remove(csv_file_location + 'input.csv')
+            os.rename(csv_file_location + 'temp.csv', csv_file_location + 'input.csv')
 
         else:
             with open(csv_file_location + 'input.csv', 'a+', encoding='utf-8', newline='') as f:
@@ -237,7 +225,29 @@ def ask_for_asin_category(tf_already_in, lpn, asin, upc, name, price):
     return
 
 
+def set_input_file_category(category, asin, upc, name, price):
+    # TODO:[] make work, deletes all data in input.csv
+    with open(csv_file_location + 'input.csv', mode='w', encoding='utf-8', newline='') as file:
+        writer = csv.writer(file)
+
+        # Read the existing data from the CSV file and save it into a list
+        data = []
+        with open(csv_file_location + 'input.csv', mode='r', encoding='utf-8') as csvfile:
+            reader = csv.reader(csvfile)
+            for row in reader:
+                if row[1] == asin:
+                    new_row = [category, asin, upc, name, price]
+                    data.append(new_row)
+                    continue  # skip to next row
+                data.append(row)
+
+        writer.writerows(data)
+
+    return
+
+
 def BOW(asin, lpn):
+    sub_cat = Subcategory_checker.Checker(all_pallet_names, label_names, sorting_categories)
     with open(csv_file_location + 'input.csv', 'r', encoding='utf-8') as csvfile:
         reader = csv.DictReader(csvfile)
         for row in reader:
@@ -247,47 +257,43 @@ def BOW(asin, lpn):
                 item_desc = row['ItemDesc'].replace(',', '')
                 upc = row['UPC']
                 price = float(row['Total Price'].replace(',', '').replace('$', ''))
-
-                # if there is no set category then it will prompt the user to enter one
-                if row['Category'] == '':
-                    tf_already_in = True
-                    ask_for_asin_category(tf_already_in, lpn, asin, upc, item_desc, price)
-                    return asin_found
-                else:
-                    category = row['Category']
-
                 title_label_text.set("TITLE: {}".format(item_desc))
                 price_label_text.set("PRICE: {}".format(price))
                 asin_label_text.set("ASIN: {}".format(asin))
 
-                # check if price is under or over $75 and write to respective CSV file
-                # category = Subcategory_checker.Checker.category_finder(asin)
-                special_bin_tf = Subcategory_checker.Checker.special_bins_check(asin, item_desc, item_desc)
-                # ? use subcategory_checker.py file to achieve this HERE
-
-                # looks at price and subcategory_checker.py function to see if the item belongs in this pallet
-                if price < 75 or special_bin_tf:
-                    row_values = [lpn, upc, row['Asin'], item_desc, price, category]
+                if price < 75 and sub_cat.modems(item_desc, price) == "":
+                    row_values = [lpn, upc, row['Asin'], item_desc, price, 'under75']
                     file_writer(row_values, file_name['under75'])
                     pallet_label_text.set('PALLET: Under 75')
+                    set_input_file_category('under75', asin, upc, item_desc, price)
 
                 else:
-                    if sorting_categories.__contains__(category):
-                        # figure what pallet to put it into
-                        if label_names.__contains__(category):
-                            # pallet that is manifested
-                            row_values = [lpn, upc, row['Asin'], item_desc, price, category]
-                            file_writer(row_values, file_name[category])
-                        else:
-                            # pallet that is not manifested
-                            row_values = [lpn, upc, asin, item_desc, price, category]
-                            truckload_file_write(row_values)
-                        pallet_label_text.set(f"PALLET: {category}")
+                    category_of_item = sub_cat.category_finder(item_desc, price)
+                    if not category_of_item == '':
+                        set_input_file_category(category_of_item, asin, upc, item_desc, price)
+
+                    if row['Category'] == '':
+                        tf_already_in = True
+                        ask_for_asin_category(tf_already_in, lpn, asin, upc, item_desc, price)
+                        return asin_found
                     else:
-                        # this is the misc over 75 pallet
-                        row_values = [lpn, upc, row['Asin'], item_desc, price, category]
-                        file_writer(row_values, file_name['over75'])
-                        pallet_label_text.set('PALLET: Over 75')
+                        category = row['Category']
+                        if sorting_categories.__contains__(category):
+                            # figure what pallet to put it into
+                            if label_names.__contains__(category):
+                                # pallet that is manifested
+                                row_values = [lpn, upc, row['Asin'], item_desc, price, category]
+                                file_writer(row_values, file_name[category])
+                            else:
+                                # pallet that is not manifested
+                                row_values = [lpn, upc, asin, item_desc, price, category]
+                                truckload_file_write(row_values)
+                            pallet_label_text.set(f"PALLET: {category}")
+                        else:
+                            # this is the misc over 75 pallet
+                            row_values = [lpn, upc, row['Asin'], item_desc, price, category]
+                            file_writer(row_values, file_name['over75'])
+                            pallet_label_text.set('PALLET: Over 75')
 
                 clear_fields()
     return asin_found
@@ -321,7 +327,7 @@ def ask_for_category(lpn):
 
         return upc_asin_not_found(lpn, category)
 
-    submit_button = ttk.Button(ask_for_category_frame, text="Submit", command=submit_category())
+    submit_button = ttk.Button(ask_for_category_frame, text="Submit", command=submit_category)
     submit_button.grid(column=1, row=1, padx=10, pady=10)
     ask_for_category_frame.lift()
     category_entry.focus()
@@ -337,7 +343,7 @@ def upc_asin_not_found(lpn, category):
     # If category is a manifest
     if category in label_names:
         # Find the average price of category
-        with open(pallet_folder + file_name[category], 'r') as f:
+        with open(pallet_folder + file_name[category], 'r',encoding='utf-8') as f:
             reader = csv.reader(f)
             for row in reader:
                 total_price += float(row[4].replace(',', '').replace('$', ''))
@@ -367,6 +373,7 @@ def truckload_file_write(row_values):
 
 
 def upc_search(lpn, upc):
+    sub_cat = Subcategory_checker.Checker(all_pallet_names, label_names, sorting_categories)
     upc_found = False
     with open(csv_file_location + 'input.csv', 'r', encoding='utf-8') as csvfile:
         reader = csv.DictReader(csvfile)
@@ -379,35 +386,39 @@ def upc_search(lpn, upc):
                 title_label_text.set("TITLE: {}".format(item_desc))
                 price_label_text.set("PRICE: {}".format(price))
                 asin_label_text.set("ASIN: {}".format(asin))
-                # check if price is under or over $75 and write to respective CSV file
-                # checks the sub-category
-                category = Subcategory_checker.Checker.category_finder(asin)
-                special_bin_tf = Subcategory_checker.Checker.special_bins_check(asin)
-                # ? use subcategory_checker.py file to achieve this HERE
-
-                # looks at price and subcategory_checker.py function to see if the item belongs in this pallet
-                if price < 75 & special_bin_tf:
-                    row_values = [lpn, upc, row['Asin'], item_desc, price, category]
+                if price < 75 and sub_cat.modems(item_desc, price) == "":
+                    row_values = [lpn, upc, row['Asin'], item_desc, price, 'under75']
                     file_writer(row_values, file_name['under75'])
-                else:
-                    # ? use subcategory_checker.py file to achieve this HERE
-                    sorting_category_tf = Subcategory_checker.Checker.sorting_category_check(asin)
+                    pallet_label_text.set('PALLET: Under 75')
+                    set_input_file_category('under75', asin, upc, item_desc, price)
 
-                    if sorting_category_tf:
-                        # figure what pallet to put it into
-                        if label_names.__contains__(category):
-                            # pallet that is manifested
-                            row_values = [lpn, upc, row['Asin'], item_desc, price, category]
-                            file_writer(row_values, file_name[category])
-                        else:
-                            # pallet that is not manifested
-                            row_values = [lpn, upc, asin, item_desc, price, category]
-                            truckload_file_write(row_values)
-                            pallet_label_text.set(f"PALLET: {category}")
+                else:
+                    category_of_item = sub_cat.category_finder(item_desc, price)
+                    if not category_of_item == '':
+                        set_input_file_category(category_of_item, asin, upc, item_desc, price)
+
+                    if row['Category'] == '':
+                        tf_already_in = True
+                        ask_for_asin_category(tf_already_in, lpn, asin, upc, item_desc, price)
+                        return upc_found
                     else:
-                        # this is the misc over 75 pallet
-                        row_values = [lpn, upc, row['Asin'], item_desc, price, 'over75']
-                        file_writer(row_values, file_name['over75'])
+                        category = row['Category']
+                        if sorting_categories.__contains__(category):
+                            # figure what pallet to put it into
+                            if label_names.__contains__(category):
+                                # pallet that is manifested
+                                row_values = [lpn, upc, row['Asin'], item_desc, price, category]
+                                file_writer(row_values, file_name[category])
+                            else:
+                                # pallet that is not manifested
+                                row_values = [lpn, upc, asin, item_desc, price, category]
+                                truckload_file_write(row_values)
+                            pallet_label_text.set(f"PALLET: {category}")
+                        else:
+                            # this is the misc over 75 pallet
+                            row_values = [lpn, upc, row['Asin'], item_desc, price, category]
+                            file_writer(row_values, file_name['over75'])
+                            pallet_label_text.set('PALLET: Over 75')
                 clear_fields()
     return upc_found
 
@@ -435,8 +446,8 @@ def complete_pallet(pallet_name):
 
 def undo():
     # remove from truckload.csv
-    with open(truck_folder + truck_items, 'r') as truck_load, open(truck_folder + 'temp.csv', 'w',
-                                                                   newline='') as output_file:
+    with open(truck_folder + truck_items, 'r',encoding='utf-8') as truck_load, open(truck_folder + 'temp.csv', 'w',
+                                                                   newline='',encoding='utf-8') as output_file:
         reader = csv.reader(truck_load)
         writer = csv.writer(output_file)
 
@@ -447,12 +458,15 @@ def undo():
                 writer.writerow(row)
 
     os.remove(truck_folder + truck_items)
-    os.rename('temp.csv', truck_items)
+    os.rename(truck_folder + 'temp.csv', truck_folder + truck_items)
 
     # check if LPN is in any manifest files, if yes remove
     for name in file_name:
-        with open(pallet_folder + file_name[name], 'r') as label_file, open(pallet_folder + 'temp.csv', 'w',
-                                                                            newline='') as output_file:
+        file_path = pallet_folder + file_name[name]
+        if not os.path.isfile(file_path):
+            continue
+        with open(file_path, 'r',encoding='utf-8') as label_file, open(pallet_folder + 'temp.csv', 'w',
+                                                      newline='',encoding='utf-8') as output_file:
             reader = csv.reader(label_file)
             writer = csv.writer(output_file)
 
@@ -463,7 +477,7 @@ def undo():
                     writer.writerow(row)
 
         os.remove(pallet_folder + file_name[name])
-        os.rename('temp.csv', file_name[name])
+        os.rename(pallet_folder + 'temp.csv', pallet_folder + file_name[name])
 
     # go to not found in master.csv
     no_asin_funct()
@@ -488,7 +502,7 @@ def on_asin_enter(event):
 def on_lpn_enter(event):
     """on_lpn_enter: checks if the lpn entry field is a lpn and calls search_asin function."""
     if lpn_entry.get().startswith("L"):
-        search_asin()  # searches 
+        search_asin()  # searches
         asin_entry.focus()
     else:
         lpn_entry.delete(0, tk.END)
@@ -663,7 +677,7 @@ def change_category():
 
 def open_options():
     """open_options: Creates the New Pallet GUI screen and the logic behind it. Creates two tabs 'New Pallet'
-     and 'Change Pallet' in which you can either create a new pallet by selecting a new type of pallet and 
+     and 'Change Pallet' in which you can either create a new pallet by selecting a new type of pallet and
      setting the new pallet number or pick from an existing pallet that is in the same directory as this code"""
     options_window = tk.Toplevel(root)
     options_window.title("Change Pallet")
