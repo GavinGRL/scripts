@@ -14,7 +14,7 @@ def asin_lookup(asin):
         path = os.path.abspath('')
 
     csv_path = os.path.join(path, "proxies.txt")
-    with open(csv_path, 'r') as f:
+    with open("../csv_files/proxies.txt", 'r') as f:
         lines = csv.reader(f)
         for line in lines:
             ips = line

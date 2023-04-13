@@ -48,8 +48,9 @@ class Checker:
 
 
     def keyboard(self, name, price):
-        keyboard_key_words = ['keyboard']
-        not_keyboard_key_words = ['iPad', 'Case', 'Laptop','Magic Keyboard']
+        name = name.upper()
+        keyboard_key_words = ['KEYBOARD']
+        not_keyboard_key_words = ['IPAD', 'CASE', 'LAPTOP', 'MAGIC KEYBOARD']
         if any(word in name for word in keyboard_key_words) and \
                 not any(word in name for word in not_keyboard_key_words):
             if price < 150:
@@ -57,14 +58,77 @@ class Checker:
             else:
                 return "keyboards_mice_g_headphones"
 
-        return
+        return ""
 
-    def airpods(self, name, price, asin):
-        asin_list = [ 'B07PXGQC1Q', 'B0BDHB9Y8H', 'B09JQL3NWT', 'B07H6QCGGZ', 'B08PZDSP2Z', 'B08PZJ8FZ8', 'B08PZD76NP',
-                      'B08PZJN7BD', 'B08PZHYWJS', 'B07ZPC9QD4', 'B07PXGQC1Q', 'B09JQMJHXY', 'B0BDHWDR12', 'B07731Y1CC',
-                      'B01MQWUXZS', 'B07PYLT6DN']
+    def mice(self, name):
+        name = name.upper()
+        mice_words = ['MOUSE']
+        not_mice_words = ['TABLET', 'DESKTOP', 'COMPUTER']
+        if any(word in name for word in mice_words) and not any(word in name for word in not_mice_words):
+            return "keyboards_mice_g_headphones"
+        else:
+            return ""
 
-        return
+    def earbuds(self, name):
+        name = name.upper()
+        earbuds_file = self.sorting_specifics_folder
+        earbud_words = ['EARBUD', 'EARPHONE', 'IN-EAR']
+        not_earbud_words = ['POCKETALKER', 'AIRPODS', 'RADIO', 'WALKIE TALKIE']
 
-    #wifi 5, escept synology
+        if any(word in name for word in earbud_words) and not any(word in name for word in not_earbud_words):
+            with open(earbuds_file, 'r', encoding='utf-8') as f:
+                reader = csv.reader(f)
 
+                for row in reader:
+
+                    if row[0] in name:
+                        return "earbuds_selected"
+                    else:
+                        return "earbuds_not_selected"
+        else:
+            return ""
+
+    def airpods(self, name):
+        name = name.upper()
+        airpod_words = ["AIRPOD"]
+        not_airpod_words = ["BELKIN"]
+
+        if any(word in name for word in airpod_words) and not any(word in name for word in not_airpod_words):
+            return "AirPods"
+        else:
+            return ""
+
+    def headphones(self, name, price):
+        name = name.upper()
+        headphone_words = ["GAMING HEADPHONE"]
+        not_headphone_words = ["APPLE"]
+
+        if any(word in name for word in headphone_words):
+            if(price > 150):
+                return "keyboard_mice_g_headphones"
+            else:
+                return "g_headphones_under"
+        else:
+            return ""
+
+    def cpu_coolers(self, name):
+        name = name.upper()
+        cpu_cooler_words = ["CPU COOLER", "CPU LIQUID COOLER", "RADIATOR"]
+        not_cpu_cooler_words = ["CASE"]
+
+        if any(word in name for word in cpu_cooler_words) and not any(word in name for word in not_cpu_cooler_words):
+            return "cpu_coolers"
+        else:
+            return ""
+
+    def modems(self, name, price):  # Modem, DOCSIS, WIFI 5, NOT Synology, and Routers under 75
+        name = name.upper()
+        router_words = ['ROUTER']
+        modem_words = ["MODEM", "DOCSIS", "WIFI 5", "WI-FI 5"]
+        not_modem_words = ["SYNOLOGY"]
+
+        if any(word in name for word in router_words) and price < 75 \
+                or any(word in name for word in modem_words) and not any(word in name for word in not_modem_words):
+            return "modems"
+        else:
+            return ""

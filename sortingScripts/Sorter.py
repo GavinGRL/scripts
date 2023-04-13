@@ -22,13 +22,15 @@ all_pallet_names = ["over75", "under75", "keyboards_mice_g_headphones", "keyboar
                     "earbuds_selected", "earbuds_not_selected", "modems", "Drawing Tablets/Portable Monitors",
                     "Graphics Cards", "Power Supplies", "Motherboards", "Ram", "SSD", "Cameras", "Audio Products",
                     "Gaming Systems", "NAS", "Hard Drives", "Mini Computers", "Watches", "Phone/Tablet Cases",
-                    "Apple Accessories", "PCIE Cards", "Phones/Tablets", "Headphone", "Laptop"]
+                    "Apple Accessories", "PCIE Cards", "Phones/Tablets", "Headphones", "Laptop", "AirPods",
+                    "cpu", "cpu_coolers"]
 
 sorting_categories = ["keyboards_mice_g_headphones", "keyboards_mice_under", "g_headphones_under",
                       "earbuds_selected", "earbuds_not_selected", "modems", "Drawing Tablets/Portable Monitors",
                       "Graphics Cards", "Power Supplies", "Motherboards", "Ram", "SSD", "Cameras", "Audio Products",
                       "Gaming Systems", "NAS", "Hard Drives", "Mini Computers", "Watches", "Phone/Tablet Cases",
-                      "Apple Accessories", "PCIE Cards", "Phones/Tablets", "Headphone", "Laptop"]
+                      "Apple Accessories", "PCIE Cards", "Phones/Tablets", "Headphones", "Laptop", "AirPods",
+                      "cpu", "cpu_coolers"]
 
 file_name = {name: name for name in label_names}
 
@@ -74,7 +76,45 @@ def set_undefined():
         file_name[name] = (name + ".csv")
 
 
+# computes the average price of a pallet file, then sets all MISC items to that average price
+def compute_misc_avg(pallet_type):
+    if os.path.exists(pallet_folder + file_name[pallet_type]):
+        print("PATH EXISTS")
+        # find the average price while skipping over temp items
+        with open(pallet_folder + file_name[pallet_type], 'r', encoding='utf-8') as f, open(pallet_folder + 'temp.csv',
+                                                                                            'w',
+                                                                                            encoding='utf-8') as temp:
+            reader = csv.reader(f)
+            writer = csv.writer(temp)
+
+            # calculate average price
+            total_price = 0
+            num_items = 0
+            for row in reader:
+                if not row[4] == 'temp_price':
+                    total_price += float(row[4])
+                    num_items += 1
+            avg_price_cat = total_price / num_items
+            # reset reader to look at top of file
+            f.seek(0)
+
+            # write updated rows to temp file
+            for row in reader:
+                if not row[3] == 'MISC':
+                    writer.writerow(row)
+                else:
+                    row[4] = avg_price_cat
+                    writer.writerow(row)
+
+        os.remove(pallet_folder + file_name[pallet_type])
+        os.rename(pallet_folder + "temp.csv", completed_pallet_folder + file_name[pallet_type])
+    else:
+        print("PATH DOES NOT EXIST")
+
+
 def file_creator(pallet_number, pallet_type):
+    compute_misc_avg(pallet_type)
+
     if pallet_number == -1:
         match = re.search(r"(\d+)\.csv$", file_name[pallet_type])
         if match:
@@ -353,7 +393,7 @@ def upc_asin_not_found(lpn, category):
         avg_price_string = f"${avg_price_of_cat}"
 
         # Set price to avg price, and set name to "Misc"
-        row_values = [lpn, "N/A", "N/A", "MISC", avg_price_string, category]
+        row_values = [lpn, "N/A", "N/A", "MISC", "temp_price", category]
 
         # Add to category manifest and truckload
         file_writer(row_values, file_name[category])
@@ -480,7 +520,7 @@ def undo():
         os.rename(pallet_folder + 'temp.csv', pallet_folder + file_name[name])
 
     # go to not found in master.csv
-    no_asin_funct()
+    undone()
 
     return
 
@@ -768,6 +808,18 @@ def open_options():
     file_button.grid(column=1, row=2, padx=10, pady=10)
 
     notebook.pack(expand=1, fill="both")
+
+
+def undone():
+    yesno = messagebox.askyesno(title="NO ASIN FOUND", message="Does this product have a UPC?")
+
+    if yesno:
+        upc_found_tf = ask_for_upc(lpn)
+        if upc_found_tf:
+            return
+    else:
+        ask_for_category(lpn)
+        return
 
 
 def no_asin_funct():
