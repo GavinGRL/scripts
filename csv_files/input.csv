@@ -2769,7 +2769,7 @@ Category,Asin,UPC,ItemDesc,Total Price
 ,B07ZJZTT5R,824142198766,MSI Gaming Intel X299 LGA 2066 Twin Turbo M.2 Gigabit LAN DDR4 USB3.2 Gen 2 SLI CFX Extended ATX Motherboard (X299 PRO), $ 332.10
 ,B083GGYNQ6,843368065485,"EVGA 06G-P4-2068-KR GeForce RTX 2060 KO Ultra Gaming, 6GB GDDR6, Dual Fans, Metal Backplate", $ 332.00
 ,B07KY83DPV,680392816924,"Dell Inspiron 5481 2-in-1 Laptop, 14.0"" HD (1366 x 768) Touchscreen, 8th Gen Intel® Core i3-8145U, 4GB DDR4, 128GB Solid State Drive, Windows 10 Home", $ 331.80
-,B08GV4YYV7,619659181314,"SanDisk 2TB Extreme PRO Portable SSD - Up to 2000MB/s - USB-C, USB 3.2 Gen 2x2 - External Solid State Drive - SDSSDE81-2T00-G25", $ 331.72
+SSD,B08GV4YYV7,619659181314,SanDisk 2TB Extreme PRO Portable SSD - Up to 2000MB/s - USB-C USB 3.2 Gen 2x2 - External Solid State Drive - SDSSDE81-2T00-G25,331.72
 ,B07XLTRJ72,615798404888,Winegard GW-1000 Gateway 4G LTE WiFi Router for AIR 360+ Antenna, $ 331.02
 ,B088KMMGNC,884962310205,"HP Chromebook 14"" Touchscreen Laptop Computer for Student_ Intel Celeron N3350 up to 2.4GHz_ 4GB DDR4 RAM_ 32GB eMMC_ AC WiFi_ Type-C_ Webcam_ Chrome OS_ BROAGE 64GB Flash Stylus_ Online Class Ready", $ 330.99
 ,B095PY85HG,810029930154,Google Pixel 4a - Unlocked Android Smartphone - 128 GB of Storage - Up to 24 Hour Battery - Barely Blue, $ 330.91
@@ -3818,7 +3818,7 @@ Category,Asin,UPC,ItemDesc,Total Price
 ,B08YMY8ZZ3,813567029717,"AORUS WATERFORCE X 280 AIO Liquid CPU Cooler, Rotatable Circular LCD Display with Micro SD Support, 280mm Radiator with 2x140mm Low Noise ARGB Fans, Compatible with Intel LGA1700", $ 229.99
 ,B09BGWJD3C,824142262771,"MSI MAG X570S Tomahawk WiFi Motherboard (AMD AM4, DDR4, PCIe 4.0, SATA 6Gb/s, M.2, USB 3.2 Gen 2, AC Wi-Fi 6, HDMI, ATX)", $ 229.99
 ,B08HR78C46,615822013864,"Jabra Elite 85t True Wireless Bluetooth Earbuds, Titanium Black – Advanced Noise-Cancelling Earbuds with Charging Case for Calls & Music – Wireless Earbuds with Superior Sound & Premium Comfort", $ 229.99
-,B082DYSQVF,815671015297,NZXT Kraken Z63 280mm - RL-KRZ63-01 - AIO RGB CPU Liquid Cooler - Customizable LCD Display - Improved Pump - Powered by CAM V4 - RGB Connector - Aer P 140mm Radiator Fans (2 Included), $ 229.99
+cpu_coolers,B082DYSQVF,815671015297,NZXT Kraken Z63 280mm - RL-KRZ63-01 - AIO RGB CPU Liquid Cooler - Customizable LCD Display - Improved Pump - Powered by CAM V4 - RGB Connector - Aer P 140mm Radiator Fans (2 Included),229.99
 ,B09X8D13JS,812137030986,Mad Catz R.A.T. Pro X3 Supreme Limited Edition Wired Optical Gaming Mouse - 16000 DPI Optical Sensor, $ 229.99
 ,B08Z492RK9,840030701399,"TP-Link Deco Tri Band Mesh WiFi 6 System(Deco X68) - Covers up to 5500 Sq. Ft.Whole Home Coverage, Replaces Wireless Routers and Extenders, 2-Pack", $ 229.99
 ,B08STXNT4K,,Nokia 5.4 | Android 10 | Unlocked Smartphone | 2-Day Battery | Dual SIM | US Version | 4/128GB | 6.39-Inch Screen | 48MP Quad Camera | Polar Night, $ 229.99
@@ -4965,7 +4965,7 @@ Category,Asin,UPC,ItemDesc,Total Price
 ,B0BGJTLFN5,840272900307,"Razer Naga V2 Pro Wireless Gaming Mouse: Interchangeable Side Plate w/ 2, 6, 12 Button Configurations - Focus+ 20K DPI Optical Sensor - Fastest Gaming Mouse Switch - Chroma RGB Lighting", $ 162.00
 ,B088SV1FH9,843368060541,"EVGA SuperNOVA 750 GT, 80 Plus Gold 750W, Fully Modular, Auto Eco Mode with FDB Fan, 7 Year Warranty, Includes Power ON Self Tester, Compact 150mm Size, Power Supply 220-GT-0750-Y1", $ 162.00
 ,B08JD18Q4Q,840006618829,"Corsair HS75 XB Wireless Gaming Headset - 20 Hour Battery Life Works w/Xbox Series X, Xbox Series S, Xbox One, PC- Detachable Noise Canceling Microphone- Memory Foam Earcups- 30 Feet of Range", $ 162.00
-,B087YL4DDY,824142205686,"MSI MAG Series CORELIQUID 360R, aRGB CPU Liquid Cooler (AIO): Rotatable Blockhead Design, 360mm Radiator, Triple 120mm aRGB PWM Fans", $ 162.00
+cpu_coolers,B087YL4DDY,824142205686,MSI MAG Series CORELIQUID 360R aRGB CPU Liquid Cooler (AIO): Rotatable Blockhead Design 360mm Radiator Triple 120mm aRGB PWM Fans,162.0
 ,B07WW1XF51,843368061968,"EVGA 220-GA-0750-X1 Super Nova 750 Ga, 80 Plus Gold 750W, Fully Modular, ECO Mode with Dbb Fan, 10 Year Warranty, Compact 150mm Size, Power Supply", $ 162.00
 ,B08VGXKB9T,195553101554,"ASUS Prime Z590-P LGA 1200 (Intel® 11th/10th Gen) ATX Motherboard (PCIe 4.0, 10+1 Power Stages, 3X M.2, 2.5Gb LAN, Front Panel USB 3.2 Gen 2 USB Type-C®, Thunderbolt™ 4 Support)", $ 162.00
 ,B096MYB1H1,884116390862,"Dell 27 inch Monitor FHD (1920 x 1080) 16:9 Ratio with Comfortview (TUV-Certified), 75Hz Refresh Rate, 16.7 Million Colors, Anti-Glare Screen with 3H Hardness, Black - SE2722HX", $ 162.00
@@ -6743,7 +6743,7 @@ Category,Asin,UPC,ItemDesc,Total Price
 ,B09VYHFS3N,17229189775,"Poly Sync 20 USB-A Personal Portable Smart Speakerphone (Plantronics) - Connect to Mobile via Bluetooth, PC/Mac via Included USB-A Cable - Noise/Echo Reduction - Works w/Teams, Zoom - Amazon Exclusive", $ 98.99
 ,B085PM3PTZ,,Polaroid Originals Now I-Type Instant Camera - White (9027), $ 98.99
 ,B07G3JBMKZ,811071030571,"AfterShokz Air Bone Conduction Wireless Bluetooth Headphones with Reflective Strips, Canyon Red", $ 98.99
-,B094JH6H77,718037891811,"SanDisk Professional 2TB G-DRIVE ArmorATD - Rugged, Durable Portable External Hard Drive HDD, USB-C, USB 3.1 Gen 1 - SDPH81G-002T-GBAND", $ 98.96
+SSD,B094JH6H77,718037891811,SanDisk Professional 2TB G-DRIVE ArmorATD - Rugged Durable Portable External Hard Drive HDD USB-C USB 3.1 Gen 1 - SDPH81G-002T-GBAND,98.96
 ,B08KRPNGZG,840056112117,"ZAGG Rugged Book Detachable Case and Magnetic-Hinged Keyboard for iPad Air 3, iPad Pro 10.2"" and iPad Pro 10.5"" (9th Generation), Multi-Device Bluetooth Pairing, Backlit Keyboard, Durable", $ 98.95
 ,B08ZSD4MHF,,"QGeeM USB 3.0 Docking Station, Triple Display USB Hub Dual Monitor, USB C Laptop Docking Station Compatible with MacBook M1 Dell HP Lenovo(2HDMI VGA SD TF Card Reader Ethernet Audio 2USB 3.0)", $ 98.87
 ,B08B8XJMB2,706487020035,"Jabra Evolve2 40 MS Wired Headphones, USB-C, Stereo, Black – Telework Headset for Calls and Music, Enhanced All-Day Comfort, Passive Noise Cancelling Headphones, MS-Optimized with USB-C Connection", $ 98.70

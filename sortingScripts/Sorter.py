@@ -1,5 +1,6 @@
 import csv
 import os
+import time
 import tkinter as tk
 from tkinter import messagebox, Scrollbar, Canvas
 from tkinter import ttk
@@ -267,21 +268,23 @@ def ask_for_asin_category(tf_already_in, lpn, asin, upc, name, price):
 
 def set_input_file_category(category, asin, upc, name, price):
     # TODO:[] make work, deletes all data in input.csv
-    with open(csv_file_location + 'input.csv', mode='w', encoding='utf-8', newline='') as file:
-        writer = csv.writer(file)
+    with open(csv_file_location + 'input.csv', 'r', encoding='utf-8') as input_file, \
+            open(csv_file_location + 'temp.csv', 'w', encoding='utf-8', newline='') as output:
+        reader = csv.reader(input_file)
+        writer = csv.writer(output)
 
-        # Read the existing data from the CSV file and save it into a list
-        data = []
-        with open(csv_file_location + 'input.csv', mode='r', encoding='utf-8') as csvfile:
-            reader = csv.reader(csvfile)
-            for row in reader:
-                if row[1] == asin:
-                    new_row = [category, asin, upc, name, price]
-                    data.append(new_row)
-                    continue  # skip to next row
-                data.append(row)
+        for row in reader:
+            if row[1] == asin:
+                new_row = [category, asin, upc, name, price]
+                writer.writerow(new_row)
+            else:
+                writer.writerow(row)
 
-        writer.writerows(data)
+    # no need to close the file explicitly
+    # the "with" statement will take care of it
+
+    os.remove(csv_file_location + 'input.csv')
+    os.rename(csv_file_location + 'temp.csv', csv_file_location + 'input.csv')
 
     return
 
@@ -294,46 +297,54 @@ def BOW(asin, lpn):
             if row['Asin'] == asin:
                 asin_found = True
                 # remove commas from item description and display title and price
+                asin = row['Asin']
                 item_desc = row['ItemDesc'].replace(',', '')
                 upc = row['UPC']
+
                 price = float(row['Total Price'].replace(',', '').replace('$', ''))
                 title_label_text.set("TITLE: {}".format(item_desc))
                 price_label_text.set("PRICE: {}".format(price))
                 asin_label_text.set("ASIN: {}".format(asin))
-
                 if price < 75 and sub_cat.modems(item_desc, price) == "":
-                    row_values = [lpn, upc, row['Asin'], item_desc, price, 'under75']
+                    row_values = [lpn, upc, asin, item_desc, price, 'under75']
                     file_writer(row_values, file_name['under75'])
                     pallet_label_text.set('PALLET: Under 75')
                     set_input_file_category('under75', asin, upc, item_desc, price)
 
                 else:
+                    csvfile.close()
                     category_of_item = sub_cat.category_finder(item_desc, price)
                     if not category_of_item == '':
                         set_input_file_category(category_of_item, asin, upc, item_desc, price)
+                    with open(csv_file_location + 'input.csv', 'r', encoding='utf-8') as csvfile2:
+                        reader2 = csv.DictReader(csvfile2)
+                        for row2 in reader2:
+                            if row2['Asin'] == asin:
+                                if row2['Category'] == '':
+                                    tf_already_in = True
+                                    ask_for_asin_category(tf_already_in, lpn, asin, upc, item_desc, price)
+                                    return asin_found
+                                else:
+                                    category = row2['Category']
+                                    if sorting_categories.__contains__(category):
+                                        # figure what pallet to put it into
+                                        if label_names.__contains__(category):
+                                            # pallet that is manifested
+                                            row_values = [lpn, upc, asin, item_desc, price, category]
+                                            file_writer(row_values, file_name[category])
+                                        else:
+                                            # pallet that is not manifested
+                                            row_values = [lpn, upc, asin, item_desc, price, category]
+                                            truckload_file_write(row_values)
+                                        pallet_label_text.set(f"PALLET: {category}")
 
-                    if row['Category'] == '':
-                        tf_already_in = True
-                        ask_for_asin_category(tf_already_in, lpn, asin, upc, item_desc, price)
-                        return asin_found
-                    else:
-                        category = row['Category']
-                        if sorting_categories.__contains__(category):
-                            # figure what pallet to put it into
-                            if label_names.__contains__(category):
-                                # pallet that is manifested
-                                row_values = [lpn, upc, row['Asin'], item_desc, price, category]
-                                file_writer(row_values, file_name[category])
-                            else:
-                                # pallet that is not manifested
-                                row_values = [lpn, upc, asin, item_desc, price, category]
-                                truckload_file_write(row_values)
-                            pallet_label_text.set(f"PALLET: {category}")
-                        else:
-                            # this is the misc over 75 pallet
-                            row_values = [lpn, upc, row['Asin'], item_desc, price, category]
-                            file_writer(row_values, file_name['over75'])
-                            pallet_label_text.set('PALLET: Over 75')
+                                    else:
+                                        # this is the misc over 75 pallet
+                                        row_values = [lpn, upc, asin, item_desc, price, category]
+                                        file_writer(row_values, file_name['over75'])
+                                        pallet_label_text.set('PALLET: Over 75')
+                                    clear_fields()
+                                    return asin_found
 
                 clear_fields()
     return asin_found
@@ -383,7 +394,7 @@ def upc_asin_not_found(lpn, category):
     # If category is a manifest
     if category in label_names:
         # Find the average price of category
-        with open(pallet_folder + file_name[category], 'r',encoding='utf-8') as f:
+        with open(pallet_folder + file_name[category], 'r', encoding='utf-8') as f:
             reader = csv.reader(f)
             for row in reader:
                 total_price += float(row[4].replace(',', '').replace('$', ''))
@@ -420,45 +431,56 @@ def upc_search(lpn, upc):
         for row in reader:
             if row['UPC'] == upc:
                 upc_found = True
-                item_desc = row['ItemDesc'].replace(',', '')
+                # remove commas from item description and display title and price
                 asin = row['Asin']
+                item_desc = row['ItemDesc'].replace(',', '')
+                upc = row['UPC']
+
                 price = float(row['Total Price'].replace(',', '').replace('$', ''))
                 title_label_text.set("TITLE: {}".format(item_desc))
                 price_label_text.set("PRICE: {}".format(price))
                 asin_label_text.set("ASIN: {}".format(asin))
                 if price < 75 and sub_cat.modems(item_desc, price) == "":
-                    row_values = [lpn, upc, row['Asin'], item_desc, price, 'under75']
+                    row_values = [lpn, upc, asin, item_desc, price, 'under75']
                     file_writer(row_values, file_name['under75'])
                     pallet_label_text.set('PALLET: Under 75')
                     set_input_file_category('under75', asin, upc, item_desc, price)
 
                 else:
+                    csvfile.close()
                     category_of_item = sub_cat.category_finder(item_desc, price)
                     if not category_of_item == '':
                         set_input_file_category(category_of_item, asin, upc, item_desc, price)
+                    with open(csv_file_location + 'input.csv', 'r', encoding='utf-8') as csvfile2:
+                        reader2 = csv.DictReader(csvfile2)
+                        for row2 in reader2:
+                            if row2['Asin'] == asin:
+                                if row2['Category'] == '':
+                                    tf_already_in = True
+                                    ask_for_asin_category(tf_already_in, lpn, asin, upc, item_desc, price)
+                                    return upc_found
+                                else:
+                                    category = row2['Category']
+                                    if sorting_categories.__contains__(category):
+                                        # figure what pallet to put it into
+                                        if label_names.__contains__(category):
+                                            # pallet that is manifested
+                                            row_values = [lpn, upc, asin, item_desc, price, category]
+                                            file_writer(row_values, file_name[category])
+                                        else:
+                                            # pallet that is not manifested
+                                            row_values = [lpn, upc, asin, item_desc, price, category]
+                                            truckload_file_write(row_values)
+                                        pallet_label_text.set(f"PALLET: {category}")
 
-                    if row['Category'] == '':
-                        tf_already_in = True
-                        ask_for_asin_category(tf_already_in, lpn, asin, upc, item_desc, price)
-                        return upc_found
-                    else:
-                        category = row['Category']
-                        if sorting_categories.__contains__(category):
-                            # figure what pallet to put it into
-                            if label_names.__contains__(category):
-                                # pallet that is manifested
-                                row_values = [lpn, upc, row['Asin'], item_desc, price, category]
-                                file_writer(row_values, file_name[category])
-                            else:
-                                # pallet that is not manifested
-                                row_values = [lpn, upc, asin, item_desc, price, category]
-                                truckload_file_write(row_values)
-                            pallet_label_text.set(f"PALLET: {category}")
-                        else:
-                            # this is the misc over 75 pallet
-                            row_values = [lpn, upc, row['Asin'], item_desc, price, category]
-                            file_writer(row_values, file_name['over75'])
-                            pallet_label_text.set('PALLET: Over 75')
+                                    else:
+                                        # this is the misc over 75 pallet
+                                        row_values = [lpn, upc, asin, item_desc, price, category]
+                                        file_writer(row_values, file_name['over75'])
+                                        pallet_label_text.set('PALLET: Over 75')
+                                    clear_fields()
+                                    return upc_found
+
                 clear_fields()
     return upc_found
 
@@ -486,8 +508,9 @@ def complete_pallet(pallet_name):
 
 def undo():
     # remove from truckload.csv
-    with open(truck_folder + truck_items, 'r',encoding='utf-8') as truck_load, open(truck_folder + 'temp.csv', 'w',
-                                                                   newline='',encoding='utf-8') as output_file:
+    with open(truck_folder + truck_items, 'r', encoding='utf-8') as truck_load, open(truck_folder + 'temp.csv', 'w',
+                                                                                     newline='',
+                                                                                     encoding='utf-8') as output_file:
         reader = csv.reader(truck_load)
         writer = csv.writer(output_file)
 
@@ -505,8 +528,8 @@ def undo():
         file_path = pallet_folder + file_name[name]
         if not os.path.isfile(file_path):
             continue
-        with open(file_path, 'r',encoding='utf-8') as label_file, open(pallet_folder + 'temp.csv', 'w',
-                                                      newline='',encoding='utf-8') as output_file:
+        with open(file_path, 'r', encoding='utf-8') as label_file, open(pallet_folder + 'temp.csv', 'w',
+                                                                        newline='', encoding='utf-8') as output_file:
             reader = csv.reader(label_file)
             writer = csv.writer(output_file)
 
@@ -844,6 +867,7 @@ def no_asin_funct():
 
             if yesno:
                 upc_found_tf = ask_for_upc(lpn)
+                root.mainloop()
                 if upc_found_tf:
                     return
 
