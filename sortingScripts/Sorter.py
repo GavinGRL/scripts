@@ -15,18 +15,18 @@ completed_pallet_folder = "../completed_pallets/"
 truck_items = ''
 lpn = ''
 label_names = [
-    "over75", "under75", "keyboards_mice_under", "g_headphones_under",
-    "earbuds_selected", "earbuds_not_selected", "modems", "cpu_coolers"]
+    "over75", "under75", "keyboards_mice_75-150", "g_headphones_75-150",
+    "earbuds_not_selected", "modems", "cpu_coolers"]
 
 # TODO:[] Update all_pallet_names to have all of the product categories sorted
-all_pallet_names = ["over75", "under75", "keyboards_mice_g_headphones", "keyboards_mice_under", "g_headphones_under",
+all_pallet_names = ["over75", "under75", "keyboards_mice_gaming_headphones", "keyboards_mice_75-150", "g_headphones_75-150",
                     "earbuds_selected", "earbuds_not_selected", "modems", "Drawing Tablets/Portable Monitors",
                     "Graphics Cards", "Power Supplies", "Motherboards", "Ram", "SSD", "Cameras", "Audio Products",
                     "Gaming Systems", "NAS", "Hard Drives", "Mini Computers", "Watches", "Phone/Tablet Cases",
                     "Apple Accessories", "PCIE Cards", "Phones/Tablets", "Headphones", "Laptop", "AirPods",
                     "cpu", "cpu_coolers"]
 
-sorting_categories = ["keyboards_mice_g_headphones", "keyboards_mice_under", "g_headphones_under",
+sorting_categories = ["keyboards_mice_gaming_headphones", "keyboards_mice_75-150", "g_headphones_75-150",
                       "earbuds_selected", "earbuds_not_selected", "modems", "Drawing Tablets/Portable Monitors",
                       "Graphics Cards", "Power Supplies", "Motherboards", "Ram", "SSD", "Cameras", "Audio Products",
                       "Gaming Systems", "NAS", "Hard Drives", "Mini Computers", "Watches", "Phone/Tablet Cases",
@@ -181,17 +181,7 @@ def search_asin():
     else:
         row_val = asinFinder.asin_lookup(asin)  # [found_TF,name,price,upc]
         if not (row_val[0]):
-            yesno = messagebox.askyesno(title="NO ASIN FOUND", message="Does this product have a UPC?")
-            if yesno:
-                upc_found_tf = ask_for_upc(lpn)
-                if upc_found_tf:
-                    return
-                else:
-                    ask_for_category(lpn)
-                    return
-            else:
-                ask_for_category(lpn)
-                return
+            set_product_to_category(lpn)
             # if asinFinder found the asinD
         price = row_val[2]
         name = row_val[1]
@@ -360,28 +350,32 @@ def file_writer(row_values, file_name_writer):
 
 
 def ask_for_category(lpn):
+    def submit_category():
+        """submit: submits the upc entered"""
+        category.set(category_entry.get())
+        ask_for_category_window.destroy()
+        upc_asin_not_found(lpn, category.get())  # Call upc_asin_not_found here
+
+    root = tk.Tk()  # Create the root window
     ask_for_category_window = tk.Toplevel(root)
     ask_for_category_window.geometry("350x120")
     ask_for_category_frame = ttk.Frame(ask_for_category_window)
     ask_for_category_frame.grid(column=0, row=0, sticky='nsew')
     ask_for_category_frame.focus_set()
-    # Create a label and entry widget for asin input
+
+    # Create a label and entry widget for category input
     category_label = ttk.Label(ask_for_category_frame, text="Enter Category:")
     category_label.grid(column=0, row=0, padx=10, pady=10)
     category_entry = ttk.Entry(ask_for_category_frame)
     category_entry.grid(column=1, row=0, padx=10, pady=10)
 
-    def submit_category():
-        """submit: submits the upc entered"""
-        category = category_entry.get()
-        ask_for_category_window.destroy()
-
-        return upc_asin_not_found(lpn, category)
+    category = tk.StringVar()  # Create a StringVar to store the value of the category
 
     submit_button = ttk.Button(ask_for_category_frame, text="Submit", command=submit_category)
     submit_button.grid(column=1, row=1, padx=10, pady=10)
-    ask_for_category_frame.lift()
-    category_entry.focus()
+    root.withdraw()  # Hide the root window
+    ask_for_category_window.mainloop()  # Start the event loop
+
     return
 
 
@@ -393,15 +387,6 @@ def upc_asin_not_found(lpn, category):
 
     # If category is a manifest
     if category in label_names:
-        # Find the average price of category
-        with open(pallet_folder + file_name[category], 'r', encoding='utf-8') as f:
-            reader = csv.reader(f)
-            for row in reader:
-                total_price += float(row[4].replace(',', '').replace('$', ''))
-                num_items += 1
-
-        avg_price_of_cat = total_price / num_items
-        avg_price_string = f"${avg_price_of_cat}"
 
         # Set price to avg price, and set name to "Misc"
         row_values = [lpn, "N/A", "N/A", "MISC", "temp_price", category]
@@ -412,7 +397,7 @@ def upc_asin_not_found(lpn, category):
     # If category is not a manifest, add to truckload
     else:
         truckload_file_write(row_values)
-        pallet_label_text.set(f"PALLET: {category}")
+    pallet_label_text.set(f"PALLET: {category}")
 
     return
 
@@ -543,7 +528,7 @@ def undo():
         os.rename(pallet_folder + 'temp.csv', pallet_folder + file_name[name])
 
     # go to not found in master.csv
-    undone()
+    set_product_to_category(lpn)
 
     return
 
@@ -573,31 +558,35 @@ def on_lpn_enter(event):
 
 def ask_for_upc(lpn):
     """
-D
     @rtype: upc_search(lpn, upc) true or false after hitting submit
     """
+    def submit():
+        """submit: submits the upc entered"""
+        upc.set(upc_entry.get())
+        ask_for_upc_window.destroy()
+
+    root = tk.Tk()
     ask_for_upc_window = tk.Toplevel(root)
     ask_for_upc_window.geometry("350x120")
     ask_for_upc_frame = ttk.Frame(ask_for_upc_window)
     ask_for_upc_frame.grid(column=0, row=0, sticky='nsew')
     ask_for_upc_frame.focus_set()
-    # Create a label and entry widget for asin input
+
     upc_label = ttk.Label(ask_for_upc_frame, text="Enter UPC:")
     upc_label.grid(column=0, row=0, padx=10, pady=10)
     upc_entry = ttk.Entry(ask_for_upc_frame)
     upc_entry.grid(column=1, row=0, padx=10, pady=10)
 
-    def submit():
-        """submit: submits the upc entered"""
-        upc = upc_entry.get()
-        ask_for_upc_window.destroy()
-
-        return upc_search(lpn, upc)
+    upc = tk.StringVar()
 
     submit_button = ttk.Button(ask_for_upc_frame, text="Submit", command=submit)
     submit_button.grid(column=1, row=1, padx=10, pady=10)
-    ask_for_upc_frame.lift()
-    upc_entry.focus()
+
+    root.withdraw()
+    ask_for_upc_window.wait_window(ask_for_upc_window)
+
+    return upc_search(lpn, upc.get())
+
 
 
 def change_truck_file():
@@ -833,7 +822,8 @@ def open_options():
     notebook.pack(expand=1, fill="both")
 
 
-def undone():
+"""def undone():
+    # TODO[]: set_product_to_category(lpn)?
     yesno = messagebox.askyesno(title="NO ASIN FOUND", message="Does this product have a UPC?")
 
     if yesno:
@@ -842,49 +832,43 @@ def undone():
             return
     else:
         ask_for_category(lpn)
-        return
+        return"""
 
 
 def no_asin_funct():
-    """no_asin_funct: creates the new asin tab that takes in the lpn and the category it should go in"""
+    """no_asin_funct: creates the new asin tab that takes in the lpn."""
+
+    def on_lpn_enter2(event=None):
+        """on_lpn_enter2: checks if the lpn entry field is a lpn."""
+        if lpn_entry2.get().startswith("L"):
+            set_product_to_category(lpn_entry2.get())
+            no_asin_window.destroy()
+        else:
+            lpn_entry2.delete(0, tk.END)
+            lpn_entry2.focus()
+
+    root = tk.Tk()  # You need to create the root window, unless you have it defined elsewhere
     no_asin_window = tk.Toplevel(root)
     no_asin_window.geometry("350x100")
     no_asin_frame = ttk.Frame(no_asin_window)
     no_asin_frame.grid(column=0, row=0, sticky='nsew')
     no_asin_frame.focus_set()
-    # Create a label and entry widget for asin input
+
+    # Create a label and entry widget for LPN input
     asin_label = ttk.Label(no_asin_frame, text="Enter LPN:")
     asin_label.grid(column=0, row=0, padx=10, pady=10)
     lpn_entry2 = ttk.Entry(no_asin_frame)
     lpn_entry2.grid(column=1, row=0, padx=10, pady=10)
 
-    def on_lpn_enter2(event):
-        """on_lpn_enter2: checks if the lpn entry field is a lpn."""
-        if lpn_entry2.get().startswith("L"):
-            lpn = lpn_entry2.get()
-            no_asin_window.destroy()
-            yesno = messagebox.askyesno(title="NO ASIN FOUND", message="Does this product have a UPC?")
-
-            if yesno:
-                upc_found_tf = ask_for_upc(lpn)
-                root.mainloop()
-                if upc_found_tf:
-                    return
-
-            ask_for_category(lpn)
-            return
-        else:
-            lpn_entry2.delete(0, tk.END)
-            lpn_entry2.focus()
-
     lpn_entry2.bind("<Return>", on_lpn_enter2)
 
     def submit():
-        """submit: submits the asin and category location"""
+        """submit: submits the LPN"""
         on_lpn_enter2()
 
     submit_button = ttk.Button(no_asin_frame, text="Submit", command=submit)
-    submit_button.grid(column=1, row=2, padx=10, pady=10)
+    submit_button.grid(column=1, row=1, padx=10, pady=10)
+    root.withdraw()  # Hide the root window
     no_asin_frame.lift()
     lpn_entry2.focus()
 

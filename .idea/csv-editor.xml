@@ -24,7 +24,7 @@
             </Attribute>
           </value>
         </entry>
-        <entry key="\completed_pallets\over75_3.csv">
+        <entry key="\completed_pallets\over75_4.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
@@ -66,7 +66,21 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\pallets\modems_3.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\pallets\over75_4.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\pallets\under75_1.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
