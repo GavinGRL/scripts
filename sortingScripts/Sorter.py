@@ -24,7 +24,7 @@ all_pallet_names = ["over75", "under75", "keyboards/mice/gaming headset", "keybo
                     "Graphics Cards", "Power Supplies", "Motherboards", "Ram", "SSD", "Cameras", "Audio Products",
                     "Gaming Systems", "NAS", "Hard Drives", "Mini Computers", "Watches", "Phone/Tablet Cases",
                     "Apple Accessories", "PCIE Cards", "Phones/Tablets", "Headphones", "Laptop", "Airpods",
-                    "CPU", "cpu_coolers","Docking Stations","Routers/Switches","Bulk"]
+                    "CPU", "cpu_coolers", "Docking Stations", "Routers/Switches", "Bulk"]
 
 sorting_categories = ["keyboards/mice/gaming headset", "keyboards_mice_auction", "g_headphones_auction",
                       "earbuds_to_test", "other_earbuds", "Modems", "Drawing Tablets/Portable Monitors",
