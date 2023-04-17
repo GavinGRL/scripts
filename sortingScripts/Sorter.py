@@ -15,23 +15,23 @@ completed_pallet_folder = "../completed_pallets/"
 truck_items = ''
 lpn = ''
 label_names = [
-    "over75", "under75", "keyboards_mice_75-150", "g_headphones_75-150",
-    "earbuds_not_selected", "modems", "cpu_coolers"]
+    "over75", "under75", "keyboards_mice_auction", "g_headphones_auction",
+    "other_earbuds", "Modems", "cpu_coolers"]
 
 # TODO:[] Update all_pallet_names to have all of the product categories sorted
-all_pallet_names = ["over75", "under75", "keyboards_mice_gaming_headphones", "keyboards_mice_75-150", "g_headphones_75-150",
-                    "earbuds_selected", "earbuds_not_selected", "modems", "Drawing Tablets/Portable Monitors",
+all_pallet_names = ["over75", "under75", "keyboards/mice/gaming headset", "keyboards_mice_auction", "g_headphones_auction",
+                    "earbuds_to_test", "other_earbuds", "Modems", "Drawing Tablets/Portable Monitors",
                     "Graphics Cards", "Power Supplies", "Motherboards", "Ram", "SSD", "Cameras", "Audio Products",
                     "Gaming Systems", "NAS", "Hard Drives", "Mini Computers", "Watches", "Phone/Tablet Cases",
-                    "Apple Accessories", "PCIE Cards", "Phones/Tablets", "Headphones", "Laptop", "AirPods",
-                    "cpu", "cpu_coolers"]
+                    "Apple Accessories", "PCIE Cards", "Phones/Tablets", "Headphones", "Laptop", "Airpods",
+                    "CPU", "cpu_coolers","Docking Stations","Routers/Switches","Bulk"]
 
-sorting_categories = ["keyboards_mice_gaming_headphones", "keyboards_mice_75-150", "g_headphones_75-150",
-                      "earbuds_selected", "earbuds_not_selected", "modems", "Drawing Tablets/Portable Monitors",
+sorting_categories = ["keyboards/mice/gaming headset", "keyboards_mice_auction", "g_headphones_auction",
+                      "earbuds_to_test", "other_earbuds", "Modems", "Drawing Tablets/Portable Monitors",
                       "Graphics Cards", "Power Supplies", "Motherboards", "Ram", "SSD", "Cameras", "Audio Products",
                       "Gaming Systems", "NAS", "Hard Drives", "Mini Computers", "Watches", "Phone/Tablet Cases",
-                      "Apple Accessories", "PCIE Cards", "Phones/Tablets", "Headphones", "Laptop", "AirPods",
-                      "cpu", "cpu_coolers"]
+                      "Apple Accessories", "PCIE Cards", "Phones/Tablets", "Headphones", "Laptop", "Airpods",
+                      "CPU", "cpu_coolers","Docking Stations","Routers/Switches","Bulk"]
 
 file_name = {name: name for name in label_names}
 
@@ -280,6 +280,7 @@ def set_input_file_category(category, asin, upc, name, price):
 
 
 def BOW(asin, lpn):
+    asin_found = False
     sub_cat = Subcategory_checker.Checker(all_pallet_names, label_names, sorting_categories)
     with open(csv_file_location + 'input.csv', 'r', encoding='utf-8') as csvfile:
         reader = csv.DictReader(csvfile)
@@ -1004,3 +1005,4 @@ if fold:
     truck_items_label_text.set("TRUCK FILE:")
     load_file_setup()
     root.mainloop()
+
