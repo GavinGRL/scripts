@@ -19,19 +19,20 @@ label_names = [
     "other_earbuds", "Modems", "cpu_coolers"]
 
 # TODO:[] Update all_pallet_names to have all of the product categories sorted
-all_pallet_names = ["over75", "under75", "keyboards/mice/gaming headset", "keyboards_mice_auction", "g_headphones_auction",
-                    "earbuds_to_test", "other_earbuds", "Modems", "Drawing Tablets/Portable Monitors",
+all_pallet_names = ["over75", "under75", "keyboards/mice/ gaming headset", "keyboards_mice_auction",
+                    "g_headphones_auction",
+                    "earbuds_to_test", "other_earbuds", "Modems", "Drawing Tablets/ Portable Monitors",
                     "Graphics Cards", "Power Supplies", "Motherboards", "Ram", "SSD", "Cameras", "Audio Products",
                     "Gaming Systems", "NAS", "Hard Drives", "Mini Computers", "Watches", "Phone/Tablet Cases",
-                    "Apple Accessories", "PCIE Cards", "Phones/Tablets", "Headphones", "Laptop", "Airpods",
+                    "Apple Brand Accessories", "PCIE Cards", "Phones/Tablets", "Headphones", "Laptop", "Airpods",
                     "CPU", "cpu_coolers", "Docking Stations", "Routers/Switches", "Bulk"]
 
-sorting_categories = ["keyboards/mice/gaming headset", "keyboards_mice_auction", "g_headphones_auction",
-                      "earbuds_to_test", "other_earbuds", "Modems", "Drawing Tablets/Portable Monitors",
+sorting_categories = ["keyboards/mice/ gaming headset", "keyboards_mice_auction", "g_headphones_auction",
+                      "earbuds_to_test", "other_earbuds", "Modems", "Drawing Tablets/ Portable Monitors",
                       "Graphics Cards", "Power Supplies", "Motherboards", "Ram", "SSD", "Cameras", "Audio Products",
                       "Gaming Systems", "NAS", "Hard Drives", "Mini Computers", "Watches", "Phone/Tablet Cases",
-                      "Apple Accessories", "PCIE Cards", "Phones/Tablets", "Headphones", "Laptop", "Airpods",
-                      "CPU", "cpu_coolers","Docking Stations","Routers/Switches","Bulk"]
+                      "Apple Brand Accessories", "PCIE Cards", "Phones/Tablets", "Headphones", "Laptop", "Airpods",
+                      "CPU", "cpu_coolers", "Docking Stations", "Routers/Switches", "Bulk"]
 
 file_name = {name: name for name in label_names}
 
@@ -164,6 +165,7 @@ def search_asin():
                 item_desc = row['ItemDesc'].replace(',', '')
                 upc = row['UPC']
                 price = float(row['Total Price'].replace(',', '').replace('$', ''))
+                csvfile.close()
                 title_label_text.set("TITLE: {}".format(item_desc))
                 price_label_text.set("PRICE: {}".format(price))
                 asin_label_text.set("ASIN: {}".format(asin))
@@ -174,6 +176,7 @@ def search_asin():
                 set_input_file_category('under75', asin, upc, item_desc, price)
                 clear_fields()
                 return
+    csvfile.close()
     # open input file and search for ASIN
 
     if BOW(asin, lpn):
@@ -196,7 +199,9 @@ def ask_for_asin_category(tf_already_in, lpn, asin, upc, name, price):
     ask_category_window.geometry("1000x250")
     ask_category_frame = ttk.Frame(ask_category_window)
     ask_category_frame.grid(column=0, row=0, sticky='nsew')
-    ask_category_frame.focus_set()
+
+    ask_category_window.focus_force()
+
     # Create a label and entry widget for asin input
     title = ttk.Label(ask_category_frame, text="Title:")
     title.grid(column=0, row=0, padx=10, pady=10)
@@ -215,8 +220,9 @@ def ask_for_asin_category(tf_already_in, lpn, asin, upc, name, price):
 
     category_entry2 = ttk.Entry(ask_category_frame)
     category_entry2.grid(column=1, row=2, padx=10, pady=10)
+    ask_category_frame.lift()
 
-    def submit():
+    def submit(event):
         # row_val = [found_TF, name, price, upc]
         """submit: submits the upc entered"""
         category = category_entry2.get()
@@ -250,10 +256,9 @@ def ask_for_asin_category(tf_already_in, lpn, asin, upc, name, price):
 
     submit_button = ttk.Button(ask_category_frame, text="Submit", command=submit)
     submit_button.grid(column=1, row=3, padx=10, pady=10)
-    ask_category_frame.lift()
-    category_entry2.focus()
 
-    return
+    category_entry2.focus_force()
+    category_entry2.bind("<Return>", submit)
 
 
 def set_input_file_category(category, asin, upc, name, price):
@@ -272,7 +277,8 @@ def set_input_file_category(category, asin, upc, name, price):
 
     # no need to close the file explicitly
     # the "with" statement will take care of it
-
+    input_file.close()
+    output.close()
     os.remove(csv_file_location + 'input.csv')
     os.rename(csv_file_location + 'temp.csv', csv_file_location + 'input.csv')
 
@@ -293,17 +299,18 @@ def BOW(asin, lpn):
                 upc = row['UPC']
 
                 price = float(row['Total Price'].replace(',', '').replace('$', ''))
+                csvfile.close()
                 title_label_text.set("TITLE: {}".format(item_desc))
                 price_label_text.set("PRICE: {}".format(price))
                 asin_label_text.set("ASIN: {}".format(asin))
-                if price < 75 and sub_cat.modems(item_desc, price) == "":
+                if price < 75 and (sub_cat.modems(item_desc, price) == "" and sub_cat.case(item_desc) == ""):
                     row_values = [lpn, upc, asin, item_desc, price, 'under75']
                     file_writer(row_values, file_name['under75'])
                     pallet_label_text.set('PALLET: Under 75')
                     set_input_file_category('under75', asin, upc, item_desc, price)
+                    return asin_found
 
                 else:
-                    csvfile.close()
                     category_of_item = sub_cat.category_finder(item_desc, price)
                     if not category_of_item == '':
                         set_input_file_category(category_of_item, asin, upc, item_desc, price)
@@ -351,7 +358,7 @@ def file_writer(row_values, file_name_writer):
 
 
 def ask_for_category(lpn):
-    def submit_category():
+    def submit_category(event):
         """submit: submits the upc entered"""
         category.set(category_entry.get())
         ask_for_category_window.destroy()
@@ -370,12 +377,15 @@ def ask_for_category(lpn):
     category_entry = ttk.Entry(ask_for_category_frame)
     category_entry.grid(column=1, row=0, padx=10, pady=10)
 
+    category_entry.focus_force()
     category = tk.StringVar()  # Create a StringVar to store the value of the category
 
     submit_button = ttk.Button(ask_for_category_frame, text="Submit", command=submit_category)
     submit_button.grid(column=1, row=1, padx=10, pady=10)
     root.withdraw()  # Hide the root window
+    category_entry.bind("<Return>", submit_category)
     ask_for_category_window.mainloop()  # Start the event loop
+
 
     return
 
@@ -407,6 +417,7 @@ def truckload_file_write(row_values):
     with open(truck_folder + truck_items, 'a', encoding='utf-8', newline='') as truck_items_file:
         truck_items_writer = csv.writer(truck_items_file)
         truck_items_writer.writerow(row_values)
+        asin_entry.focus()
 
 
 def upc_search(lpn, upc):
@@ -423,17 +434,18 @@ def upc_search(lpn, upc):
                 upc = row['UPC']
 
                 price = float(row['Total Price'].replace(',', '').replace('$', ''))
+                csvfile.close()
                 title_label_text.set("TITLE: {}".format(item_desc))
                 price_label_text.set("PRICE: {}".format(price))
                 asin_label_text.set("ASIN: {}".format(asin))
-                if price < 75 and sub_cat.modems(item_desc, price) == "":
+                if price < 75 and (sub_cat.modems(item_desc, price) == "" and sub_cat.case(item_desc) == ""):
                     row_values = [lpn, upc, asin, item_desc, price, 'under75']
+
                     file_writer(row_values, file_name['under75'])
                     pallet_label_text.set('PALLET: Under 75')
                     set_input_file_category('under75', asin, upc, item_desc, price)
 
                 else:
-                    csvfile.close()
                     category_of_item = sub_cat.category_finder(item_desc, price)
                     if not category_of_item == '':
                         set_input_file_category(category_of_item, asin, upc, item_desc, price)
@@ -494,6 +506,9 @@ def complete_pallet(pallet_name):
 
 def undo():
     # remove from truckload.csv
+    title_label_text.set("TITLE: ")
+    price_label_text.set("PRICE:")
+    asin_label_text.set("ASIN:")
     with open(truck_folder + truck_items, 'r', encoding='utf-8') as truck_load, open(truck_folder + 'temp.csv', 'w',
                                                                                      newline='',
                                                                                      encoding='utf-8') as output_file:
@@ -552,7 +567,6 @@ def on_lpn_enter(event):
     """on_lpn_enter: checks if the lpn entry field is a lpn and calls search_asin function."""
     if lpn_entry.get().startswith("L"):
         search_asin()  # searches
-        asin_entry.focus()
     else:
         lpn_entry.delete(0, tk.END)
 
@@ -561,6 +575,7 @@ def ask_for_upc(lpn):
     """
     @rtype: upc_search(lpn, upc) true or false after hitting submit
     """
+
     def submit():
         """submit: submits the upc entered"""
         upc.set(upc_entry.get())
@@ -571,7 +586,6 @@ def ask_for_upc(lpn):
     ask_for_upc_window.geometry("350x120")
     ask_for_upc_frame = ttk.Frame(ask_for_upc_window)
     ask_for_upc_frame.grid(column=0, row=0, sticky='nsew')
-    ask_for_upc_frame.focus_set()
 
     upc_label = ttk.Label(ask_for_upc_frame, text="Enter UPC:")
     upc_label.grid(column=0, row=0, padx=10, pady=10)
@@ -582,12 +596,12 @@ def ask_for_upc(lpn):
 
     submit_button = ttk.Button(ask_for_upc_frame, text="Submit", command=submit)
     submit_button.grid(column=1, row=1, padx=10, pady=10)
-
+    upc_entry.bind("<Return>", submit)
+    upc_entry.focus_force()
     root.withdraw()
     ask_for_upc_window.wait_window(ask_for_upc_window)
 
     return upc_search(lpn, upc.get())
-
 
 
 def change_truck_file():
@@ -633,7 +647,7 @@ def change_category():
 
     import os
 
-    def on_category_enter():
+    def on_category_enter(event):
 
         category = change_category_entry2.get()
         asin = re.sub(r'^ASIN: ', '', asin_label_text.get())
@@ -712,18 +726,19 @@ def change_category():
 
         pallet_label_text.set(f"PALLET: {category}")
         change_category_window.destroy()
+        asin_entry.focus_set()
         return
 
     change_category_entry2.bind("<Return>", on_category_enter)
 
-    def submit():
+    def submit(event):
         """submit: submits the asin and category location"""
         on_category_enter()
 
     submit_button = ttk.Button(change_category_frame, text="Submit", command=submit)
     submit_button.grid(column=1, row=2, padx=10, pady=10)
     change_category_frame.lift()
-    change_category_entry2.focus()
+    change_category_entry2.focus_force()
 
     return
 
@@ -853,7 +868,6 @@ def no_asin_funct():
     no_asin_window.geometry("350x100")
     no_asin_frame = ttk.Frame(no_asin_window)
     no_asin_frame.grid(column=0, row=0, sticky='nsew')
-    no_asin_frame.focus_set()
 
     # Create a label and entry widget for LPN input
     asin_label = ttk.Label(no_asin_frame, text="Enter LPN:")
@@ -870,8 +884,9 @@ def no_asin_funct():
     submit_button = ttk.Button(no_asin_frame, text="Submit", command=submit)
     submit_button.grid(column=1, row=1, padx=10, pady=10)
     root.withdraw()  # Hide the root window
-    no_asin_frame.lift()
-    lpn_entry2.focus()
+
+    # Set focus to lpn_entry2 after the window is completely set up
+    lpn_entry2.focus_force()
 
 
 # 'fold' is just so I can collapse this section of code for my own sake, can be taken out later
@@ -1005,4 +1020,3 @@ if fold:
     truck_items_label_text.set("TRUCK FILE:")
     load_file_setup()
     root.mainloop()
-

@@ -1,10 +1,10 @@
 Category,Asin,UPC,ItemDesc,Total Price
 ,B07NH3HKG9,751492622293,NVIDIA Quadro RTX 8000," $ 5,699.99 "
-,B0B444CTHL,824142292532,"MSI Titan GT77 17.3"" UHD 120Hz Gaming Laptop: Intel Core i9-12900HX RTX 3080 Ti 64GB DDR5 2TB NVMe SSD, Thunderbolt 4, USB-Type C, Cooler Boost Titan, Win11 Pro: Core Black 12UHS-006"," $ 4,799.00 "
-,B09QL9SNFF,840006660002,"Corsair ONE i300 Compact Gaming PC (Intel Core i9-12900K CPU, NVIDIA GeForce RTX 3080 Ti Graphics, 32GB Corsair Vengeance DDR5 Memory, Thunderbolt 4, Windows 11 Pro) Black"," $ 4,699.99 "
+SSD,B0B444CTHL,824142292532,"MSI Titan GT77 17.3"" UHD 120Hz Gaming Laptop: Intel Core i9-12900HX RTX 3080 Ti 64GB DDR5 2TB NVMe SSD Thunderbolt 4 USB-Type C Cooler Boost Titan Win11 Pro: Core Black 12UHS-006",4799.0
+desktop,B09QL9SNFF,840006660002,Corsair ONE i300 Compact Gaming PC (Intel Core i9-12900K CPU NVIDIA GeForce RTX 3080 Ti Graphics 32GB Corsair Vengeance DDR5 Memory Thunderbolt 4 Windows 11 Pro) Black,4699.99
 ,B09QLD7GNL,840006657255,"CORSAIR ONE i300 Compact Gaming PC, i9-12900K, Liquid-Cooled RTX 3080 Ti, 2TB M.2, 64GB DDR5-4800, Win11 Pro"," $ 4,600.00 "
 ,B09HHB3YFW,190021045354,"DJI Mavic 3 Cine Premium Combo, Drone with 4/3 CMOS Hasselblad Camera, 5.1K Video, Omnidirectional Obstacle Sensing, 46 Mins Flight, 15km Video Transmission, with DJI RC Pro,  Two Extra Batteries"," $ 4,499.10 "
-,B0997D2164,810056144999,"Razer Blade Pro 17 Gaming Laptop 2021: Intel Core i7-11800H 8-Core, NVIDIA GeForce RTX 3080, 17.3"" FHD 360Hz, 32GB RAM, 1TB SSD - Chroma RGB - Thunderbolt 3 - SD Card Reader"," $ 4,498.99 "
+,B0997D2164,810056144999,"Razer Blade Pro 17 Gaming Laptop 2021: Intel Core i7-11800H 8-Core NVIDIA GeForce RTX 3080 17.3"" FHD 360Hz 32GB RAM 1TB SSD - Chroma RGB - Thunderbolt 3 - SD Card Reader",4498.99
 ,B09BBLWX6Y,840006636533,CORSAIR ONE PRO a200 Compact Workstation-Class PC - AMD Ryzen™ 9 5950X CPU - NVIDIA® GeForce RTX™ 3080 Graphics - 64GB CORSAIR Vengeance LPX DDR4 Memory," $ 4,149.59 "
 ,B09RBG6N7Y,810056146351,"Razer Blade 17 Gaming Laptop: NVIDIA GeForce RTX 3080 Ti - 12th Gen Intel 14-Core i9 CPU - 17.3"" 4K 144Hz - 32GB DDR5 RAM - 1TB PCIe SSD - Windows 11 - Chroma RGB - Thunderbolt 4 - SD Card Reader"," $ 4,117.24 "
 ,B095BYB1M5,824142255100,MSI WE76 11UM FHD Mobile Workstation Intel Core i9-11980HK Quadro RTX A5000 32GB RAM 1TB NVME SSD WIN10 Pro TPM2.0 Fingerprint 3 Year onsite Warranty," $ 3,999.00 "
@@ -855,7 +855,7 @@ Category,Asin,UPC,ItemDesc,Total Price
 ,B0B3T7PNCN,887276668246,"SAMSUNG Galaxy Z Flip 4 Cell Phone, Factory Unlocked Android Smartphone, 256GB, Flex Mode, Hands Free Camera, Compact, Foldable Design, Informative Cover Screen, US Version, Blue"," $ 1,049.99 "
 ,B09TLG7FCF,195553658423,"ASUS ExpertCenter D700SC Small Form Factor Desktop PC, Intel Core i7-11700, 16GB DDR4 RAM, 512GB PCIe SSD, TPM, Windows 11 Pro, Black, D700SC-XH704"," $ 1,049.99 "
 ,B0849P8F8T,194850000126,"HP 24-inch All-in-One Touchscreen Desktop Computer, AMD Ryzen 5 4500U Processor, 12 GB RAM, 512 GB SSD, Windows 10 Home (24-dp0160, Silver)"," $ 1,049.04 "
-,B09322PK9Q,194252202029,2021 Apple 11-inch iPad Pro Wi-Fi + Cellular 256GB - Space Gray," $ 1,049.00 "
+Phones/Tablets,B09322PK9Q,194252202029,2021 Apple 11-inch iPad Pro Wi-Fi + Cellular 256GB - Space Gray,1049.0
 ,B09M7Q8N8R,884116364474,"Dell Inspiron 15 3501 15.6 inch FHD i7 Laptop - Intel Core i7-1165G7, 16GB DDR4 RAM, 512GB SSD, Intel Iris Xe Graphics, Bluetooth 5.0, WiFi, HDMI, Windows 10 Home - Black"," $ 1,047.60 "
 ,B01N6YC6EY,725264116723,Lightspeed Aviation Zulu 3 ANR Aviation Headset - Premium Comfort GA Dual Plugs Pilot Headset - Maximum Noise Canceling & Bluetooth Technology for Exceptional Communication," $ 1,046.16 "
 ,B0B13Y8LK2,195553606509,"ASUS TUF Gaming F15 Laptop, 15.6"" 144Hz FHD IPS-Type Display, Intel Core i7-11800H Processor, GeForce RTX 3050 Ti, 16GB DDR4 RAM, 512GB PCIe SSD, Wi-Fi 6, Windows 11 Home, FX506HEB-IS73"," $ 1,045.00 "
@@ -1384,7 +1384,7 @@ Category,Asin,UPC,ItemDesc,Total Price
 ,B07YNHJ85Y,887276377414,"Samsung Galaxy Tab Active PRO 10.1"" | 64GB & LTE (UNLOCKED) Water-Resistant Rugged Tablet, Black – SM-T547UZKAXAA",$ 679.99
 ,B09L3T9Q5S,889842820133,"Microsoft Surface Go 3 - 10.5"" Touchscreen - Intel® Core™ i3 - 8GB Memory - 128GB SSD - LTE - Device Only - Black (Latest Model)",$ 679.99
 ,B096HJC18P,824142255797,MSI Gaming GeForce RTX 3070 Ti 8GB GDRR6X 256-Bit HDMI/DP Nvlink Torx Fan 3 Ampere Architecture OC Graphics Card (RTX 3070 Ti Gaming X Trio 8G),$ 679.99
-,B0996VW79N,887276594361,"SAMSUNG Galaxy Tab S7 FE 12.4” 256GB WiFi Android Tablet w/ Large Screen, Long Lasting Battery, S Pen Included, Multi Device Connectivity, US Version, 2021, Mystic Black",$ 679.99
+Phones/Tablets,B0996VW79N,887276594361,SAMSUNG Galaxy Tab S7 FE 12.4” 256GB WiFi Android Tablet w/ Large Screen Long Lasting Battery S Pen Included Multi Device Connectivity US Version 2021 Mystic Black,679.99
 ,B08DWD38VX,195174002872,LG 34GP83A-B 34 Inch 21: 9 UltraGear Curved QHD (3440 x 1440) 1ms Nano IPS Gaming Monitor with 160Hz and G-SYNC Compatibility - Black (34GP83A-B),$ 679.99
 ,B08NXSJVCR,195235206737,Lenovo IdeaPad 3 Intel i5-1035G1 Quad Core 12GB RAM 256GB SSD 15.6-inch Touch Screen Laptop,$ 679.86
 ,B07PQ8WX75,190199072329,"2019 Apple iPad Mini (Wi-Fi + Cellular, 64GB) - Silver",$ 679.05
@@ -1936,7 +1936,7 @@ Category,Asin,UPC,ItemDesc,Total Price
 ,B09JS2VPBV,887276550022,"SAMSUNG TU87F Series 32-Inch 4K UHD Pro Monitor w/Thunderbolt 3, VA Panel, 60Hz, 5ms, HDR10, sRGB, HDMI, Dual 4K Display, Fully Adjustable Stand, Eye Saver Mode (LF32TU874VNXGO) Dark Blue Gray",$ 488.79
 ,B099WGYNHQ,,"Ulefone Power Armor 13 Rugged Smartphone, IP68 Waterproof Phone, 13200mAh Battery, 15W Wireless Charge, 48MP Four Rear Camera, 6.81"" FHD+, Helio G95 Octa-core Android 11, 8GB + 256GB, Dual 4G Unlocked",$ 488.42
 ,B07534B8FS,672042282630,Supermicro X11SPM-TPF Motherboard (MBD-X11SPM-TPF-O),$ 487.62
-,B0996WCSND,887276590752,"SAMSUNG Galaxy Tab S7 FE 12.4” 64GB WiFi Android Tablet w/ Large Screen, Long Lasting Battery, S Pen Included, Multi Device Connectivity, US Version, 2021, Mystic Black",$ 487.59
+Phones/Tablets,B0996WCSND,887276590752,SAMSUNG Galaxy Tab S7 FE 12.4” 64GB WiFi Android Tablet w/ Large Screen Long Lasting Battery S Pen Included Multi Device Connectivity US Version 2021 Mystic Black,487.59
 ,B09973TGP9,887276590714,"SAMSUNG Galaxy Tab S7 FE 12.4” 64GB WiFi Android Tablet w/ S Pen Included, Large Screen, Multi Device Connectivity, Long Lasting Battery, 2021, ‎SM-T733NLIAXAR, Mystic Pink",$ 487.59
 ,B0996S7F94,887276590783,"SAMSUNG Galaxy Tab S7 FE 12.4” 64GB WiFi Android Tablet w/ S Pen Included, Large Screen, Multi Device Connectivity, Long Lasting Battery, 2021, ‎SM-T733NLGAXAR, Mystic Green",$ 487.59
 ,B07F2RZPYW,192545382540,HP 15-inch Core i3-8130U 4GB SDRAM 16GB Intel Optane Memory 1TB HDD DVD Win 10 Silver,$ 487.55
@@ -2164,7 +2164,7 @@ Category,Asin,UPC,ItemDesc,Total Price
 ,B074QW86T4,718037856803,"WD 16TB My Book Duo Desktop RAID External Hard Drive HDD, USB 3.1, With Password Protection and Auto Backup Software - WDBFBE0160JBK-NESN",$ 435.64
 ,B0B1W45C97,740617327328,Kingston XS2000 4TB High Performance Portable SSD with USB-C | Pocket-Sized | USB 3.2 Gen 2x2 | External Solid State Drive | Up to 2000MB/s | SXS2000/4000G,$ 435.00
 ,B086Z3QNBM,887276410623,"SAMSUNG Galaxy Tab S6 Lite 10.4"" 64GB WiFi Android Tablet w/ S Pen Included, Slim Metal Design, Crystal Clear Display, Dual Speakers, Long Lasting Battery, SM-P610NZIAXAR, Chiffon Rose",$ 434.70
-,B086Z2XFYP,887276410401,"SAMSUNG Galaxy Tab S6 Lite 10.4"" 64GB WiFi Android Tablet w/ S Pen Included, Slim Metal Design, Crystal Clear Display, Dual Speakers, Long Lasting Battery, SM-P610NZAAXAR, Oxford Gray",$ 434.70
+Phones/Tablets,B086Z2XFYP,887276410401,"SAMSUNG Galaxy Tab S6 Lite 10.4"" 64GB WiFi Android Tablet w/ S Pen Included Slim Metal Design Crystal Clear Display Dual Speakers Long Lasting Battery SM-P610NZAAXAR Oxford Gray",434.7
 ,B086Z3S3MY,887276410609,"SAMSUNG Galaxy Tab S6 Lite 10.4"" 64GB WiFi Android Tablet w/ S Pen Included, Slim Metal Design, Crystal Clear Display, Dual Speakers, Long Lasting Battery, SM-P610NZBAXAR, Angora Blue",$ 434.70
 ,B01LZORCUR,612677618138,"Apple MacBook Air MD760LL/A 13.3-Inch Laptop (Intel Core i5 Dual-Core 1.3GHz up to 2.6GHz, 4GB RAM, 128GB SSD, Wi-Fi, Bluetooth 4.0) (Renewed)",$ 434.17
 ,B09QHKK83B,195553523868,"ASUS PN62S Mini PC Barebone with Intel Core i7-10710U Mobile Processor, up to 64GB DDR4 RAM, Dual Storge Design, WiFi 6, Bluetooth, USB-C with VESA Mount",$ 434.00
@@ -2395,7 +2395,7 @@ Category,Asin,UPC,ItemDesc,Total Price
 ,B09G938JYF,194252585801,"Apple Watch SE (Gen 1) [GPS 44mm] Smart Watch w/ Gold Aluminium Case with Starlight Sport Band. Fitness & Activity Tracker, Heart Rate Monitor, Retina Display, Water Resistant",$ 391.50
 ,B08J5XTRZD,190199763036,"Apple Watch SE GPS, 44mm Space Gray Aluminum Case w Black Sport Band",$ 391.50
 ,B0967WBXBC,764915888220,DIGISHUO Raspberry Pi 4B Model B 2/4/8GB RAM DIY Kit Case Fan SD Card Micro-SD HDMI (8G Module 8 in 1 Kit),$ 391.49
-,B09HF6H3X3,194252588925,"Apple Watch Series 7 [GPS 41mm] Smart Watch w/ Starlight Aluminum Case with Starlight Sport Band. Fitness Tracker, Blood Oxygen & ECG Apps, Always-On Retina Display, Water Resistant",$ 391.28
+Apple Brand Accessories,B09HF6H3X3,194252588925,Apple Watch Series 7 [GPS 41mm] Smart Watch w/ Starlight Aluminum Case with Starlight Sport Band. Fitness Tracker Blood Oxygen & ECG Apps Always-On Retina Display Water Resistant,391.28
 ,B09R8RVMPJ,815671019028,NZXT H1 Version 2 - CS-H11BW-US - Small Form-Factor ITX Case - Dual Chamber Airflow - Tinted Tempered Glass Front Panel - 140mm Liquid Cooler - SFX 750W 80+ Gold PSU - PCIe Gen4 Riser - White,$ 390.99
 ,B086MHSTVD,735858447638,Intel Core i9-10900K Desktop Processor 10 Cores up to 5.3 GHz Unlocked  LGA1200 (Intel 400 Series Chipset) 125W,$ 390.85
 ,B07SGQBQ9C,,"Rugged Cell Phones Unlocked, Blackview BV9700 Pro 4G IP68 Waterproof Drop Proof Gaming Smartphones, Octa Core 6GB+128GB 5.8 inches FHD Screen Android 9.0 4380mAh Battery Dual Sim Mobile Phone, Black",$ 390.66
@@ -2728,7 +2728,7 @@ Category,Asin,UPC,ItemDesc,Total Price
 ,B08KHCSQB3,751492639932,PNY XLR8 CS3040 2TB M.2 NVMe Gen4 x4 Internal Solid State Drive (SSD) with Heatsink - M280CS3040HS-2TB-RB​,$ 338.50
 ,B01MQU5LW7,753218988270,"Wacom Intuos Pro Medium Bluetooth Graphics Drawing Tablet, 8 Customizable ExpressKeys, 8192 Pressure Sensitive Pro Pen 2 Included, Compatible with Mac OS and Windows",$ 338.16
 ,B07RQZJ347,763649118146,Seagate 14TB HDD Exos X14 7200 RPM 512e/4Kn SATA 6Gb/s 256MB Cache 3.5-Inch Enterprise Hard Drive (ST14000NM0018),$ 337.91
-,B09B17DVYR,195890697000,"Lenovo - Tab P11 Plus - Tablet - 11"" 2K Display - MediaTek Octa-Core Processor - 4GB Memory - 128GB Storage - Dolby Atmos - Android 11 - Bluetooth & Wi-Fi - Long Battery Life",$ 337.50
+Phones/Tablets,B09B17DVYR,195890697000,"Lenovo - Tab P11 Plus - Tablet - 11"" 2K Display - MediaTek Octa-Core Processor - 4GB Memory - 128GB Storage - Dolby Atmos - Android 11 - Bluetooth & Wi-Fi - Long Battery Life",337.5
 ,B097RHX32W,740617322705,Kingston FURY Renegade 64GB (2x32GB) 3600MHz DDR4 CL18 Desktop Memory Kit of 2 KF436C18RBK2/64,$ 337.50
 ,B08H548ZK4,192876833926,"ASUS VivoBook Flip 14 2-in-1 Convertible Laptop, 14"" HD Touchscreen Display, Intel Pentium Silver N5030 CPU, 4GB DDR4 RAM, 128GB Storage, Windows 10 Home in S Mode, Grey, TP401MA-AH21T",$ 337.49
 ,B07C37JH5T,706487017271,"Jabra Engage 65 Wireless Headset, Mono – Telephone Headset with Industry-Leading Wireless Performance, Advanced Noise-Cancelling Microphone, Call Center Headset with All Day Battery Life",$ 337.31
@@ -2840,7 +2840,7 @@ Category,Asin,UPC,ItemDesc,Total Price
 ,B07CRDRGHC,680596412656,"Lenovo ThinkPad T430 Business Laptop Computer, Intel Dual Core i5 2.50GHz up to 3.2GHz, 8GB DDR3 Memory, 256GB SSD, DVD, Windows 10 Professional (Renewed)",$ 322.38
 ,B0881Y63MX,881493018174,"Atdec AWMS-2-LTH75-H-S Dual Stack Heavy Monitor Desk Mount - Flat and Curved up to 49in - VESA 75x75, 100x100 - Tool-Free Adjustable Monitor Height, tilt, pan - Quick Display Release",$ 322.34
 ,B07M6S81CM,192158239729,"Lenovo USA ThinkPad Thunderbolt 3 Dock Gen 2 135W (40AN0135US) Dual UHD 4K Display Capability, 2 HDMI, 2 DP, USB-C, USB 3.1, Black",$ 322.16
-,B09WYWQZVJ,887276661162,"SAMSUNG Galaxy Tab S6 Lite 10.4"" 64GB Android Tablet w/ Long Lasting Battery, S Pen Included, Slim Metal Design, AKG Dual Speakers, US Version, Angora Blue",$ 322.00
+Phones/Tablets,B09WYWQZVJ,887276661162,"SAMSUNG Galaxy Tab S6 Lite 10.4"" 64GB Android Tablet w/ Long Lasting Battery S Pen Included Slim Metal Design AKG Dual Speakers US Version Angora Blue",322.0
 ,B09WZ13CBS,887276661209,"SAMSUNG Galaxy Tab S6 Lite 10.4"" 64GB Android Tablet w/ Long Lasting Battery, S Pen Included, Slim Metal Design, AKG Dual Speakers, US Version, Oxford Gray",$ 322.00
 ,B09WYWJ46K,887276661155,"SAMSUNG Galaxy Tab S6 Lite 10.4"" 64GB Android Tablet w/ Long Lasting Battery, S Pen Included, Slim Metal Design, AKG Dual Speakers, US Version, Chiffon Rose",$ 322.00
 ,B0B254X138,,"DOOGEE Android 12 Phones Unlocked S98 8GB+256GB 64MP+20MP Night Vision Camera Rugged Smartphone 33W Fast Charge 6000mAh Cell Phone Smart Rear Display Dual SIM 6.3"" IP68 Waterproof NFC",$ 321.99
@@ -2848,7 +2848,7 @@ Category,Asin,UPC,ItemDesc,Total Price
 ,B099P3925B,887276586793,"Samsung Galaxy Chromebook Go LTE 14.0"" 4GB Memory, 32GB eMMC |(XE345XDA-NA1TT) 2021",$ 321.99
 ,B07ZPJW2XH,713699869093,"Apple iPhone 11, 64GB, White - Fully Unlocked (Renewed)",$ 321.60
 ,B07VL5XLBS,85896386254,"Thunderbolt 3 Dock for MacBooks (OS 10.14 and Later) and Windows laptops Equipped with Thunderbolt 3 (Lenovo Dell HP Acer, Asus, MSI, Razer, and More)",$ 321.30
-,B09Q9SX3NY,824142281987,MSI Gaming GeForce RTX 3050 8GB GDRR6 128-Bit HDMI/DP PCIe 4 Torx Twin Fans Ampere OC Graphics Card (RTX 3050 Ventus 2X 8G OC),$ 321.00
+Graphics Cards,B09Q9SX3NY,824142281987,MSI Gaming GeForce RTX 3050 8GB GDRR6 128-Bit HDMI/DP PCIe 4 Torx Twin Fans Ampere OC Graphics Card (RTX 3050 Ventus 2X 8G OC),321.0
 ,B09BK8NCPB,824142261408,MSI Gaming AMD Radeon RX 6600 XT 128-bit 8GB GDDR6 DP/HDMI Dual Torx Fans FreeSync DirectX 12 VR Ready OC Graphics Card (RX 6600 XT MECH 2X 8G OC),$ 321.00
 ,B08CM17RPZ,195122313111,"HP 14 Laptop, AMD 3020e, 4 GB RAM, 64 GB eMMC Storage, 14-inch HD Touchscreen, Windows 10 Home in S Mode, Long Battery Life, Microsoft 365, (14-fq0040nr, 2020)",$ 320.99
 ,B07VQJ56T3,887276359779,"SAMSUNG Galaxy Watch Active 2 Smart Watch 44mm US Version GPS Bluetooth Advanced Health Monitoring Fitness Tracking Long-Lasting Battery, Aqua Black",$ 320.75
@@ -2994,10 +2994,10 @@ Category,Asin,UPC,ItemDesc,Total Price
 ,B089WC4VWF,793519990527,"AMD Ryzen 5 3600XT 6-core, 12-threads unlocked desktop processor with Wraith Spire cooler",$ 302.20
 ,B01EJMYOHO,700115708876,Meze 99 Classics Walnut Silver | Wired Over-Ear Headphones with Mic and Self Adjustable Headband | Classic Wooden Closed-Back Headset for Audiophiles,$ 301.56
 ,B08WLY9GVW,,"Bang & Olufsen Beoplay EQ - Active Noise Cancelling Wireless In-Ear Earphones with 6 Microphones, up to 20 hours of playtime, Sand",$ 301.25
-,B09VLHYQMV,,"Bang & Olufsen Beoplay EX - Wireless Bluetooth Earphones with Microphone and Active Noise Cancelling, Waterproof, 20 Hours of Playtime",$ 301.24
+earbuds_to_test,B09VLHYQMV,,Bang & Olufsen Beoplay EX - Wireless Bluetooth Earphones with Microphone and Active Noise Cancelling Waterproof 20 Hours of Playtime,301.24
 ,B08KHP5MV8,819927012382,"Plugable Thunderbolt 3 and USB C Docking Station with 96W Charging - Compatible with Mac and Windows Laptops, DisplayPort and HDMI, 2X USB-C, 3X USB 3.0, Gigabit Ethernet, Audio Jack - Horizontal",$ 301.17
 ,B086MMS6FV,735858447690,Intel Core i7-10700KF Desktop Processor 8 Cores up to 5.1 GHz Unlocked Without Processor Graphics LGA1200 (Intel 400 Series chipset) 125W,$ 301.02
-,B09YHXT12P,824142290248,MSI Gaming Radeon RX 6650 XT 128-bit 8GB GDDR6 DP/HDMI Dual Torx 3.0 Fans FreeSync DirectX 12 VR Ready OC Graphics Card (RX 6650 XT MECH 2X 8G OC),$ 301.00
+Graphics Cards,B09YHXT12P,824142290248,MSI Gaming Radeon RX 6650 XT 128-bit 8GB GDDR6 DP/HDMI Dual Torx 3.0 Fans FreeSync DirectX 12 VR Ready OC Graphics Card (RX 6650 XT MECH 2X 8G OC),301.0
 ,B085LMQQLC,,"HP Z240 Small Form Factor Worksation, Intel Quad Core i5-6500 up to 3.6GHz, 16G DDR4, 512G SSD, WiFi, BT 4.0, DVD, Windows 10 Pro 64 Bit-Multi-Language Supports English/Spanish/French(Renewed)",$ 300.96
 ,B07TN1MNJ4,840025245570,SABRENT 2TB Rocket NVMe 4.0 Gen4 PCIe M.2 Internal SSD Extreme Performance Solid State Drive (SB-ROCKET-NVMe4-2TB),$ 300.88
 ,B09G54XXCR,810296025188,The Cat® S42 H+ Hygiene Plus Rugged Smartphone,$ 300.57
@@ -3010,7 +3010,7 @@ Category,Asin,UPC,ItemDesc,Total Price
 ,B08HJTN8PH,195122314422,"HP Chromebook 11-inch Laptop - MediaTek - MT8183 - 4 GB RAM - 32 GB eMMC Storage - 11.6-inch HD IPS Touchscreen - with Chrome OS™ - (11a-na0050nr, 2020 model, Snow White)",$ 299.99
 ,B07HM6KJN8,192876032787,"ASUS AX6000 WiFi 6 Gaming Router (RT-AX88U) - Dual Band Gigabit Wireless Router, 8 GB Ports, Gaming & Streaming, AiMesh Compatible, Included Lifetime Internet Security, Adaptive QoS, MU-MIMO",$ 299.99
 ,B08HJVZ41J,195122314439,"HP Chromebook 11-inch Laptop - MediaTek - MT8183 - 4 GB RAM - 32 GB eMMC Storage - 11.6-inch HD IPS Touchscreen - with Chrome OS™ - (11a-na0060nr, 2020 model, Indigo Blue)",$ 299.99
-,B08NWF8SL4,840023207440,Moto G stylus | 2021 | 2-Day battery | Unlocked | Made for US by Motorola | 4/128GB | 48MP Camera | Black,$ 299.99
+Phones/Tablets,B08NWF8SL4,840023207440,Moto G stylus | 2021 | 2-Day battery | Unlocked | Made for US by Motorola | 4/128GB | 48MP Camera | Black,299.99
 ,B01L25GOGA,,"Netatmo c Camera, WiFi, Integrated Floodlight, Movement Detection, Night Vision, Without Fees, NOC01-US, Black Aluminium",$ 299.99
 ,B07CS3JGPC,887276263533,"SAMSUNG 32 inch UJ59 4k monitor (LU32J590UQNXZA) - UHD, 3840 x 2160p, 60hz, 4ms, Dual monitor, laptop monitor, monitor stand / riser / mount compliant, AMD FreeSync, Gaming, HDMI, DP, Black",$ 299.99
 ,B09ZNN4GP4,810074840187,NZXT N7 Z690 Motherboard - N7-Z69XT-W1 - Intel Z690 chipset (Supports 12th Gen CPUs) - ATX Gaming Motherboard - Integrated I/O Shield - WiFi 6E connectivity - Bluetooth V5.2 - White,$ 299.99
@@ -3188,7 +3188,7 @@ Category,Asin,UPC,ItemDesc,Total Price
 ,B087N5LKNL,,"Newest HP 14"" HD WLED Backlit High Performance Business Laptop, AMD Athlon Silver 3050U up to 3.2GHz, 4GB DDR4, 128GB SSD, Wireless-AC, HDMI, Bluetooth, Webcam, SD Card Reader, Windows 10 S",$ 282.37
 ,B07Z2PF8FV,745883785698,"Belkin Thunderbolt 3 Dock Plus w/ 2.6ft Thunderbolt 3 Cable (Thunderbolt Dock for macOS and Windows) Dual 4K @60Hz, 40Gbps Transfer Speeds, 60W Upstream Charging",$ 282.23
 ,B08WCCGBH9,824142242872,"MSI MPG Z590 Gaming Plus Gaming Motherboard (ATX, 11th/10th Gen Intel Core, LGA 1200 Socket, DDR4, PCIe 4, CFX, M.2 Slots, USB 3.2 Gen 2, DP/HDMI, Mystic Light RGB)",$ 282.15
-,B0876J8436,824142212493,"MSI MPG Z490 GAMING EDGE WIFI ATX Gaming Motherboard (10th Gen Intel Core, LGA 1200 Socket, DDR4, CF, Dual M.2 Slots, USB 3.2 Gen 2, Wi-Fi 6, DP/HDMI, Mystic Light RGB)",$ 282.15
+Motherboards,B0876J8436,824142212493,MSI MPG Z490 GAMING EDGE WIFI ATX Gaming Motherboard (10th Gen Intel Core LGA 1200 Socket DDR4 CF Dual M.2 Slots USB 3.2 Gen 2 Wi-Fi 6 DP/HDMI Mystic Light RGB),282.15
 ,B08YMW8YY4,824142195529,"MSI G27CQ4, 27"" Gaming Monitor, 2560 x 1440 (QHD), VA, 165Hz, FreeSync, HDMI, Displayport, Tilt",$ 282.00
 ,B083GTJQFB,889523025055,GIGABYTE B550 Vision D-P (AM4/ AMD/ B550/ ATX/Dual M.2/ SATA 6Gb/s/USB 3.2 Type-C/Thunderbolt 3/ WiFi 6/ Dual 2.5GbE LAN/PCIe 4.0/ Motherboard),$ 282.00
 ,B09PX5WHMB,824142272640,"MSI MAG Z690 Tomahawk WiFi Gaming Motherboard (ATX, 12th Gen Intel Core, LGA 1700 Socket, DDR5, PCIe 5, 2.5G LAN, M.2 Slots, Wi-Fi 6E)",$ 282.00
@@ -3480,7 +3480,7 @@ Category,Asin,UPC,ItemDesc,Total Price
 ,B0B62W9RQK,840006694700,"Corsair Vengeance RGB DDR5 32GB (2x16GB) 5200MHz C40 Intel Optimized Desktop Memory (Dynamic Ten-Zone RGB Lighting, Onboard Voltage Regulation, Custom XMP 3.0 Profiles, Tight Response Times) Black",$ 257.75
 ,B0882PQ1SC,,"Bang & Olufsen Beoplay E8 Sport True Wireless In-Ear Bluetooth Earphone with Customizable Comfort Fit, Microphones and Touch Control, Wireless Charging Case, 28H Playtime, IP57 Dust & Waterproof Black",$ 257.69
 ,B06XT1F1WH,858783801976,"Nuance PowerMic III Microphone for Dragon (Non-Healthcare), 3 Ft Cord, Dictate Documents and Control your PC – all by Voice, [PC Disc]",$ 257.68
-,B09N3XRLZH,887276607368,"SAMSUNG Galaxy Tab A8 Android Tablet, 10.5” LCD Screen, 64GB Storage, Long-Lasting Battery, Kids Content, Smart Switch, Expandable Memory, Dark Gray",$ 257.59
+Phones/Tablets,B09N3XRLZH,887276607368,SAMSUNG Galaxy Tab A8 Android Tablet 10.5” LCD Screen 64GB Storage Long-Lasting Battery Kids Content Smart Switch Expandable Memory Dark Gray,257.59
 ,B09N3YS882,887276607337,"SAMSUNG Galaxy Tab A8 10.5” 64GB Android Tablet w/ LCD Screen, Long Lasting Battery, Kids Content, Smart Switch, Expandable Memory, US Version, Silver, Amazon Exclusive",$ 257.59
 ,B09N3ZKHS9,887276607382,"SAMSUNG Galaxy Tab A8 Android Tablet, 10.5” LCD Screen, 64GB Storage, Long-Lasting Battery,Kids Content, Smart Switch, Expandable Memory, Pink Gold",$ 257.59
 ,B01N2PH32N,643653452231,Highpoint RocketRAID 4522SGL,$ 257.58
@@ -3595,7 +3595,7 @@ Category,Asin,UPC,ItemDesc,Total Price
 ,B00378KMI2,747192118907,Polk Audio Atrium 8 SDI Flagship Outdoor All-Weather Speaker (White) - Use as Single Unit or Stereo Pair | Powerful Bass & Broad Sound Coverage,$ 249.00
 ,B00378KMIC,747192118891,Polk Audio Atrium 8 SDI Flagship Outdoor All-Weather Speaker (Black) - Use as Single Unit or Stereo Pair | Powerful Bass & Broad Sound Coverage,$ 249.00
 ,B01N6YK1GA,,"Audio-Technica AT-LP3BK Fully Automatic Belt-Drive Stereo Turntable, Black",$ 249.00
-,B07M9J3XW2,612572215432,"ARRIS SURFboard SBG8300 DOCSIS 3.1 Gigabit Cable Modem & AC2350 Wi-Fi Router | Comcast Xfinity, Cox, Spectrum & more | Four 1 Gbps Ports | 1 Gbps Max Internet Speeds | 4 OFDM Channels 2 Year Warranty",$ 249.00
+Modems,B07M9J3XW2,612572215432,ARRIS SURFboard SBG8300 DOCSIS 3.1 Gigabit Cable Modem & AC2350 Wi-Fi Router | Comcast Xfinity Cox Spectrum & more | Four 1 Gbps Ports | 1 Gbps Max Internet Speeds | 4 OFDM Channels 2 Year Warranty,249.0
 ,B08HHGM3MB,195122314392,"HP Chromebook 11-inch Laptop - MediaTek - MT8183 - 4 GB RAM - 32 GB eMMC Storage - 11.6-inch HD Display - with Chrome OS™ - (11a-na0030nr, 2020 model, Indigo Blue)",$ 248.93
 ,B08LQT1L87,601557985378,"LG V60 ThinQ 5G 128GB Android Smartphone LM-V600TM (Renewed) (Classy Blue, 128GB, GSM Unlocked)",$ 248.83
 ,B08X7BKLWS,192876845660,"ASUS ROG STRIX 1000W Gold PSU, Power Supply (ROG heatsinks, Axial-tech fan design, dual ball fan bearings, 0dB technology, 80 PLUS Gold Certification, fully modular cables, 10-year warranty)",$ 248.40
@@ -3817,7 +3817,7 @@ Category,Asin,UPC,ItemDesc,Total Price
 ,B08J8C7D8C,810056140083,Razer BlackWidow V3 Pro Mechanical Wireless Gaming Keyboard: Yellow Mechanical Switches - Linear & Silent - Chroma RGB Lighting - Doubleshot ABS Keycaps - Transparent Switch Housing - Bluetooth/2.4GHz,$ 229.99
 ,B08YMY8ZZ3,813567029717,"AORUS WATERFORCE X 280 AIO Liquid CPU Cooler, Rotatable Circular LCD Display with Micro SD Support, 280mm Radiator with 2x140mm Low Noise ARGB Fans, Compatible with Intel LGA1700",$ 229.99
 ,B09BGWJD3C,824142262771,"MSI MAG X570S Tomahawk WiFi Motherboard (AMD AM4, DDR4, PCIe 4.0, SATA 6Gb/s, M.2, USB 3.2 Gen 2, AC Wi-Fi 6, HDMI, ATX)",$ 229.99
-,B08HR78C46,615822013864,"Jabra Elite 85t True Wireless Bluetooth Earbuds, Titanium Black – Advanced Noise-Cancelling Earbuds with Charging Case for Calls & Music – Wireless Earbuds with Superior Sound & Premium Comfort",$ 229.99
+other_earbuds,B08HR78C46,615822013864,Jabra Elite 85t True Wireless Bluetooth Earbuds Titanium Black – Advanced Noise-Cancelling Earbuds with Charging Case for Calls & Music – Wireless Earbuds with Superior Sound & Premium Comfort,229.99
 ,B082DYSQVF,815671015297,NZXT Kraken Z63 280mm - RL-KRZ63-01 - AIO RGB CPU Liquid Cooler - Customizable LCD Display - Improved Pump - Powered by CAM V4 - RGB Connector - Aer P 140mm Radiator Fans (2 Included),$ 229.99
 ,B09X8D13JS,812137030986,Mad Catz R.A.T. Pro X3 Supreme Limited Edition Wired Optical Gaming Mouse - 16000 DPI Optical Sensor,$ 229.99
 ,B08Z492RK9,840030701399,"TP-Link Deco Tri Band Mesh WiFi 6 System(Deco X68) - Covers up to 5500 Sq. Ft.Whole Home Coverage, Replaces Wireless Routers and Extenders, 2-Pack",$ 229.99
@@ -3829,9 +3829,9 @@ Category,Asin,UPC,ItemDesc,Total Price
 ,B09K2N5XTN,,Nokia T20 | Android 11 | 10-Inch Screen | Tablet | US Version | 4/64GB | 8MP Camera | Ocean Blue,$ 229.99
 ,B00IBIVL42,86792985077,YAMAHA MG10XU 10-Input Stereo Mixer with Effects,$ 229.99
 ,B0BDHWDR12,194253397168,"Apple AirPods Pro (2nd Generation) Wireless Earbuds with MagSafe Charging Case. Active Noise Cancelling, Personalized Spatial Audio, Customizable Fit, Bluetooth Headphones for iPhone",$ 229.99
-,B0B2SH4CN6,887276668703,"SAMSUNG Galaxy Buds 2 Pro True Wireless Bluetooth Earbuds w/ Noise Cancelling, Hi-Fi Sound, 360 Audio, Comfort Ear Fit, HD Voice, Conversation Mode, IPX7 Water Resistant, US Version, Graphite",$ 229.99
+earbuds_to_test,B0B2SH4CN6,887276668703,SAMSUNG Galaxy Buds 2 Pro True Wireless Bluetooth Earbuds w/ Noise Cancelling Hi-Fi Sound 360 Audio Comfort Ear Fit HD Voice Conversation Mode IPX7 Water Resistant US Version Graphite,229.99
 ,B08JCX68VZ,843591019170,"Corsair Virtuoso RGB Wireless SE Gaming Headset - High-Fidelity 7.1 Surround Sound W/Broadcast Quality Microphone, Memory Foam Earcups, 20 Hour Battery Life, Works w/PC, PS5, PS4 - Espresso",$ 229.99
-,B0B2SH56BZ,887276709000,"SAMSUNG Galaxy Buds 2 Pro True Wireless Bluetooth Earbuds w/ Noise Cancelling, Hi-Fi Sound, 360 Audio, Comfort Ear Fit, HD Voice, Conversation Mode, IPX7 Water Resistant, US Version, Bora Purple",$ 229.99
+other_earbuds,B0B2SH56BZ,887276709000,SAMSUNG Galaxy Buds 2 Pro True Wireless Bluetooth Earbuds w/ Noise Cancelling Hi-Fi Sound 360 Audio Comfort Ear Fit HD Voice Conversation Mode IPX7 Water Resistant US Version Bora Purple,229.99
 ,B09KKYXXQB,824142270370,"MSI PRO Z690-A WiFi ProSeries Motherboard (ATX, 12th Gen Intel Core, LGA 1700 Socket, DDR5, PCIe 5, 2.5G LAN, M.2 Slots, Wi-Fi 6E)",$ 229.99
 ,B07NPMMZ8C,763649134399,"Seagate Expansion Desktop 10TB External Hard Drive HDD - USB 3.0 for PC & Laptop, 1-Year Rescue Service (STEB10000400), Black",$ 229.99
 ,B087C9RVRG,723755139497,Moto G8 Power | Unlocked | International GSM Only | 4/64GB | 16MP Camera | 2020 | Black | NOT compatible with Sprint or Verizon,$ 229.99
@@ -3974,7 +3974,7 @@ Category,Asin,UPC,ItemDesc,Total Price
 ,B08HBZCSHW,718037883830,"WD_BLACK 1TB AN1500 NVMe Internal Gaming Solid State Drive SSD Add-In-Card - Gen3 PCIe, Up to 6500 MB/s - WDS100T1X0L",$ 219.99
 ,B09CRLXL76,843368069353,"EVGA Supernova 850 P6, 80 Plus Platinum 850W, Fully Modular, Eco Mode with FDB Fan, 10 Year Warranty, Includes Power ON Self Tester, Compact 140mm Size, Power Supply 220-P6-0850-X1",$ 219.99
 ,B09Y1FDJNK,195553428514,"ASUS ROG Strix Flare II Animate 100% RGB Gaming Keyboard - Hot-swappable, ROG NX Red Linear Switches, Customizable LED Display, PBT Keycaps, Acoustic Dampening Foam, Media Controls, Wrist Rest",$ 219.99
-,B09GKYMDHP,615822015981,"BlueParrott B650-XT Noise Cancelling Bluetooth Mono Headset – Wireless Headset for Clear Calls with Activated Noise Cancellation, Extended Wireless Range and IP54-Rated Protection, Black",$ 219.99
+Headphones,B09GKYMDHP,615822015981,BlueParrott B650-XT Noise Cancelling Bluetooth Mono Headset – Wireless Headset for Clear Calls with Activated Noise Cancellation Extended Wireless Range and IP54-Rated Protection Black,219.99
 ,B09GLC1SS4,824142270394,"MSI PRO Z690-A WiFi DDR4 ProSeries Motherboard (ATX, 12th Gen Intel Core, LGA 1700 Socket, DDR4, PCIe 4, CFX, M.2 Slots, Wi-Fi 6E)",$ 219.99
 ,B08XKLM6V9,763649168080,"Seagate Expansion 10TB External Hard Drive HDD - USB 3.0, with Rescue Data Recovery Services (STKP10000402)",$ 219.99
 ,B096BKNBKR,887276552538,"SAMSUNG Galaxy Watch 4 40mm Smartwatch with ECG Monitor Tracker for Health, Fitness, Running, Sleep Cycles, GPS Fall Detection, Bluetooth, US Version, SM-R860NZSAXAA, Silver",$ 219.99
@@ -4082,7 +4082,7 @@ Category,Asin,UPC,ItemDesc,Total Price
 ,B09N3YBXCN,887276607344,"SAMSUNG Galaxy Tab A8 10.5” 32GB Android Tablet w/ LCD Screen, Long Lasting Battery, Kids Content, Smart Switch, Expandable Memory, US Version, Silver, Amazon Exclusive",$ 211.59
 ,B07BN217QG,887276261898,"SAMSUNG (MZ-V7E1T0BW) 970 EVO SSD 1TB - M.2 NVMe Interface Internal Solid State Drive with V-NAND Technology, Black/Red",$ 211.48
 ,B079H74ZD1,689227626691,"Dell WD15 Monitor Dock 4K with 130W Adapter, USB-C, (450-AFGM, 6GFRT)",$ 211.37
-,B08D1RSCRL,811659037787,Razer Hammerhead True Wireless Pro Bluetooth Gaming Earbuds: THX Certified - Advanced Hybrid Active Noise Cancellation - 60ms Low-Latency - Touch Enabled - <20 Hr Battery Life - Classic Black,$ 211.28
+other_earbuds,B08D1RSCRL,811659037787,Razer Hammerhead True Wireless Pro Bluetooth Gaming Earbuds: THX Certified - Advanced Hybrid Active Noise Cancellation - 60ms Low-Latency - Touch Enabled - <20 Hr Battery Life - Classic Black,211.28
 ,B07BC35343,760625128366,"HP ProDesk 600 G1 SFF Slim Business Desktop Computer, Intel i5-4570 up to 3.60 GHz, 8GB RAM, 256GB SSD, DVD, USB 3.0, Windows 10 Pro 64 Bit (Renewed)",$ 211.13
 ,B0759FGJ3Q,735858350488,Intel Core i5-8400 Desktop Processor 6 Cores up to 4.0 GHz LGA 1151 300 Series 65W,$ 211.01
 ,B07XGDNZXT,718037858371,"Western Digital 8TB WD Gold Enterprise Class Internal Hard Drive - 7200 RPM Class, SATA 6 Gb/s, 256 MB Cache, 3.5"" - WD8004FRYZ",$ 211.00
@@ -4244,7 +4244,7 @@ Category,Asin,UPC,ItemDesc,Total Price
 ,B01MS0I1ZK,843591085946,Corsair K95 RGB Platinum Mechanical Gaming Keyboard -  6x Programmable Macro Keys - USB Passthrough & Media Controls - Tactile & Quiet - Cherry MX Brown – RGB LED Backlit,$ 199.99
 ,B082M4L5K6,843591019262,"Corsair Virtuoso RGB Wireless Gaming Headset - High-Fidelity 7.1 Surround Sound w/Broadcast Quality Microphone - Memory Foam Earcups - 20 Hour Battery Life - Works with PC, PS5, PS4 – White, Premium",$ 199.99
 ,B0B1N7SGMZ,193575032283,Google Pixel Buds Pro - Noise Canceling Earbuds - Up to 31 Hour Battery Life with Charging Case - Bluetooth Headphones - Compatible with Wireless Charging - Charcoal,$ 199.99
-,B0B1NGPY94,193575032306,Google Pixel Buds Pro - Noise Canceling Earbuds - Up to 31 Hour Battery Life with Charging Case - Bluetooth Headphones - Compatible with Wireless Charging - Fog,$ 199.99
+other_earbuds,B0B1NGPY94,193575032306,Google Pixel Buds Pro - Noise Canceling Earbuds - Up to 31 Hour Battery Life with Charging Case - Bluetooth Headphones - Compatible with Wireless Charging - Fog,199.99
 ,B00170IO7I,93207057328,Definitive Technology AW 5500 All Weather Speaker with Bracket - Each (White),$ 199.99
 ,B08V3VF1MX,606449152456,"NETGEAR Nighthawk Tri-Band Whole Home Mesh WiFi 6 Add-on Satellite (MS80) – add up to 2,250 sq. ft. of Coverage",$ 199.99
 ,B09CLMK872,616960414889,"Simple Mobile Samsung Galaxy A32 5G, 64GB - Prepaid Smartphone (Locked), Black",$ 199.99
@@ -4585,7 +4585,7 @@ Category,Asin,UPC,ItemDesc,Total Price
 ,B09PWVN9TP,884102095962,"CoolerMaster MasterLiquid PL360 FLUX Close-Loop AIO CPU Liquid Cooler, Dual Chamber Pump, Ceramic Bearing Impeller Motor, Dual Loop ARGB, PL-Flux 120mm Fans for AMD Ryzen AM5/AM4/Intel 1700/1200/115X",$ 179.99
 ,B09WJNX3ZT,195553518383,"ASUS Pro Q670M-C-CSM LGA 1700 (Intel 12th Gen & Intel vPro) mATX Motherboard (PCIe 4.0, DDR5 4800, 2xNVMe SSD M.2, USB 3.2 Gen 2, ASUS Boot), Black",$ 179.99
 ,B099821FWG,843368068370,"EVGA SuperNOVA 850 G6, 80 Plus Gold 850W, Fully Modular, Eco Mode with FDB Fan, 10 Year Warranty, Includes Power ON Self Tester, Compact 140mm Size, Power Supply 220-G6-0850-X1",$ 179.99
-,B09D1GFNHG,615822015806,Jabra Elite 7 Active in-Ear Bluetooth Earbuds - True Wireless Sports Ear Buds with Jabra ShakeGrip for The Ultimate Active fit and Adjustable Active Noise Cancellation - Mint,$ 179.99
+other_earbuds,B09D1GFNHG,615822015806,Jabra Elite 7 Active in-Ear Bluetooth Earbuds - True Wireless Sports Ear Buds with Jabra ShakeGrip for The Ultimate Active fit and Adjustable Active Noise Cancellation - Mint,179.99
 ,B08F9VP2RC,192876826607,"ASUS ROG Strix B550-A Gaming AMD AM4 Zen 3 Ryzen 5000 & 3rd Gen Ryzen ATX Gaming Motherboard (PCIe 4.0, 2.5Gb LAN, BIOS Flashback, Dual M.2 with heatsinks, Addressable Gen 2 RGB Header and Aura Sync",$ 179.99
 ,B09QV5KJHV,718037887357,"WD_BLACK 2TB SN770 NVMe Internal Gaming SSD Solid State Drive - Gen4 PCIe, M.2 2280, Up to 5,150 MB/s - WDS200T3X0E",$ 179.99
 ,B0B8QP5BGD,813682027735,"SteelSeries New Arctis Nova 7X Wireless Multi-Platform Gaming & Mobile Headset — Nova Acoustic System — Simultaneous Wireless 2.4GHz + Bluetooth — 38Hr Battery — USB-C — Xbox, PC, PS, Switch, Mobile",$ 179.99
@@ -4804,7 +4804,7 @@ Category,Asin,UPC,ItemDesc,Total Price
 ,B09FF7MV16,810033110788,Victrola Revolution GO 3-Speed Bluetooth Portable Rechargeable Record Player with Built-in Speakers | Blue VSC-750SB-BLU,$ 170.00
 ,B08ZC78GWJ,810056141899,Razer Anzu Smart Glasses: Blue Light Filtering & Polarized Sunglass Lenses - Low Latency Audio - Built-in Mic & Speakers - Touch & Voice Assistant Compatible - 5hrs Battery - Rectangle/Large,$ 170.00
 ,B07SVJJCP3,813682023645,SteelSeries Apex Pro Mechanical Gaming Keyboard – Adjustable Actuation Switches – World’s Fastest Mechanical Keyboard – OLED Smart Display – RGB Backlit,$ 169.99
-,B087R97MM2,706487019817,"BlueParrott B450-XT Noise Cancelling Bluetooth Headset – Updated Design with Industry Leading Sound & Improved Comfort, Up to 24 Hours of Talk Time, IP54-Rated Wireless Headset,Black",$ 169.99
+Headphones,B087R97MM2,706487019817,BlueParrott B450-XT Noise Cancelling Bluetooth Headset – Updated Design with Industry Leading Sound & Improved Comfort Up to 24 Hours of Talk Time IP54-Rated Wireless HeadsetBlack,169.99
 ,B08WCMNJ6J,824142242506,"MAG B560 Torpedo (ATX, 11th/10th Gen Intel Core, LGA 1200 Socket, DDR4, PCIe 4, CFX, M.2 Slots, USB 3.2, 2.5G LAN, DP/HDMI)",$ 169.99
 ,B09318DTNJ,840056139053,"ZAGG Pro Keys Detachable Case and Wireless Keyboard for Apple iPad Pro 12.9, Multi-Device Bluetooth Pairing, Backlit Laptop-Style Keys, Apple Pencil Holder, 6.6ft Drop Protection (Charcoal)",$ 169.99
 ,B08WC9JSV8,824142241011,"MSI Z590-A PRO ProSeries Motherboard (ATX, 11th/10th Gen Intel Core, LGA 1200 Socket, DDR4, PCIe 4, M.2 Slots, USB 3.2 Gen 2, 2.5G LAN, DP/HDMI)",$ 169.99
@@ -4847,7 +4847,7 @@ Category,Asin,UPC,ItemDesc,Total Price
 ,B00ODRSODQ,706487015147,"Jabra Evolve 65 UC Wireless Headset, Stereo – Includes Link 370 USB Adapter – Bluetooth Headset with Industry-Leading Wireless Performance, Passive Noise Cancellation, All Day Battery, Stereo Speaker, Model: 6599-829-409",$ 168.82
 ,B07WZYJX73,880255446781,M-Player iPod Shuffle 2GB Silver (Packaged in White Box with Generic Accessories),$ 168.81
 ,B097QPQXLW,,OLOy DDR4 RAM 16GB (2x8GB) Blade Aura Sync RGB 3600 MHz CL14 1.45V 288-Pin Desktop Gaming UDIMM (MD4U0836144BRADE),$ 168.74
-,B0B2SFVRC2,887276668741,"SAMSUNG Galaxy Buds 2 Pro True Wireless Bluetooth Earbuds w/ Noise Cancelling, Hi-Fi Sound, 360 Audio, Comfort Ear Fit, HD Voice, Conversation Mode, IPX7 Water Resistant, US Version, White (Pack of 1)",$ 168.67
+earbuds_to_test,B0B2SFVRC2,887276668741,SAMSUNG Galaxy Buds 2 Pro True Wireless Bluetooth Earbuds w/ Noise Cancelling Hi-Fi Sound 360 Audio Comfort Ear Fit HD Voice Conversation Mode IPX7 Water Resistant US Version White (Pack of 1),168.67
 ,B011JNVIYI,889028001639,Monoprice 300-Watt (150w RMS x2) Studio Audio Amplifier (605030) Black,$ 168.57
 ,B08V1PF29L,810010073501,Ubiquiti UniFi 6 Long-Range Access Point | US Model | PoE Adapter not Included (U6-LR-US),$ 168.52
 ,B07NSG62QX,692232500429,"DELL Optiplex 7010 Desktop Computer - Intel Core i5 3.6GHz, 16GB DDR3, New 500GB SSD, Windows 10 Pro 64-Bit, WiFi, USB 3.0, DVDRW, 2X Display Port (Renewed)']",$ 168.51
@@ -4894,7 +4894,7 @@ Category,Asin,UPC,ItemDesc,Total Price
 ,B08MYVQW1S,728886755028,Raspberry PI 400 Computer Kit - RPI400-US,$ 166.04
 ,B0B2J88HTZ,843368058432,"EVGA Supernova 850 G7, 80 Plus Gold 850W, Fully Modular, Eco Mode with FDB Fan, 10 Year Warranty, Includes Power ON Self Tester, Compact 130mm Size, Power Supply 220-G7-0850-X1",$ 166.00
 ,B09PTS2NMZ,848354041047,G.Skill Trident Z5 Series (Intel XMP) 32GB (2 x 16GB) 288-Pin SDRAM DDR5 6000 CL36-36-36-96 1.35V Dual Channel Desktop Memory F5-6000J3636F16GA2-TZ5K (Matte Black),$ 165.99
-,B0B1N7Z8B3,193575032290,Google Pixel Buds Pro - Noise Canceling Earbuds - Up to 31 Hour Battery Life with Charging Case - Bluetooth Headphones - Compatible with Wireless Charging - Coral,$ 165.99
+other_earbuds,B0B1N7Z8B3,193575032290,Google Pixel Buds Pro - Noise Canceling Earbuds - Up to 31 Hour Battery Life with Charging Case - Bluetooth Headphones - Compatible with Wireless Charging - Coral,165.99
 ,B0B1N7RT74,193575032313,Google Pixel Buds Pro - Noise Canceling Earbuds - Up to 31 Hour Battery Life with Charging Case- Bluetooth Headphones - Compatible with Wireless Charging - Lemongrass,$ 165.99
 ,B00ECHYTBI,858779002509,Infant Optics DXR-8 Video Baby Monitor with Interchangeable Optical Lens,$ 165.99
 ,B09L1C3231,,"Tablet 10 inch 2022 Newest Android 11 2G/3G/4G Phone Call Tablet with 64GB Storage, 256 GB Expand, Octa-Core, IPS HD Display,13MP Dual Camera, WiFi, Bluetooth, GPS, Black",$ 165.90
@@ -4939,7 +4939,7 @@ Category,Asin,UPC,ItemDesc,Total Price
 ,B09YTB3KH6,,PowerColor AMD Radeon RX 6400 Low Profile Graphics Card with 4GB GDDR6 Memory,$ 164.00
 ,B08VLNX5Q9,195553103367,"ASUS Prime Z590M-PLUS LGA 1200(Intel11th/10th Gen) microATX Motherboard (PCIe 4.0, 10 Power Stages, 3X M.2 Slot,Thunderbolt 4 Header,1Gb LAN, SPI-TPM Header,M.2 Socket -Key E Wireless,Aura Sync RGB)",$ 163.99
 ,B07WTXG3XW,606449144055,"NETGEAR Orbi Whole Home Mesh WiFi System (RBK13) – Router replacement covers up to 4,500 sq. ft. with 1 Router & 2 Satellites",$ 163.99
-,B09X8Z5T16,606449158885,NETGEAR Cloud Managed Wireless Access Point (WAX615PA) - WiFi 6 Dual-Band AX3000 Speed | Up to 256 Client Devices | 802.11ax | Insight Remote Management | PoE+ Powered or Included AC Adapter,$ 163.99
+Routers/Switches,B09X8Z5T16,606449158885,NETGEAR Cloud Managed Wireless Access Point (WAX615PA) - WiFi 6 Dual-Band AX3000 Speed | Up to 256 Client Devices | 802.11ax | Insight Remote Management | PoE+ Powered or Included AC Adapter,163.99
 ,B07PCMG75T,606449139747,"NETGEAR Nighthawk 4-Stream AX4 Wi-fi 6 Router (RAX40) – AX3000 Wireless Speed (Up to 3 Gbps) | 1,500 Sq Ft Coverage",$ 163.99
 ,B08L746NXW,193108140911,"Arlo Pro 4 Spotlight Camera - 1 Pack - Wireless Security, 2K Video & HDR, Color Night Vision, 2 Way Audio, Wire-Free, Direct to WiFi No Hub Needed, White - VMC4050P",$ 163.99
 ,B08L74BYS9,193108142274,"Arlo Pro 4 Spotlight Camera - 1 Pack - Wireless Security, 2K Video & HDR, Color Night Vision, 2 Way Audio, Wire-Free, Direct to WiFi No Hub Needed, Black - VMC4050B",$ 163.99
@@ -5219,7 +5219,7 @@ Category,Asin,UPC,ItemDesc,Total Price
 ,B0858JWG2S,190199246225,"Powerbeats High-Performance Wireless Earbuds - Apple H1 Headphone Chip, Class 1 Bluetooth Headphones, 15 Hours of Listening Time, Sweat Resistant, Built-in Microphone - Black",$ 151.20
 ,B0858MZFBC,190199246386,"Powerbeats High-Performance Wireless Earbuds - Apple H1 Headphone Chip, Class 1 Bluetooth Headphones, 15 Hours of Listening Time, Sweat Resistant, Built-in Microphone - Red",$ 151.20
 ,B09WQ1FB5R,194253194286,"Beats Studio Buds - True Wireless Noise Cancelling Earbuds - Compatible with Apple & Android, Built-in Microphone, IPX4 Rating, Sweat Resistant Earphones, Class 1 Bluetooth Headphones - Ocean Blue",$ 151.20
-,B09D15G8PG,615822015790,Jabra Elite 7 Active in-Ear Bluetooth Earbuds - True Wireless Sports Ear Buds ShakeGrip for The Ultimate Active fit and Adjustable Active Noise Cancellation - Black,$ 151.20
+other_earbuds,B09D15G8PG,615822015790,Jabra Elite 7 Active in-Ear Bluetooth Earbuds - True Wireless Sports Ear Buds ShakeGrip for The Ultimate Active fit and Adjustable Active Noise Cancellation - Black,151.2
 ,B09HXKRZSZ,193575007946,Google Nest Doorbell (Battery) - Wireless Doorbell Camera - Video Doorbell - Ivy,$ 151.19
 ,B09FCLPLWX,193575007953,Google Nest Doorbell (Battery) - Wireless Doorbell Camera - Video Doorbell - Ash,$ 151.19
 ,B09FCMSJZG,193575008240,"Google Nest Cam Outdoor or Indoor, Battery - 2nd Generation - 1 Pack",$ 151.19
@@ -5255,14 +5255,14 @@ Category,Asin,UPC,ItemDesc,Total Price
 ,B096SRYXMP,194252388396,"Beats Studio Buds – True Wireless Noise Cancelling Earbuds – Compatible with Apple & Android, Built-in Microphone, IPX4 Rating, Sweat Resistant Earphones, Class 1 Bluetooth Headphones - White",$ 149.99
 ,B096SSCV5K,194252388495,"Beats Studio Buds – True Wireless Noise Cancelling Earbuds – Compatible with Apple & Android, Built-in Microphone, IPX4 Rating, Sweat Resistant Earphones, Class 1 Bluetooth Headphones - Red",$ 149.99
 ,B099X4HMV4,887276576428,"Samsung Galaxy Buds Pro, Bluetooth Earbuds, True Wireless, Noise Cancelling, Charging Case, Quality Sound, Water Resistant, White (US Version)",$ 149.99
-,B07XWK1DYB,,"OnePlus Buds Pro Wireless Earbuds| with Charging Case |IP55 | Smart Adaptive Noise Cancellation Sound | Matte Black,E503A",$ 149.99
+other_earbuds,B07XWK1DYB,,OnePlus Buds Pro Wireless Earbuds| with Charging Case |IP55 | Smart Adaptive Noise Cancellation Sound | Matte BlackE503A,149.99
 ,B07343TRVR,27242900783,"Sony NWWS623/B Waterproof and Dustproof Walkman with Bluetooth,Black",$ 149.99
 ,B09T9879D2,740617326123,"Kingston Technology Fury Impact 32GB 4800MT/s DDR5 CL38 SODIMM XMP Ready Laptop Memory Single Module KF548S38IB-32, Black",$ 149.99
 ,B078H1T9YD,814855026449,"Razer Nommo Chroma: Custom Woven 3"" Glass Fiber Drivers - Rear-Facing Bass Ports - Bass Knob w/ Automatic Gain Control - Razer Chroma Enabled - Full Range 2.0 PC Gaming Speakers, Black",$ 149.99
 ,B06W56TBLN,627988303154,"Ecobee3 Lite SmartThermostat, Black",$ 149.99
 ,B071P4QD5R,21331536099,"Altec Lansing Sonic Boom - Waterproof Bluetooth Speaker and Phone Charger, IP67 Floating Outdoor Bluetooth Speaker, 3 USB Charging Ports, Aux Input, 50 Ft Wireless Range, 20 Hours Battery Life",$ 149.99
 ,B09X5T42XZ,840006662013,"Corsair VENGEANCE DDR5 SODIMM 16GB (1x16GB) DDR5 4800MHz C40 (Compatible with Nearly Any Intel and AMD System, Easy Installation, Faster Load Times, Smoother Multitasking, XMP 3.0 Compatibility) Black",$ 149.99
-,B089B7LX7N,887276430270,"SAMSUNG Galaxy Buds Live True Wireless Earbuds US Version Active Noise Cancelling Wireless Charging Case Included, Mystic Bronze",$ 149.99
+other_earbuds,B089B7LX7N,887276430270,SAMSUNG Galaxy Buds Live True Wireless Earbuds US Version Active Noise Cancelling Wireless Charging Case Included Mystic Bronze,149.99
 ,B089B658NP,887276420707,"SAMSUNG Galaxy Buds Live True Wireless Earbuds US Version Active Noise Cancelling Wireless Charging Case Included, Mystic Black",$ 149.99
 ,B00ZGET6SM,68888759205,"Outdoor Waterproof Wireless Bluetooth Speaker - 5.25 Inch Pair 2-Way Weatherproof Wall/Ceiling Mounted Dual Speakers w/Heavy Duty Grill, Universal Mount, Patio, Indoor Use - Pyle PDWR54BTW (White)",$ 149.99
 ,B07B32GY9Z,813682024529,"SteelSeries Arctis Pro High Fidelity Gaming Headset - Hi-Res Speaker Drivers - DTS Headphone: X v2.0 Surround for PC, Black",$ 149.99
@@ -5284,7 +5284,7 @@ Category,Asin,UPC,ItemDesc,Total Price
 ,B010HWDPKW,843368034719,"EVGA 220-P2-0650-X1 SuperNOVA 650 P2, 80+ PLATINUM 650W , Fully Modular , EVGA ECO Mode, 10 Year Warranty , Includes FREE Power On Self Tester, Power Supply ,Black",$ 149.99
 ,B07C2QHTTZ,753759209797,"Garmin 010-02028-00 Approach S10, Lightweight GPS Golf Watch, Black",$ 149.99
 ,B09VYFXV66,17229187788,"Plantronics by Poly Voyager 4310 UC Wireless Headset - Single-Ear Bluetooth Headset w/Noise-Canceling Boom Mic - Connect to PC/Mac/Mobile via Bluetooth - Works w/Teams, Zoom & More - Amazon Exclusive",$ 149.99
-,B08R5JPTMZ,840006604839,"Corsair RMx Series (2021), RM850x, 850 Watt, GOLD, Fully Modular Power Supply (CP-9020200-NA)",$ 149.99
+Power Supplies,B08R5JPTMZ,840006604839,Corsair RMx Series (2021) RM850x 850 Watt GOLD Fully Modular Power Supply (CP-9020200-NA),149.99
 ,B08WCTZ2VX,824142243312,"MSI MAG B560M Mortar WiFi Gaming Motherboard (mATX, 11th/10th Gen Intel Core, LGA 1200 Socket, DDR4, PCIe 4, CFX, M.2 Slots, USB 3.2 Gen 2, 2.5G LAN, DP/HDMI, Wi-Fi 6E)",$ 149.99
 ,B09TD1C1CC,884116416883,"Dell G2722HS IPS 27 Inch 165Hz Gaming Monitor - (FHD) Full HD 1920 x 1080p, LED LCD Display, AMD FreeSync Premium and NVIDIA G-Sync Compatible, HDMI, DisplayPort, Thin Bezel - Black",$ 149.99
 ,B0B7ZNCXKZ,615822016476,"Jabra Elite 5 True Wireless in-Ear Bluetooth Earbuds - Hybrid Active Noise Cancellation (ANC), 6 Built-in Microphones for Clear Calls, Small Ergonomic Fit and 6mm Speakers - Titanium Black",$ 149.99
@@ -5699,7 +5699,7 @@ Category,Asin,UPC,ItemDesc,Total Price
 ,B0174X43LM,888863494279,"Acer Chromebook C738T NX.G55AA.005;C738T-C44Z 11.6"" Laptop",$ 130.99
 ,B09ZVPLQJ8,810052982694,"SteelSeries Arctis 7+ Wireless Gaming Headset – Lossless 2.4 GHz – 30 Hour Battery Life – USB-C – 7.1 Surround – for PC, PS5, PS4, Mac, Android and Switch – White",$ 130.98
 ,B08K3RPZYT,751492636412,PNY CS900 1TB M.2 SATA III Internal Solid State Drive (SSD) - (M280CS900-1TB-RB)​,$ 130.95
-,B07VPL6BL6,192876057087,"ASUS Dual Band WiFi Repeater & Range Extender (RP-AC1900) - Coverage Up to 3000 sq.ft, Wireless Signal Booster for Home, AiMesh Node, Easy Setup",$ 130.95
+Routers/Switches,B07VPL6BL6,192876057087,ASUS Dual Band WiFi Repeater & Range Extender (RP-AC1900) - Coverage Up to 3000 sq.ft Wireless Signal Booster for Home AiMesh Node Easy Setup,130.95
 ,B0B1QP3XFY,740617328585,Kingston Technology Fury Beast RGB 16GB 5600MT/s DDR5 CL40 DIMM Desktop Memory Single Module | Intel XMP 3.0 | Infrared Sync Technology | Overclocking Stability | KF556C40BBA-16,$ 130.95
 ,B08R22K2T9,,"BOIFUN Portable Monitor, 15.8"" USB-C 1080P Computer Monitor with IPS Screen, 100% sRGB Game Monitor with HDMI for Laptop PC PS4 Xbox Phone, Plug and Play & Smart Case Included",$ 130.92
 ,B08G1KQ9ZW,778299332415,"EVERSECU 1080p Auto Tracking 30x Zoom IP PTZ CCTV Camera with an External POE Splitter, RTSP for Online Streaming with Long Range Infrared Night Vision Outdoor high Speed Dome Security Camera",$ 130.89
@@ -5713,7 +5713,7 @@ Category,Asin,UPC,ItemDesc,Total Price
 ,B099SC88N4,,"iPhone 6s 16GB Unlocked, Silver",$ 130.28
 ,B01MU3WUX1,689549647848,"Ubiquiti UniFi Switch 8 60W (US-8-60W),White",$ 130.19
 ,B09KLDPGP9,610840957435,"Mini PC Fanless Intel Atom Z8350 2GB DDR3 32GB eMMC Mini Computer with Windows 10 Pro Mini Desktop PC Support 4K HD, 2.4G/5G WiFi, Bluetooth 4.2, Gigabit Ethernet",$ 130.19
-,B0941PVLYN,887276546766,"SAMSUNG Galaxy Buds 2 True Wireless Earbuds Noise Cancelling Ambient Sound Bluetooth Lightweight Comfort Fit Touch Control US Version, Olive Green",$ 130.18
+other_earbuds,B0941PVLYN,887276546766,SAMSUNG Galaxy Buds 2 True Wireless Earbuds Noise Cancelling Ambient Sound Bluetooth Lightweight Comfort Fit Touch Control US Version Olive Green,130.18
 ,B09N3G22HG,,Lian Li GA-360B Galahad AIO 360 RGB Black CPU Liquid Cooler - GA360B.01 (with LGA 1700 Bracket) GA-360B BLACK,$ 130.15
 ,B09MPYPHJB,,Lian Li GA-360A Galahad AIO 360 RGB White CPU Liquid Cooler - GA360A.01 (with LGA 1700 Bracket) GA-360A WHITE,$ 130.15
 ,B079H6111J,843591034876,"Corsair RMX Series (2018), RM650x, 650 Watt, 80+ Gold Certified, Fully Modular Power Supply",$ 130.14
@@ -5843,7 +5843,7 @@ Category,Asin,UPC,ItemDesc,Total Price
 ,B07C51C6T5,,XSPC D5 PWM Pump (SATA Power),$ 126.94
 ,B08NTMHC3X,194850483813,"HP Chromebook 11A G8 EE 11.6"" Chromebook - HD - 1366 x 768 - AMD A-Series A6-9220C Dual-core (2 Core) 1.80 GHz - 8 GB RAM - 32 GB Flash Memory - Chrome OS - AMD Radeon R5 Graphics - English Keybo",$ 126.91
 ,B097QMSLKL,740617318548,"Kingston FURY Impact 32GB (2x16GB) 2666MHz DDR4 CL16 Laptop Memory Kit of 2 KF426S16IBK2/32, Black.",$ 126.67
-,B07Z9SW756,840006611684,"Corsair QL Series, Ql120 RGB, 120mm RGB LED Fan, Triple Pack with Lighting Node Core, Black",$ 126.67
+under75,B07Z9SW756,840006611684,Corsair QL Series Ql120 RGB 120mm RGB LED Fan Triple Pack with Lighting Node Core Black,126.67
 ,B08F39N9J1,,iFi Zen CAN Balanced Desktop Headphone Amp and Preamp with 4.4mm Outputs - [US PIN],$ 126.63
 ,B00L87IG7S,616639936032,Acer 11.6 inches Chromebook 2 GB 16 GB Chrome OS | C720-2848 (Renewed),$ 126.52
 ,B09CGM6Q2Y,618996741786,"INLAND Performance 1TB PCIe Gen 4.0 NVMe 4 x4 SSD M.2 2280 TLC 3D NAND Internal Solid State Drive, R/W Speed up to 5000MB/s and 4300MB/s, 1800 TBW",$ 126.52
@@ -5940,7 +5940,7 @@ Category,Asin,UPC,ItemDesc,Total Price
 ,B01N0TQPQB,740617263442,"Kingston 480GB A400 SATA 3 2.5"" Internal SSD SA400S37/480G - HDD Replacement for Increase Performance",$ 123.00
 ,B07YXKMGX7,192876375983,ASUS ROG Strix 750 Fully Modular 80 Plus Gold 750W ATX Power Supply with 0dB Axial Tech Fan and 10 Year Warranty,$ 123.00
 ,B09F5VNNXW,,"[Mgears] M-Stick MG-S01 AI Box for Android Auto, Android Auto Dongle(2GB+16GB), in-Vehicle Infotainment, Android 9.0 System, Easy Setup, Netflix, YouTube, Disney+, GPS, car Supported Model 2016-2022",$ 123.00
-,B08NXWM3GK,606449147490,"NETGEAR Cable Modem with Built-in WiFi Router (C6230) - Compatible with All Major Cable Providers incl. Xfinity, Spectrum, Cox - for Cable Plans Up to 400Mbps - AC1200 WiFi Speed - DOCSIS 3.0",$ 122.99
+Modems,B08NXWM3GK,606449147490,NETGEAR Cable Modem with Built-in WiFi Router (C6230) - Compatible with All Major Cable Providers incl. Xfinity Spectrum Cox - for Cable Plans Up to 400Mbps - AC1200 WiFi Speed - DOCSIS 3.0,122.99
 ,B08R813HLW,606449152166,"NETGEAR 4G LTE Broadband Modem (LM1200) – Use LTE as a Primary Internet Connection or Failover Solution for Always-On WiFi Certified with AT&T, T-Mobile and Verizon",$ 122.99
 ,B089Y6R6B8,193108141598,"Arlo Essential Wired Video Doorbell - HD Video, 180° View, Night Vision, 2 Way Audio, Direct to Wi-Fi No Hub Needed, Easy Installation (existing doorbell wiring required), Black - AVD1001B",$ 122.99
 ,B07YMV9VMT,193108139779,"Arlo Essential Wired Video Doorbell - HD Video, 180° View, Night Vision, 2 Way Audio, Direct to Wi-Fi No Hub Needed, Easy Installation (existing doorbell wiring required), White - AVD1001",$ 122.99
@@ -5951,7 +5951,7 @@ Category,Asin,UPC,ItemDesc,Total Price
 ,B07Y468HV3,824142194799,MSI Performance Gaming AMD X470 Ryzen 2ND and 3rd Gen AM4 DDR4 DVI HDMI Onboard Graphics CFX ATX Motherboard (X470 GAMING PLUS Max),$ 122.85
 ,B083HZHP62,,GIGABYTE GC-MAPLE RIDGE (Intel/Thunderbolt 4/ JHL 8540 Controller/ 2x USB Type-C/ 1x DisplayPort 1.4/ 2x Mini DisplayPort/ Max Bandwidth 40GB/s/ PCle Card),$ 122.85
 ,B0868T19PS,824142189726,"MSI B450M-A PRO MAX ProSeries Motherboard (ATX, 2ND and 3rd Gen, AM4, M.2, USB 3, DDR4, DVI HDMI, Crossfire)",$ 122.85
-,B09DFRGYNQ,606449158618,"NETGEAR 4-Stream WiFi 6 Router (R6700AXS) – with 1-Year Armor Cybersecurity Subscription - AX1800 Wireless Speed (Up to 1.8 Gbps) | Coverage up to 1,500 sq. ft., 20+ devices, AX WiFi 6 w/ 1yr Security",$ 122.84
+Routers/Switches,B09DFRGYNQ,606449158618,NETGEAR 4-Stream WiFi 6 Router (R6700AXS) – with 1-Year Armor Cybersecurity Subscription - AX1800 Wireless Speed (Up to 1.8 Gbps) | Coverage up to 1500 sq. ft. 20+ devices AX WiFi 6 w/ 1yr Security,122.84
 ,B085VQFZ8Z,27242918832,"Sony WF-XB700 EXTRA BASS True Wireless Earbuds Headset/Headphones with Mic for Phone Call Bluetooth Technology, Black",$ 122.84
 ,B07XH41DLN,653341336538,"TC Helicon GoXLR MINI Online Broadcast Mixer with USB/Audio Interface and Midas Preamp, Officially Supported on Windows",$ 122.84
 ,B07TYM5T17,753459267967,"DEEPCOOL Castle 360EX, Addressable RGB AIO Liquid CPU Cooler, Anti-Leak Technology Inside, Cable Controller and 5V ADD RGB 3-Pin Motherboard Control, TR4/AM4 Supported, 3-Year Warranty",$ 122.75
@@ -6024,7 +6024,7 @@ Category,Asin,UPC,ItemDesc,Total Price
 ,B09MVG7C9L,615822016360,"Jabra Elite 4 Active in-Ear Bluetooth Earbuds – True Wireless Earbuds with Secure Active Fit, 4 Built-in Microphones, Active Noise Cancellation and Adjustable HearThrough Technology – Navy",$ 119.99
 ,B09BDFMDQC,,Polaroid Go Everything Box Camera and Instant Film Bundle (6036),$ 119.99
 ,B0744NVPJ8,814855024179,"Razer BlackWidow TE Chroma v2 TKL Tenkeyless Mechanical Gaming Keyboard: Green Key Switches, Tactile & Clicky, Chroma RGB Lighting, Magnetic Wrist Rest, Programmable Macros, Classic Black",$ 119.99
-,B09MVGQRDD,615822016346,"Jabra Elite 4 Active in-Ear Bluetooth Earbuds – True Wireless Earbuds with Secure Active Fit, 4 Built-in Microphones, Active Noise Cancellation and Adjustable HearThrough Technology – Black",$ 119.99
+other_earbuds,B09MVGQRDD,,,
 ,B079K3MXWF,887276210704,"SAMSUNG 23.5” CF396 Curved Computer Monitor, AMD FreeSync for Advanced Gaming, 4ms Response Time, Wide Viewing Angle, Ultra Slim Design, LC24F396FHNXZA, Black",$ 119.99
 ,B07XMP77DM,816203019813,"Victrola Nostalgic 7-in-1 Bluetooth Record Player & Multimedia Center with Built-in Speakers - 3-Speed Turntable, CD & Cassette Player, AM/FM Radio, USB | Wireless Music Streaming | Mahogany",$ 119.99
 ,B09931G795,824142258996,MSI MAG CoreLiquid C240 - AIO ARGB CPU Liquid Cooler - 240mm Radiator - LGA 1700 Ready - Dual 120mm ARGB PWM Fans,$ 119.99
@@ -6037,7 +6037,7 @@ Category,Asin,UPC,ItemDesc,Total Price
 ,B08F2YY8JV,811659039859,Razer BlackWidow V3 Mechanical Gaming Keyboard: Green Mechanical Switches - Tactile & Clicky - Chroma RGB Lighting - Compact Form Factor - Programmable Macros - Halo Infinite,$ 119.99
 ,B08Y1QRTBM,763649161586,"Seagate Game Drive for Xbox 4TB External Hard Drive Portable HDD - USB 3.2 Gen 1, Black with built-in green LED bar , Xbox Certified, 3 year Rescue Services (STKX4000402)",$ 119.99
 ,B08R4WJR15,840006603818,"Corsair RMX Series (2021), RM550x, 550 Watt, Gold, Fully Modular Power Supply",$ 119.99
-,B086V2LDLP,606449148169,"NETGEAR Nighthawk Whole Home Mesh WiFi 6 Add-on Satellite (MS60) – add up to 1,500 sq. ft. of coverage",$ 119.99
+Routers/Switches,B086V2LDLP,606449148169,NETGEAR Nighthawk Whole Home Mesh WiFi 6 Add-on Satellite (MS60) – add up to 1500 sq. ft. of coverage,119.99
 ,B07YLKPWL5,884102062964,"Cooler Master MasterAir MA620M Dual Tower ARGB High Performance CPU Air Cooler, SF120R Fan, Hexagon Strip ARGB Lighting, 6 Heat Pipes, Copper Plated Base for AMD Ryzen/Intel LGA1151",$ 119.99
 ,B0948R8Y9F,,"be quiet! BN671 Pure Power 11 FM 650W, 80 Plus Gold Efficiency, Power Supply, ATX",$ 119.99
 ,B093NGBKKD,840006630920,"CORSAIR RM Series (2021), RM650, 650 Watt, 80 PLUS GOLD Certified, Fully Modular Power Supply",$ 119.99
@@ -6073,7 +6073,7 @@ Category,Asin,UPC,ItemDesc,Total Price
 ,B07YMKD6SM,193575001593,Google Nest Wifi -  AC2200 - Mesh WiFi System -  Wifi Router - 2200 Sq Ft Coverage - 1 pack,$ 119.00
 ,B0886KWVYR,694318024935,"AKAI Professional MPK Mini MK3 - 25 Key USB MIDI Keyboard Controller With 8 Backlit Drum Pads, 8 Knobs and Music Production Software included (Black)",$ 119.00
 ,B071ZZTNBM,190198383396,"Apple Magic Keyboard with Numeric Keypad (Wireless, Rechargable) (US English) - Silver",$ 119.00
-,B07H42QXF1,612572215388,"ARRIS SURFboard SBG10 DOCSIS 3.0 16 x 4 Gigabit Cable Modem & AC1600 Wi-Fi Router | Comcast Xfinity, Cox, Spectrum | Two 1 Gbps Ports | 400 Mbps Max Internet Speeds | SURFboard App | 2 Year Warranty",$ 119.00
+Modems,B07H42QXF1,612572215388,ARRIS SURFboard SBG10 DOCSIS 3.0 16 x 4 Gigabit Cable Modem & AC1600 Wi-Fi Router | Comcast Xfinity Cox Spectrum | Two 1 Gbps Ports | 400 Mbps Max Internet Speeds | SURFboard App | 2 Year Warranty,119.0
 ,B07NHSJ1RF,719192625341,"LG 24GL600F-B UltraGear Gaming Monitor 24"" FHD (1920 x 1080) Display, Radeon FreeSync Technology, 144Hz Refresh Rate, 1ms Response Time, AMD FreeSync - Black",$ 119.00
 ,B07HY4PSPW,192876071984,"Asus VP228HE 21.5” Full HD 1920x1080 1ms HDMI VGA Eye Care Monitor,Blacklight",$ 119.00
 ,B08FQR969J,810056140090,"Razer BlackWidow V3 Mechanical Gaming Keyboard: Yellow Mechanical Switches - Linear & Silent - Chroma RGB Lighting - Compact Form Factor - Programmable Macro Functionality, Classic Black",$ 119.00
@@ -6208,7 +6208,7 @@ Category,Asin,UPC,ItemDesc,Total Price
 ,B07P9BBJM2,842893116037,"Pyle PTA66BT - Wireless Home Audio Amplifier System - Bluetooth Compatible Sound Stereo Receiver Amp - 6 Channel 600Watt Power, Digital LCD, Headphone Jack, 1/4'' Microphone IN USB SD AUX RCA FM Radio",$ 114.75
 ,B09VNRGT7S,815671019486,NZXT H7 Flow - CM-H71FG-01 - ATX Mid Tower PC Gaming Case - Front I/O USB Type-C Port - Quick-Release Tempered Glass Side Panel - White/Black,$ 114.75
 ,B07WTXYHY5,,"Seasonic Focus GM-650, 650W, Semi-Modular, Fits All ATX Systems, Fan Control in Silent and Cooling Mode, Perfect Power Supply for Gaming and Various Application",$ 114.75
-,B072N84DG6,889349620045,ASUS XG-C100C 10G Network Adapter Pci-E X4 Card with Single RJ-45 Port,$ 114.75
+PCIE Cards,B072N84DG6,889349620045,ASUS XG-C100C 10G Network Adapter Pci-E X4 Card with Single RJ-45 Port,114.75
 ,B00DWFPDJI,803982779052,"ASUS BW-16D1HT - ultra-fast 16X Blu-ray burner with M-DISC support, black",$ 114.75
 ,B08K31Z4CR,,OLOy DDR4 RAM 32GB (2x16GB) 3200 MHz CL16 1.35V 288-Pin Desktop Gaming UDIMM (MD4U1632161BHWDA),$ 114.74
 ,B07PMLWHDD,,Parrot - Mechanical Kit for Anafi Drone - Drone Body + 2 Front Arms + 2 Rear Arms + Hinge and Mount + LED + Coaxial Cable Front and Rear + Screws and Assembly Tool - Anafi Drone Repair Kit,$ 114.74
@@ -6302,7 +6302,7 @@ Category,Asin,UPC,ItemDesc,Total Price
 ,B08HM69GS2,,"Invoxia Real Time GPS Tracker with 1 Year Subscription NO FEES — For Vehicles, Cars, Motorcycles, Bikes, Kids — Battery 120 Hours (moving) to 4 Months (stationary) — Anti-Theft Alerts",$ 111.00
 ,B08B3JSKGR,811659037596,Razer Huntsman Mini 60% Gaming Keyboard: Fast Keyboard Switches - Linear Optical Switches - Chroma RGB Lighting - PBT Keycaps - Onboard Memory - Classic Black,$ 111.00
 ,B08B3MHYPC,811659037619,Razer Huntsman Mini 60% Gaming Keyboard: Fast Keyboard Switches - Linear Optical Switches - Chroma RGB Lighting - PBT Keycaps - Onboard Memory - Mercury White,$ 111.00
-,B08FQMBKQG,811659036964,Razer DeathAdder V2 Pro Wireless Gaming Mouse: 20K DPI Optical Sensor - 3X Faster Than Mechanical Optical Switch - Chroma RGB Lighting - 70 Hr Battery Life - 8 Programmable Buttons - Classic Black,$ 111.00
+keyboards_mice_auction,B08FQMBKQG,606449147490,NETGEAR Cable Modem with Built-in WiFi Router (C6230) - Compatible with All Major Cable Providers incl. Xfinity Spectrum Cox - for Cable Plans Up to 400Mbps - AC1200 WiFi Speed - DOCSIS 3.0,122.99
 ,B00XBDBQ8S,884938302869,"Pioneer NDBC8 Universal CMOS Surface Mount Backup Camera, Black, 6.50in. x 4.90in. x 3.00in.",$ 111.00
 ,B07YXKM3KZ,192876375853,ASUS ROG Strix 650 Full Modular 80 Plus Gold 650W ATX Power Supply with 0dB Axial Tech Fan and 10 Year Warranty,$ 111.00
 ,B0866BQKVM,194366115055,Timex Metropolitan S AMOLED Smartwatch with GPS & Heart Rate 36mm – Black with Black Silicone Strap,$ 110.98
@@ -6463,7 +6463,7 @@ Category,Asin,UPC,ItemDesc,Total Price
 ,B09G9FS754,194252645802,Apple Watch Band - Leather Link - (45mm) - Golden Brown - Small/Medium,$ 106.65
 ,B008I21EA2,12304347552,"Linksys AC1750 Wi-Fi Wireless Dual-Band+ Router with Gigabit, Smart Wi-Fi App Enabled to Control Your Network from Anywhere (EA6500)",$ 106.59
 ,B0875FRJPT,193108140973,"Arlo Essential Spotlight Camera - 1 Pack - Wireless Security, 1080p Video, Color Night Vision, 2 Way Audio, Wire-Free, Direct to WiFi No Hub Needed, Works with Alexa, White - VMC2030",$ 106.59
-,B00R2AZLD2,606449106039,"NETGEAR Nighthawk Smart Wi-Fi Router, R6700 - AC1750 Wireless Speed Up to 1750 Mbps | Up to 1500 Sq Ft Coverage & 25 Devices | 4 x 1G Ethernet and 1 x 3.0 USB Ports | Armor Security",$ 106.59
+Modems,B00R2AZLD2,606449106039,NETGEAR Nighthawk Smart Wi-Fi Router R6700 - AC1750 Wireless Speed Up to 1750 Mbps | Up to 1500 Sq Ft Coverage & 25 Devices | 4 x 1G Ethernet and 1 x 3.0 USB Ports | Armor Security,106.59
 ,B08BF4KWHQ,193108141185,"Arlo Essential Spotlight Camera - 1 Pack - Wireless Security, 1080p Video, Color Night Vision, 2 Way Audio, Wire-Free, Direct to WiFi No Hub Needed, Works with Alexa, Black - VMC2030B",$ 106.59
 ,B01BU77M4I,765441630901,TEAMGROUP Elite DDR4 32GB Kit (2 x 16GB) 2400MHz PC4-19200 CL16 Unbuffered Non-ECC 1.2V SODIMM 260-Pin Laptop Notebook PC Computer Memory Module Ram Upgrade - TED432G2400C16DC-S01,$ 106.51
 ,B00CR9Q6MI,132017895345,Fantom Drives FD 4TB External Hard Drive - USB 3.2 Gen 1-5Gbps & eSATA - GForce 3 Aluminum - Black - Compatible with Mac/Windows/PS4/Xbox (GF3B4000EU),$ 106.40
@@ -6543,7 +6543,7 @@ Category,Asin,UPC,ItemDesc,Total Price
 ,B003WD4YUY,53926372096,Veracity VOR-ORL Outreach Lite Ethernet Extender,$ 103.52
 ,B09J159SWL,,"SAMSUNG 980 PRO SSD with Heatsink 1TB PCIe Gen 4 NVMe M.2 Internal Solid State Hard Drive, Heat Control, Max Speed, PS5 Compatible, MZ-V8P1T0CW",$ 103.46
 ,B00KCIPA9G,,"UPBRIGHT 60W AC/DC Adapter Compatible with Philips Respironics PR REMstar C-Flex AA24750L-003 MW115RA1200N09 REF 1091398 One 50, 60 Series CPAP APAP BIPAP Pro DOM 460P IP22 Medistrom Pilot-12 Power",$ 103.44
-,B08VNT658R,843368066802,"EVGA Z15 RGB Gaming Keyboard, RGB Backlit LED, Hotswappable Mechanical Kailh Speed Silver Switches (Linear), 821-W1-15US-KR",$ 103.40
+keyboards_mice_auction,B08VNT658R,843368066802,EVGA Z15 RGB Gaming Keyboard RGB Backlit LED Hotswappable Mechanical Kailh Speed Silver Switches (Linear) 821-W1-15US-KR,103.4
 ,B08LSF63FB,,"Keychron K4 96% Layout Hot-Swappable Mechanical Keyboard, Gateron G Pro Red Switch White LED Backlit Wireless Bluetooth 5.1/Wired USB 100-Key Computer Gaming Keyboard for Mac Windows-Version 2",$ 103.40
 ,B06Y25Y43S,757120415091,"C2G 41509 2x2 Drop in Ceiling Speaker - 70V, Plenum Rated (8 Inch Speaker), White",$ 103.31
 ,B095RXLM6M,,"Double Din Touchscreen Radio for Bluetooth Car Stereo,Apple Car Play Radio,Car Radio with Bluetooth、Backup Camera and Apple Carplay,Touch Screen Car Stereo,7 inch Car Radio",$ 103.30
@@ -6559,7 +6559,7 @@ Category,Asin,UPC,ItemDesc,Total Price
 ,B07WD5VKVL,740617296341,HyperX Fury 16GB 3200MHz DDR4 CL15 DIMM (Kit of 2) 1Rx8  Black XMP Desktop Memory HX432C16FB3K2/16,$ 102.60
 ,B07D998212,619659167196,"SanDisk SSD PLUS 1TB Internal SSD - SATA III 6 Gb/s, 2.5""/7mm, Up to 535 MB/s - SDSSDA-1T00-G26",$ 102.55
 ,B09NH2RCM5,819159017315,"Azumi iPhone SE 64GB Factory Unlocked, Rose Gold",$ 102.46
-,B08B3CFL6W,811659037602,Razer Huntsman Mini 60% Gaming Keyboard: Fast Keyboard Switches - Clicky Optical Switches - Chroma RGB Lighting - PBT Keycaps - Onboard Memory - Mercury White,$ 102.45
+keyboards_mice_auction,B08B3CFL6W,811659037602,Razer Huntsman Mini 60% Gaming Keyboard: Fast Keyboard Switches - Clicky Optical Switches - Chroma RGB Lighting - PBT Keycaps - Onboard Memory - Mercury White,102.45
 ,B08BFF4C7J,811659038753,Razer Huntsman Mini 60% Gaming Keyboard: Fast Keyboard Switches - Clicky Optical Switches - Chroma RGB Lighting - PBT Keycaps - Onboard Memory - Classic Black,$ 102.45
 ,B07Q59N1VY,655216009479,"EnGenius EWS357AP WiFi 6 AX1800 2x2 Gigabit Wireless Access Point with 1Gbps Port, OFDMA, MU-MIMO, PoE+, WPA3, 1GB RAM, License-Free Management Tools (Power Adapter Not Included)",$ 102.45
 ,B08RD41X5P,,2-Pack Outdoor Trail Game Cameras 24MP Picture 1296P/1080P Video Wildlife Hunting Deer Camera 100ft Night Vision No Glow 0.1S Trigger Speed Motion Activated Waterproof Password Protected Time Lapse,$ 102.40
@@ -6611,7 +6611,7 @@ Category,Asin,UPC,ItemDesc,Total Price
 ,B09TWZ5T32,751492659770,PNY XLR8 Gaming REV RGB 32GB (2x16GB) DDR4 3600MHz (PC4-28800) CL18 1.35V Dual Channel Desktop (DIMM) Memory – MD32GK2D4360018X2RGB,$ 101.00
 ,B07TGQ7CNF,813682023669,SteelSeries Apex 7 TKL Compact Mechanical Gaming Keyboard – OLED Smart Display – USB Passthrough and Media Controls – Linear and Quiet – RGB Backlit (Red Switch),$ 101.00
 ,B08R6D148D,192876812907,"ASUS Mechanical Gaming Keyboard - ROG Strix Scope RX | Red Optical Mechanical Switches | USB 2.0 Passthrough | 2X Wider Ctrl Key for Greater FPS Precision | Aura Sync, Armoury Crate RGB Lighting",$ 101.00
-,B091D6Y78G,192876726334,"ASUS AC1900 WiFi Router (RT-AC67P) - Dual Band Wireless Internet Router, Easy Setup, VPN, Parental Control, AiRadar Beamforming Technology extends Speed, Stability & Coverage, MU-MIMO",$ 100.99
+Modems,B091D6Y78G,192876726334,ASUS AC1900 WiFi Router (RT-AC67P) - Dual Band Wireless Internet Router Easy Setup VPN Parental Control AiRadar Beamforming Technology extends Speed Stability & Coverage MU-MIMO,100.99
 ,B085CNXD8Y,619659180768,SanDisk 64GB Extreme PRO CFexpress Card Type B - SDCFE-064G-GN4NN,$ 100.97
 ,B09CQ27DPJ,,"2021 Wall-Through Strong WiFi Range Extender 2100Mbps, up to 3000 Sq.ft Full Coverage, Wireless Internet Repeater, WiFi Boosters with Ethernet Port and Access Point",$ 100.90
 ,B08BV4XVV8,884102079122,"Cooler Master MasterLiquid ML360 Mirror ARGB Close-Loop AIO CPU Liquid Cooler, Mirror ARGB Pump, 360 Radiator, Triple SickleFlow 120mm, 3rd Gen Dual Chamber Pump for AMD Ryzen/Intel LGA1200/1151",$ 100.80
@@ -6628,7 +6628,7 @@ Category,Asin,UPC,ItemDesc,Total Price
 ,B09TTSZKFW,763649172889,Seagate The Mandalorian Drive Special Edition FireCuda External Hard Drive 2TB Officially-Licensed - 2.5 Inch USB 3.2 Gen 1 Blue LED RGB lighting with Rescue Services (STKL2000405),$ 100.40
 ,B07SN47MG9,810035151390,"Dragon Touch Y88X Pro 7 inch Kids Tablets, 2GB RAM 16GB ROM, Android 9.0 Tablet, Kidoz Pre-Installed with Kid-Proof Case (Pink)",$ 100.39
 ,B07T1TB2RB,,"YIERA 10 inch Android 8.1 Tablet Unlocked Pad with Dual SIM Card Slot 10.1"" IPS Screen 4GB RAM 64GB ROM 3G Phablet Built-in Bluetooth WiFi GPS (Metallic Black)",$ 100.39
-,B083XVY99B,718037861036,"Western Digital 4TB WD Red NAS Internal Hard Drive HDD - 5400 RPM, SATA 6 Gb/s, SMR, 256MB Cache, 3.5"" - WD40EFAX",$ 100.23
+Hard Drives,B083XVY99B,718037861036,"Western Digital 4TB WD Red NAS Internal Hard Drive HDD - 5400 RPM SATA 6 Gb/s SMR 256MB Cache 3.5"" - WD40EFAX",100.23
 ,B07CVNN69Z,600136972266,LG WH16NS40K 16X Blu-ray BDXL M-DISC DVD CD Internal Writer Drive Bundle with Free 100G Verbatim M-Disc BDXL + Cyberlink Media Suite 10 + SATA Cable,$ 100.18
 ,B092JSJ5NY,882991007806,LINKUP - Ultra PCIe 4.0 X16 Riser Cable [RTX3090ti RX6950XT x570 B550 Z690 Tested] Shielded Extreme High-Speed Vertical Mount Gaming PCI Express Gen4┃Dual Reverse Connectors {20cm} Designed for ITX,$ 100.17
 ,B09L3NZ819,842893144214,"PLINK5 HDMI Video Capture Card By Pyle- PCI-E Gen2 4K HDMI-to-USB Audio-Video Recording- HD Zero-Lag & Ultra-Low Latency Live Broadcasting, Gaming, Streaming- Record Via DSLR Camcorder or Action Cam",$ 100.14
@@ -6645,7 +6645,7 @@ Category,Asin,UPC,ItemDesc,Total Price
 ,B09NWCZC1N,195553514781,"ASUS Prime H610M-E D4 LGA 1700(Intel 12th Gen) mATX Motherboard (PCIe 4.0, DDR4,2xM.2 Slots,1Gb LAN,DisplayPort/HDMI/D-Sub, USB 3.2 Gen 1 Ports, SATA 6 Gbps, COM Header, RGB Header)",$ 99.99
 ,B07ZKSLVT5,846504003747,"Synology DS120j 1 bay NAS DiskStation (Diskless), 512MB DDR3L",$ 99.99
 ,B07CVL2D2S,191114774571,"Acer SB220Q bi 21.5 Inches Full HD (1920 x 1080) IPS Ultra-Thin Zero Frame Monitor (HDMI & VGA Port), Black",$ 99.99
-,B08XZQBD3R,706487021803,BlueParrott M300-XT Noise Cancelling Hands-free Mono Bluetooth Headset for Mobile Phones with up to 14 Hours of Talk Time for On-The-Go Mobile Professionals & Drivers,$ 99.99
+other_earbuds,B08XZQBD3R,706487021803,BlueParrott M300-XT Noise Cancelling Hands-free Mono Bluetooth Headset for Mobile Phones with up to 14 Hours of Talk Time for On-The-Go Mobile Professionals & Drivers,99.99
 ,B08KXVYGSF,694318024799,"M-Audio BX3 3.5"" Studio Monitors, HD PC Speakers for Recording and Multimedia with Music Production Software, 120W, Pair",$ 99.99
 ,B07CRGSR16,763649127315,"Seagate Portable 4TB External Hard Drive HDD – USB 3.0 for PC, Mac, Xbox, & PlayStation - 1-Year Rescue Service (STGX4000400)",$ 99.99
 ,B01H2RBQUG,17229164475,Plantronics by Poly Voyager 5200 Wireless Headset - Single-Ear Bluetooth Headset w/Noise-Canceling Mic - Ergonomic Design - Voice Controls - Lightweight - Connect to Mobile/Tablet via Bluetooth,$ 99.99
@@ -6686,7 +6686,7 @@ Category,Asin,UPC,ItemDesc,Total Price
 ,B0713WPGLL,694089502342,"WD 4TB Elements Portable HDD, External Hard Drive, USB 3.0 for PC & Mac, Plug and Play Ready - ‎WDBU6Y0040BBK-WESN",$ 99.99
 ,B00SAYCVTQ,780746765950,"HyperX Cloud II - Gaming Headset, 7.1 Surround Sound, Memory Foam Ear Pads, Durable Aluminum Frame, Detachable Microphone, Works with PC, PS5, PS4, Xbox Series X|S, Xbox One – Gun Metal",$ 99.99
 ,B08L61WLW7,840006626190,"Corsair K60 RGB Pro Mechanical Gaming Keyboard - CHERRY Mechanical Keyswitches - Durable AluminumFrame - Customizable Per-Key RGB Backlighting, Black",$ 99.99
-,B01936N73I,85896723592,"Kensington Expert Wireless Trackball Mouse (K72359WW) Black, 3.5"" x 6.1"" x 8""",$ 99.99
+keyboards_mice_g_headphones,B01936N73I,85896723592,"Kensington Expert Wireless Trackball Mouse (K72359WW) Black 3.5"" x 6.1"" x 8""",99.99
 ,B07TJH4S7X,811370022550,"Twelve South StayGo | USB-C Hub for Type C MacBooks, Laptops and iPad Pro with included 1 meter desktop cable + stowable travel cable for Home, Office & Travel",$ 99.99
 ,B08PCY7XZC,850022570087,"Amazfit GTS 2 Mini Smart Watch for Women Android iPhone, Alexa Built-in, 14 Days Battery Life, Fitness Tracker with GPS & 70+ Sports Modes, Blood Oxygen Heart Rate Monitor, 5 ATM Water Resistant-Pink",$ 99.99
 ,B0977S8HXV,193575009735,Google Pixel Buds A-Series - Wireless Earbuds - Headphones with Bluetooth - Dark Olive,$ 99.99
@@ -6719,7 +6719,7 @@ Category,Asin,UPC,ItemDesc,Total Price
 ,B076LRJ528,886085657311,"Koolertron One Handed Programmable Mechanical Keyboard with OEM Gateron Red Switch,All 48 Programmable Keys Tools Keypad,8 Macro Keys, PBT Keycaps.[SMKD72-A]",$ 99.18
 ,B01NBM6JUV,753759169473,"Garmin Drive 51 USA LM GPS Navigator System with Lifetime Maps, Spoken Turn-By-Turn Directions, Direct Access, Driver Alerts, TripAdvisor and Foursquare Data",$ 99.18
 ,B07XLTYBQ6,753960015934,AirTV 2 by AirTV-LLC,$ 99.01
-,B0932QJ2JZ,190199320260,Apple AirTag 4 Pack,$ 99.00
+Apple Brand Accessories,B0932QJ2JZ,190199320260,Apple AirTag 4 Pack,99.0
 ,B07BDHJJTH,190021310568,"Ryze Tech Tello - Mini Drone Quadcopter UAV for Kids Beginners 5MP Camera HD720 Video 13min Flight Time Education Scratch Programming Toy Selfies, powered by DJI, White",$ 99.00
 ,B0977RX58V,193575007977,Google Pixel Buds A-Series - Wireless Earbuds - Headphones with Bluetooth - Clearly White,$ 99.00
 ,B08Y3RHZ97,192876641958,"ASUS AX1800 Dual Band WiFi 6 (802.11ax) Repeater & Range Extender (RP-AX56) - Coverage Up to 2200 sq.ft, Wireless Signal Booster for Home, AiMesh Node, Easy Setup",$ 99.00
@@ -6757,7 +6757,7 @@ Category,Asin,UPC,ItemDesc,Total Price
 ,B00EHBERSE,718037810058,"Western Digital 4TB WD Red Plus NAS Internal Hard Drive HDD - 5400 RPM, SATA 6 Gb/s, CMR, 64 MB Cache, 3.5"" - WD40EFRX",$ 98.48
 ,B08XMBD1TT,791809576666,"Tablet 10 inch Android Tablet, Android 10.0 Tablet Quad-Core Processor 32GB Storage Tablet Computer, 2GB RAM, 8MP Camera, Long Battery Life",$ 98.47
 ,B08559FWTR,656777017637,"Dual Kiosk Stand – CTA Dual Security Kiosk Stand with Locking Case, Cable, and 360-Degree Rotating Base – Compatible with iPad 7th/ 8th/ 9th Gen 10.2-inch, iPad Air 4, (PAD-ASKB10) – Black",$ 98.42
-,B08KTXG8Q5,606449152739,"NETGEAR 4-Stream WiFi 6 Router (R6700AX) – AX1800 Wireless Speed (Up to 1.8 Gbps) | Coverage up to 1,500 sq. ft., 20 devices",$ 98.39
+Routers/Switches,B08KTXG8Q5,606449152739,NETGEAR 4-Stream WiFi 6 Router (R6700AX) – AX1800 Wireless Speed (Up to 1.8 Gbps) | Coverage up to 1500 sq. ft. 20 devices,98.39
 ,B082G2G2F8,606449146820,"NETGEAR 8-Port Gigabit Ethernet Unmanaged PoE+ Switch (GS308PP) - with 8 x PoE+ @ 83W, Desktop or Wall Mount",$ 98.39
 ,B0002CWPOK,606449036398,"NETGEAR 16-Port Gigabit Ethernet Unmanaged Switch (JGS516) - Desktop or Rackmount, and Limited Lifetime Protection",$ 98.39
 ,B06XSJV5B9,190280100481,"1MORE Quad Driver in-Ear Earphones Hi-Res High Fidelity Headphones Warm Bass, Spacious Reproduction, High Resolution, Mic in-Line Remote Smartphones/PC/Tablet - Silver/Gray",$ 98.36
@@ -7057,7 +7057,7 @@ Category,Asin,UPC,ItemDesc,Total Price
 ,B09D7ZRH1Y,700445359465,"DIGCOOL USB C Hub, 12 in 1 USB C Laptop Docking Station Monitor Type C Adapter Dock with 4K HDMI,1080P VGA,100W PD,DP,1000M RJ45, 4 USB 3.0, SD/TF 3.5mm Audio Docking Stations for MacBook Pro and More",$ 89.21
 ,B08VH9NDV7,718037884387,"Western Digital 3TB WD Red Plus NAS Internal Hard Drive HDD - 5400 RPM, SATA 6 Gb/s, CMR, 128 MB Cache, 3.5"" -WD30EFZX",$ 89.10
 ,B09XZXRFPX,840272901175,"Razer Barracuda X Wireless Gaming & Mobile Headset (PC, Playstation, Switch, Android, iOS): 2022 Model - 2.4GHz Wireless + Bluetooth - Lightweight 250g - 40mm Drivers - 50 Hr Battery - Mercury White",$ 89.00
-,B0BJLG69QR,194253687870,Apple Pencil (1st Generation) - Includes USB-C to Pencil Adapter,$ 89.00
+Apple Brand Accessories,B0BJLG69QR,194253687870,Apple Pencil (1st Generation) - Includes USB-C to Pencil Adapter,89.0
 ,B07XW9WW98,753218985828,"One by Wacom Medium Graphics Drawing Tablet, Portable and Versatile for Students & Creators,10.9 x 7.4 inches, Ergonomic 2048 Pressure Sensitive Pen, Compatible with Chromebook, Mac & Windows",$ 89.00
 ,B0B1SL7PV4,821793052690,HTC Headset Cable for Vive Pro 2,$ 89.00
 ,B09DTKHHGD,,"iPhone 6s 16GB Unlocked, Gold",$ 89.00
@@ -7171,7 +7171,7 @@ Category,Asin,UPC,ItemDesc,Total Price
 ,B07NF44X91,840030700194,"TP-Link AC4000 Smart WiFi Router - Tri Band Router , MU-MIMO, VPN Server, Antivirus/Parental Control, 1.8GHz CPU, Gigabit, Beamforming, Link Aggregation, Rangeboost, Works with Alexa(Archer A20),Black",$ 85.04
 ,B0877B3TJJ,843368051372,"EVGA 700 BQ, 80+ Bronze 700W, Semi Modular, 5 Year Warranty, Power Supply 110-BQ-0700-V1",$ 85.03
 ,B01MXYD0G3,812944023515,"Lucid Audio Enrich Pro Behind The Ear Digital Personal Sound Hearing Amplifier Psap (Ready to Wear Behind The Ear Hearing Amplifier, Electronic Hearing Protection, TV Enhancement)",$ 85.00
-,B08FFPKRYW,811659037336,"Razer Kishi Mobile Game Controller / Gamepad for iPhone iOS: Works with most iPhones – X, 11, 12, 13, 13 Max - Apple Arcade, Amazon Luna, Google Stadia - Lightning Port Passthrough - MFi Certified",$ 85.00
+Gaming Systems,B08FFPKRYW,811659037336,Razer Kishi Mobile Game Controller / Gamepad for iPhone iOS: Works with most iPhones – X 11 12 13 13 Max - Apple Arcade Amazon Luna Google Stadia - Lightning Port Passthrough - MFi Certified,85.0
 ,B071KVB4F8,718037856773,"Western Digital 4TB WD Purple Surveillance Internal Hard Drive HDD - SATA 6 Gb/s, 64 MB Cache, 3.5"" - WD40PURZ",$ 85.00
 ,B081DDQG2H,810027781093,Drop + Redsuns GMK Red Samurai Keycap Set for Tenkeyless Keyboards - Compatible with Cherry MX Switches and Clones (TKL 96-Key Kit),$ 85.00
 ,B081DDQQ58,810027781185,"Drop + Matt3o MT3 /dev/tty Keycap Set for 65% Keyboards - Compatible with Cherry MX Switches and Clones (65% 70-Key Kit), 65% Kit (70-Keys)",$ 85.00
@@ -7351,7 +7351,7 @@ Category,Asin,UPC,ItemDesc,Total Price
 ,B06WW64YM6,74101033267,"Fujifilm Instax Mini 9 Instant Camera - Ice Blue, 2.7x4.7x4.6 (Instax Mini 9 - Ice Blue)",$ 80.27
 ,B085282C1R,74101202342,Fujifilm Instax Mini 11 Instant Camera - Blush Pink,$ 80.27
 ,B085283V4X,74101202298,Fujifilm Instax Mini 11 Instant Camera - Ice White,$ 80.27
-,B08527W1MF,74101202441, Fujifilm Instax Mini 11 Instant Camera - Sky Blue,$ 80.27
+Cameras,B08527W1MF,74101202441, Fujifilm Instax Mini 11 Instant Camera - Sky Blue,80.27
 ,B0852844YB,74101202304,"Fujifilm Instax Mini 11 Instant Camera, Charcoal Grey, 16654786",$ 80.27
 ,B01929V7ZG,606449110920,"NETGEAR PowerLINE 1000 Mbps WiFi, 802.11ac, 1 Gigabit Port - Essentials Edition (PLW1010-100NAS)",$ 80.24
 ,B07G3JN2JB,811071030557,"Aftershokz Air Bone Conduction Wireless Bluetooth Headphones with Reflective Strips, Midnight Blue",$ 80.19
@@ -7401,10 +7401,10 @@ Category,Asin,UPC,ItemDesc,Total Price
 ,B0B1QMQGQ7,740617328523,Kingston Fury Beast RGB 8GB 6000MT/s DDR5 CL40 DIMM Desktop Memory Single Module | Intel XMP 3.0 | Infrared Sync Technology | Overclocking Stability | KF560C40BBA-8,$ 79.99
 ,B08C7JX5N1,824142198841,"MSI MAG Series FORGE 100R, Mid-Tower Gaming PC Case: Tempered Glass Side Panel, ARGB 120mm Fans, Liquid Cooling Support up to 240mm Radiator, Mesh Panel for Optimized Airflow",$ 79.99
 ,B09ZVQB93B,879408002059,"Karaoke USA Professional Dual UHF Wireless Microphones with Re-Chargeable Batteries, Gray (WM906)",$ 79.99
-,B07Q424WFW,843591075961,"Corsair Ironclaw Wireless RGB - FPS and MOBA Gaming Mouse - 18,000 DPI Optical Sensor - Sub-1 ms SLIPSTREAM Wireless",$ 79.99
+keyboards/mice/ gaming headset,B07Q424WFW,843591075961,Corsair Ironclaw Wireless RGB - FPS and MOBA Gaming Mouse - 18000 DPI Optical Sensor - Sub-1 ms SLIPSTREAM Wireless,79.99
 ,B07SKCLW2G,811659031907,"Razer Kraken Gaming Headset: Lightweight Aluminum Frame, Retractable Noise Isolating Microphone, for PC, PS4, PS5, Switch, Xbox One, Xbox Series X & S, Mobile, 3.5 mm Audio Jack, Mercury White",$ 79.99
 ,B07V5D1FLL,660543512189,LifeProof NEXT SERIES Case for iPhone 11 - BLUEBERRY FROST (CLEAR/SURF THE WEB),$ 79.99
-,B082N5N3R1,606449147841,NETGEAR WiFi Router (R6330) - AC1600 Dual Band Wireless Speed (up to 1600 Mbps) | Up to 1200 sq ft Coverage & 20 Devices | 4 x 1G Ethernet and 1 x 2.0 USB Ports (R6330-1AZNAS),$ 79.99
+Modems,B082N5N3R1,606449147841,NETGEAR WiFi Router (R6330) - AC1600 Dual Band Wireless Speed (up to 1600 Mbps) | Up to 1200 sq ft Coverage & 20 Devices | 4 x 1G Ethernet and 1 x 2.0 USB Ports (R6330-1AZNAS),79.99
 ,B093NTQJSF,840006616528,"Corsair CX-M Series, CX650M, Modular Power Supply, 80 Plus Bronze",$ 79.99
 ,B08176RT4G,848354033684,G.Skill Trident Z RGB Series 16GB (2 x 8GB) 288-Pin SDRAM PC4-28800 DDR4 3600 CL18-22-22-42 1.35V Dual Channel Desktop Memory Model F4-3600C18D-16GTZR,$ 79.99
 ,B09HSLHBLS,810045685342,Skullcandy Grind Fuel True Wireless In-Ear Earbuds - True Black/Orange,$ 79.99
@@ -7421,7 +7421,7 @@ Category,Asin,UPC,ItemDesc,Total Price
 ,B00Z7SP3VQ,660543426943,Lifeproof FRĒ SERIES Waterproof Case for iPhone SE (2nd gen - 2020) and iPhone 8/7 (NOT PLUS) - Retail Packaging - BANZAI (COWABUNGA/WAVE CRASH/LONGBOARD),$ 79.94
 ,B08Q7915WG,,"DELUX Ergonomic Keyboard, Wireless Ergo Split Keyboard with Backlit for Natural Typing and Reduce Hands Pain, USB Receiver, BT5.0, Scissor Switch and Palm Rest for Windows and Mac(GM902A-Black)",$ 79.93
 ,B09M8H87ZS,,"be quiet! Light Wings 120mm PWM high-Speed, Premium ARGB Cooling Fan, 4-Pin, for radiators, Triple Pack, BL077",$ 79.90
-,B08GKY84WZ,,Lian Li UNI FAN SL120 3 Pack White - with Controller (ARGB 120mm LED PWM Daisy-Chain),$ 79.90
+over75,B08GKY84WZ,,Lian Li UNI FAN SL120 3 Pack White - with Controller (ARGB 120mm LED PWM Daisy-Chain),79.9
 ,B08TQQVZP1,,Lian Li O11DMINI-1 Vertical GPU Bracket KIT /PCIE 4.0 / White -O11DMINI-1W-4,$ 79.90
 ,B07PL3LH5D,,"be quiet! Pure Power 11 600W, BN627, 80 Plus Gold, Power Supply",$ 79.90
 ,B08X1QMWK9,,"Keychron K7 65% Layout 68-Key Ultra-Slim RGB Backlit Hot-swappable Computer Keyboard for Mac Windows, Wireless Bluetooth/Wired USB Mechanical Keyboard with Low-Profile Optical Blue Switch",$ 79.79
@@ -7549,11 +7549,11 @@ Category,Asin,UPC,ItemDesc,Total Price
 ,B08N4NV5HM,843368066444,"EVGA 710 BP, 80+ BRONZE 700W + 10W, 3 Year Warranty, Power Supply 100-BP-0710-K1",$ 77.00
 ,B096L572DF,842893144436,"300W Digital Stereo Receiver System - AM/FM Qtz. Synthesized Tuner, USB/SD Card MP3 Player & Subwoofer Control, A/B Speaker, iPod/MP3 Input w/Karaoke, Cable & Remote Sensor - Pyle PT270AIU.5",$ 77.00
 ,B01FYDU8X6,843368036553,"EVGA 650 Bq, 80+ Bronze 650W, Semi Modular, 5 Year Warranty, Includes Free Power On Self Tester, Power Supply 110-BQ-0650-V1",$ 77.00
-,B084HMHGSP,192876624920,"ASUS Hyper M.2 X16 PCIe 4.0 X4 Expansion Card Supports 4 NVMe M.2 (2242/2260/2280/22110) up to 256Gbps for AMD 3rd Ryzen sTRX40, AM4 Socket and Intel VROC NVMe Raid",$ 76.99
+PCIE Cards,B084HMHGSP,192876624920,ASUS Hyper M.2 X16 PCIe 4.0 X4 Expansion Card Supports 4 NVMe M.2 (2242/2260/2280/22110) up to 256Gbps for AMD 3rd Ryzen sTRX40 AM4 Socket and Intel VROC NVMe Raid,76.99
 ,B07FZW37YS,813682025250,SteelSeries Arctis 5 - RGB Illuminated Gaming Headset with DTS Headphone: X v2.0 Surround - for PC and PS5/PS4 - White,$ 76.99
 ,B07N1JQ2VJ,749789021072,Ratuforez New 240W Power Supply for Dell Optiplex 3050 5050 7050 Mini Tower L240ES-00 H240ES-02 HU240AS-02 H240NM-00 H240NM-02 HU240AS-00 P/N:J61WF DK87P F484X DW3M7 HT04K,$ 76.98
 ,B01LZ3WDQG,843368040314,"EVGA 750 N1, 750W, 2 Year Warranty, Power Supply 100-N1-0750-L1",$ 76.95
-,B08J4H48Q9,840104221556,LifeProof FRĒ SERIES Waterproof Case for iPhone 12 Pro Max - BLACK,$ 76.94
+Phone/Tablet Cases,B08J4H48Q9,840104221556,LifeProof FRĒ SERIES Waterproof Case for iPhone 12 Pro Max - BLACK,76.94
 ,B07NSSPV9S,97855147936,"Logitech G703 Lightspeed Wireless Gaming Mouse W/Hero 25K Sensor, PowerPlay Compatible, Lightsync RGB, Lightweight 95G+10G Optional, 100-25, 600 DPI, Rubber Side Grips - Black",$ 76.92
 ,B09FBTLL4C,840104277935,LifeProof FRĒ SERIES Waterproof Case for iPhone 13 Pro Max (ONLY) - RESOURCEFUL PURPLE,$ 76.88
 ,B07KPVNF97,765673475745,"Jemo for Samsung Galaxy J3 Orbit Case Galaxy J3 Achieve/J3 V 3rd Gen/J3 2018/J3 Star/Express Prime 3/Amp Prime 3/Sol 3 Case Kickstand Wrist Strap Wallet Cover for Girls Women, Purple",$ 76.86
@@ -7806,7 +7806,7 @@ Category,Asin,UPC,ItemDesc,Total Price
 ,B00BCSYZXC,132017732336,Arkon Heavy Duty Tablet and Keyboard Tray Combo Car Mount Retail Black,$ 70.00
 ,B07G5FQMJ8,811659030658,"Razer Kraken Tournament Edition THX 7.1 Surround Sound Gaming Headset: Retractable Noise Cancelling Mic - USB DAC - for PC, PS4, PS5 Nintendo Switch, Xbox One, Xbox Series X, & S, Mobile – Green",$ 70.00
 ,B09SBP4GWD,84438961898,"Minolta MN4KP1 4K Ultra HD Wi-Fi Enabled Pocket Camcorder, Red",$ 70.00
-,B088K6LPG2,813682027575,"SteelSeries Nimbus+ Bluetooth Mobile Gaming Controller with iPhone Mount + Up to 4 Free Months of Apple Arcade, 50+ Hour Battery Life, Apple Licensed, Made for iOS, iPadOS, tvOS",$ 69.99
+under75,B088K6LPG2,813682027575,SteelSeries Nimbus+ Bluetooth Mobile Gaming Controller with iPhone Mount + Up to 4 Free Months of Apple Arcade 50+ Hour Battery Life Apple Licensed Made for iOS iPadOS tvOS,69.99
 ,B09PFFDM12,842893143071,Kids Tablet W/Stylus Pen 7 Inch WiFi Android 10 Children Tablet 1GB RAM 8 GB Storage Quad-Core 2800 mAH Parental Control Educational Learning Games Dual Camera YouTube Toddler/Kid Proof Case (Pink),$ 69.99
 ,B085TFF7M1,97855160522,"Logitech C920x HD Pro Webcam, Full HD 1080p/30fps Video Calling, Clear Stereo Audio, HD Light Correction, Works with Skype, Zoom, FaceTime, Hangouts, PC/Mac/Laptop/Macbook/Tablet - Black",$ 69.99
 ,B07XG9NPB6,,"Perixx Periduo-605, Wireless Ergonomic Split Keyboard and Vertical Mouse Combo, Adjustable Palm Rest and Membrane Low Profile Keys, Black, US English Layout (11633)",$ 69.99
@@ -7899,7 +7899,7 @@ Category,Asin,UPC,ItemDesc,Total Price
 ,B09BVKYWJ5,,"NSPENCM 85W Mac Book Pro Charger, Replacement AC 85w 2T-Tip Connector Power Adapter,Laptop Charger Compatible with MacBook pro & Mac Book Air 13 inch-15 inch Retina After Mid 2012",$ 69.00
 ,B08YCYQ55X,840030700323,WiFi Router,$ 69.00
 ,B083TSBY82,649528824547,Crucial Ballistix 3000 MHz DDR4 DRAM Desktop Gaming Memory Kit 16GB (8GBx2) CL15 BL2K8G30C15U4W (WHITE),$ 68.99
-,B0B7CDLS9M,840304701315,OtterBox DEFENDER XT CLEAR SERIES for iPhone 14 Pro (ONLY) - LAVENDER SKY (Purple/Clear),$ 68.98
+Phone/Tablet Cases,B0B7CDLS9M,840304701315,OtterBox DEFENDER XT CLEAR SERIES for iPhone 14 Pro (ONLY) - LAVENDER SKY (Purple/Clear),68.98
 ,B06XPRDVDC,612572213759,"ARRIS Surfboard SB6190-RB DOCSIS 3.0 Cable Modem, White (Renewed)",$ 68.93
 ,B091BCQK7B,740617316841,Kingston NV1 500G M.2 2280 NVMe PCIe Internal SSD Up to 2100 MB/s SNVS/500G,$ 68.85
 ,B09PMZRD1X,,DoHonest D11 HD 1080P RV Backup Camera for S19,$ 68.84
@@ -7935,7 +7935,7 @@ Category,Asin,UPC,ItemDesc,Total Price
 ,B01DUF3UVC,27242896406,"Sony Stereo CD/Cassette Boombox Home Audio Radio, Black (CFDS70BLK), 13.7 x 6.1 x 9 inches",$ 68.00
 ,B07NH3Q1TC,850261008693,Azio RM-RCM-L-03 Retro Classic Mouse (Artisan),$ 68.00
 ,B008LTBJFM,163120438112,Crucial 8GB Kit (4GBx2) DDR3/DDR3L 1066 MT/s (PC3-8500) SODIMM 204-Pin Memory For Mac - CT2K4G3S1067M,$ 68.00
-,B08559R1CJ,656777017699,"Desktop Anti-Theft Stand – CTA Kiosk Stand with Stylus, Tether, and Aluminum Enclosure for iPad 7th/ 8th/ 9th Gen 10.2,” iPad Air 3, & iPad Pro 10.7” and More (PAD-DASB) - Black",$ 68.00
+under75,B08559R1CJ,656777017699,Desktop Anti-Theft Stand – CTA Kiosk Stand with Stylus Tether and Aluminum Enclosure for iPad 7th/ 8th/ 9th Gen 10.2” iPad Air 3 & iPad Pro 10.7” and More (PAD-DASB) - Black,68.0
 ,B091TTHW4T,673143848640,"BongBingBoo iPad Pro Stand, Adjustable Tablet Holder Magnetic Cradle Mount Dock for Apple iPad Pro 12.9'' 3rd/4th/5th/6th Generation - Silver",$ 68.00
 ,B00K01Z7WA,847169020704,Cerwin Vega CVM2 Bass Maximizer Processor,$ 67.99
 ,B08PXVLQPM,745883819829,"Belkin USB C Hub, 6-in-1 MultiPort Adapter Dock with 4K HDMI, USB-C 100W PD Pass-Through Charging, 2 x USB A, Gigabit Ethernet Ports and SD Slot for MacBook Pro, Air, iPad Pro, XPS and More",$ 67.99
@@ -7944,7 +7944,7 @@ Category,Asin,UPC,ItemDesc,Total Price
 ,B0866NX67B,751492637525,PNY 32GB Attaché 4 USB 2.0 Flash Drive 20-Pack,$ 67.96
 ,B00GQDORA4,710619566650,Rode VideoMic GO Lightweight On-Camera Microphone with Integrated Rycote Shockmount,$ 67.95
 ,B07W6ND3BB,,"DIERYA DK61E 60% Wired Mechanical Gaming Keyboard, Hot Swap Optical Switch, RGB Backlit, Waterproof, PBT Keycap, Blind-Mate Interface, Compact Computer Keyboard with Full Keys Programmable",$ 67.89
-,B01H74VKZU,845973094805,"TP-Link AV2000 Powerline Adapter - 2 Gigabit Ports, Ethernet Over Power, Plug&Play, Power Saving, 2x2 MIMO, Noise Filtering, Extra Power Socket for other Devices, Ideal for Gaming (TL-PA9020P KIT)",$ 67.88
+Modems,B01H74VKZU,845973094805,TP-Link AV2000 Powerline Adapter - 2 Gigabit Ports Ethernet Over Power Plug&Play Power Saving 2x2 MIMO Noise Filtering Extra Power Socket for other Devices Ideal for Gaming (TL-PA9020P KIT),67.88
 ,B01LVTKMFR,849155044961,"Acoustic Audio CSic83 in Ceiling 8"" Speaker Pair 3 Way Home Theater Speakers",$ 67.88
 ,B07V3955LS,660543512172,LifeProof NEXT SERIES Case for iPhone 11 - BLACK CRYSTAL (CLEAR/BLACK),$ 67.84
 ,B09KMBLGV5,,"be quiet! Light Wings 120mm PWM, Premium ARGB Cooling Fan, 4-Pin, Triple Pack, BL076",$ 67.80
@@ -8006,7 +8006,7 @@ Category,Asin,UPC,ItemDesc,Total Price
 ,B085M8RF1X,92636344801,"Targus Cypress Briefcase with EcoSmart Designed for Business Traveler and School fit up to 15.6-Inch Laptop/Notebook, Light Gray (TBT92602GL)",$ 66.32
 ,B096MC89C5,,"EZDIY-FAB Vertical PCIe 4.0 GPU Mount Bracket Graphic Card Holder, Video Card VGA Support Kit with PCIe 4.0 X16 Gen4 17cm/6.69in Riser Cable 90 Degree Right Angle- Black",$ 66.30
 ,B082CYKHYH,786118199750,"MokerLink 8 Port Gigabit PoE Switch, 8 PoE+ Ports 1000Mbps, 802.3af/at 120W, Metal Fanless Unmanaged Plug and Play",$ 66.30
-,B07XLP199J,192876288658,"Asus AX3000 (Pce-AX58BT) Next-Gen WiFi 6 Dual Band PCIe Wireless Adapter with Bluetooth 5.0 - Ofdma, 2x2 MU-Mimo and Wpa3 Security,Black",$ 66.26
+PCIE Cards,B07XLP199J,192876288658,Asus AX3000 (Pce-AX58BT) Next-Gen WiFi 6 Dual Band PCIe Wireless Adapter with Bluetooth 5.0 - Ofdma 2x2 MU-Mimo and Wpa3 SecurityBlack,66.26
 ,B00OIA4XSI,50036322737,"JBL MS6510 6-1/2"" 300 Watts Max Power MS Series Dual Cone Water-Resistant Marine Car Boat ATV Speakers",$ 66.26
 ,B072M2DJXC,40003317149,AT&T Air 4920 Airties Smart Wi-Fi Extender - White,$ 66.19
 ,B07MFXYH5G,,"LaCie Mobile Drive 1TB External Hard Drive HDD – Moon Silver USB-C USB 3.0, for Mac and PC Computer Desktop Workstation Laptop (STHG1000400)",$ 66.19
@@ -8185,7 +8185,7 @@ Category,Asin,UPC,ItemDesc,Total Price
 ,B0932J2L8N,747464134901,BUFFALO External SSD 1TB - Compatible with PS4 / PS5 / Windows/Mac - USB-C - USB-A - USB 3.2 - External Solid State Drive - SSD-PG1.0U3B,$ 62.99
 ,B07DB6P367,765441640665,TEAMGROUP T-Force Vulcan TUF Gaming Alliance DDR4 16GB Kit (2x8GB) 3200MHz (PC4-25600) CL16 Desktop Memory Module Ram - TLTYD416G3200HC16CDC01,$ 62.99
 ,B094PKFJ9V,840104260654,OTTERBOX DEFENDER SERIES Case for Galaxy Tab A7 Lite - BLACK,$ 62.96
-,B08S468HYP,840104234907,"OTTERBOX UnlimitEd SERIES Case with Kickstand & Hand Strap + Screen Protector for iPad 7th, 8th & 9th Gen (10.2"" Display - 2019, 2020 & 2021 version) - Non-retail/Ships in Polybag - Clear/Black",$ 62.96
+Phone/Tablet Cases,B08S468HYP,840104234907,"OTTERBOX UnlimitEd SERIES Case with Kickstand & Hand Strap + Screen Protector for iPad 7th 8th & 9th Gen (10.2"" Display - 2019 2020 & 2021 version) - Non-retail/Ships in Polybag - Clear/Black",62.96
 ,B092977F9Z,,Perixx PERIBOARD-613B Compact Wireless Ergonomic Split Keyboard with Dual 2.4G and Bluetooth Mode - Compatible with Windows 10 and Mac OS X System - Black - US English (11804),$ 62.85
 ,B097Z2TMXS,858743007721,"ZUGU Case for 2021/2022 iPad Pro 12.9 inch 5th / 6th Gen - Slim Protective Case - Apple Pencil Charging - Magnetic Stand & Sleep/Wake Cover (Fits Model #’s A2378, A2379, A2461, A2462) - Cognac Brown",$ 62.85
 ,B086QQN655,889842589696,"Microsoft Ergonomic Desktop - Black - Wired, Comfortable, Ergonomic Keyboard and Mouse Combo, with Cushioned Wrist and Palm Support. Split Keyboard. Dedicated Office Key.",$ 62.77
@@ -8303,7 +8303,7 @@ Category,Asin,UPC,ItemDesc,Total Price
 ,B00BN5Z2WM,88022208468,"Winegard FL5500A FlatWave Amped Digital HD Indoor Amplified TV Antenna (4K Ready / ATSC 3.0 Ready / High-VHF / UHF), 60 Mile Long Range",$ 59.99
 ,B088TJWZWK,85896973249,Kensington Surface Pro X Rugged Case - Blackbelt 2nd Degree Rugged Case for Surface Pro X (K97324WW),$ 59.99
 ,B09LPQY7H5,697560279368,OtterBox Symmetry Series+ Antimicrobial Case with MagSafe for iPhone 13 Pro - Black,$ 59.99
-,B09LPDLK91,840262372435,OtterBox SYMMETRY SERIES+ CLEAR Antimicrobial Case with MagSafe for iPhone 13 - Clear,$ 59.99
+Phone/Tablet Cases,B09LPDLK91,840262372435,OtterBox SYMMETRY SERIES+ CLEAR Antimicrobial Case with MagSafe for iPhone 13 - Clear,59.99
 ,B08C3YBBHM,845973089641,"TP-Link AC1900 Smart WiFi Router (Archer A8) -High Speed MU-MIMO Wireless Router, Dual Band Router for Wireless Internet, Gigabit, Supports Guest WiFi",$ 59.99
 ,B07KKW31B5,843591078320,"Corsair M65 RGB Elite - FPS Gaming Mouse - 18,000 DPI Optical Sensor - Adjustable DPI Sniper Button - Tunable Weights - White",$ 59.99
 ,B07ZV2CJL2,840030700361,"TP-Link WiFi 6 AX3000 PCIe WiFi Card (Archer TX3000E), Up to 2400Mbps, Bluetooth 5.2, 802.11AX Dual Band Wireless Adapter with MU-MIMO,OFDMA,Ultra-Low Latency, Supports Windows 11, 10 (64bit) only",$ 59.99
@@ -8328,7 +8328,7 @@ Category,Asin,UPC,ItemDesc,Total Price
 ,B08935WKG3,753858214999,Black Light Fixture Sputnik Chandeliers 8 Lights Industrial Pendant Lighting Dining Room Kitchen Island Bedroom Light,$ 59.95
 ,B09D5G613M,840104285923,OTTERBOX DEFENDER SERIES SCREENLESS EDITION Case for iPhone 13 (ONLY) - HUNTER GREEN,$ 59.95
 ,B09N9SYVV5,840104295304,OTTERBOX Defender Series SCREENLESS Edition Case for Galaxy S22+ - Happy Purple,$ 59.95
-,B09N9RH7F7,840104295281,OTTERBOX Defender Series SCREENLESS Edition Case for Galaxy S22+ - Black,$ 59.95
+Phone/Tablet Cases,B09N9RH7F7,840104295281,OTTERBOX Defender Series SCREENLESS Edition Case for Galaxy S22+ - Black,59.95
 ,B0725D21TQ,640947794749,"STM Dux, rugged case for Apple iPad 5th/6th Gen / 9.7"" - Black (stm-222-160JW-01 )",$ 59.95
 ,B095L32CH5,840104272053,"OTTERBOX TRUSTY CASE for iPad 7th, 8th & 9th Gen (10.2"" Display - 2019, 2020 & 2021 version) - JUMP ROPE",$ 59.95
 ,B08DY77FYW,840104221259,OTTERBOX DEFENDER SERIES SCREENLESS EDITION Case for iPhone 12 & iPhone 12 Pro - BLACK,$ 59.95
@@ -8342,13 +8342,13 @@ Category,Asin,UPC,ItemDesc,Total Price
 ,B09889J5NP,840104270073,OtterBox DEFENDER SERIES SCREENLESS EDITION Case for Galaxy S21 FE 5G (Only) - BLACK,$ 59.95
 ,B09N9TVNWN,840104295328,OTTERBOX Defender Series SCREENLESS Edition Case for Galaxy S22 Ultra - Fort Blue,$ 59.95
 ,B09N9SFCYD,840104295250,OTTERBOX DEFENDER SERIES SCREENLESS EDITION Case for Galaxy S22 - BLACK,$ 59.95
-,B09RBCWGYX,840262375788,OtterBox Otter + POP Symmetry Series Case for iPhone 13 - Black,$ 59.95
+Phone/Tablet Cases,B09RBCWGYX,840262375788,OtterBox Otter + POP Symmetry Series Case for iPhone 13 - Black,59.95
 ,B09RBDX98W,840262376068,OtterBox OTTER + POP SYMMETRY SERIES Case for iPhone 13 Pro Max - BLACK,$ 59.95
 ,B09JYSV8PT,840104271278,OTTERBOX DEFENDER SERIES Case for Pixel 6 Pro - FORT BLUE,$ 59.95
 ,B09VJYX727,840262378673,OtterBox DEFENDER SERIES Case for Samsung Galaxy A53 5G - BLACK,$ 59.95
 ,B09D5C76LY,840104285862,OTTERBOX DEFENDER SERIES SCREENLESS EDITION Case for iPhone 13 (ONLY) - FORT BLUE,$ 59.95
 ,B0B7C969L4,840262396189,OtterBox OTTER + POP SYMMETRY SERIES for iPhone 14 & iPhone 13 - BLACK,$ 59.95
-,B09D5DQZ4J,840104274545,OTTERBOX DEFENDER SERIES SCREENLESS EDITION Case for iPhone 13 Pro Max & iPhone 12 Pro Max - FORT BLUE,$ 59.95
+Phone/Tablet Cases,B09D5DQZ4J,840104274545,OTTERBOX DEFENDER SERIES SCREENLESS EDITION Case for iPhone 13 Pro Max & iPhone 12 Pro Max - FORT BLUE,59.95
 ,B09RBDC8FF,840262376198,OtterBox OTTER + POP SYMMETRY SERIES Case for iPhone 13 Pro Max - DAISY (Graphic),$ 59.95
 ,B08DY9HNY6,840104221280,OTTERBOX DEFENDER SERIES SCREENLESS EDITION Case for iPhone 12 & iPhone 12 Pro - TEAL ME ABOUT IT (GUACAMOLE/CORSAIR),$ 59.95
 ,B089VMTH3Z,840104213995,OTTERBOX DEFENDER SERIES SCREENLESS EDITION Case for Galaxy Note20 Ultra 5G - VARSITY BLUES (DESERT SAGE/DRESS BLUES),$ 59.95
@@ -8571,7 +8571,7 @@ Category,Asin,UPC,ItemDesc,Total Price
 ,B071VR5WBB,756122004678,Ford M1447M50AB 2015-2020 Mustang GT 5.0 Fender Emblems Black,$ 54.98
 ,B09D588TTZ,840104277539,OTTERBOX DEFENDER SERIES XT SCREENLESS EDITION Case for iPhone 13 Pro Max & iPhone 12 Pro Max - DARK MINERAL,$ 54.97
 ,B09D5FQZT9,840104277553,OTTERBOX DEFENDER SERIES XT SCREENLESS EDITION Case for iPhone 13 Pro Max & iPhone 12 Pro Max - PURPLE PRECEPTION,$ 54.97
-,B09D5RDZ6J,840104287330,OTTERBOX DEFENDER SERIES XT SCREENLESS EDITION Case for iPhone 13 Pro Max & iPhone 12 Pro Max - BLACK,$ 54.97
+Phone/Tablet Cases,B09D5RDZ6J,840104287330,OTTERBOX DEFENDER SERIES XT SCREENLESS EDITION Case for iPhone 13 Pro Max & iPhone 12 Pro Max - BLACK,54.97
 ,B09D5GDZ2T,840104287187,OTTERBOX DEFENDER SERIES XT SCREENLESS EDITION Case for iPhone 13 (ONLY) - BLACK,$ 54.97
 ,B07DHNY96P,,"External Blu-ray Drive External Blu-ray BurnerCompatible with DVD CD Drive Portable 3DBlu-ray Burner with USB3.0 and Type-C Port, Suitable for Windows XP/7/8/10 MacOS for MacBook PC,Silent Highspeedul",$ 54.96
 ,B09JYLCGGX,840104299920,OTTERBOX SYMMETRY SERIES DISNEY'S 50th Case for iPhone XR & iPhone 11 - 50th BADGE,$ 54.95
@@ -8663,7 +8663,7 @@ Category,Asin,UPC,ItemDesc,Total Price
 ,B08L7YZ118,766214010104,"NexiGo N650 2K 4MP Zoomable Webcam with Privacy Cover & Dual Microphone, 3X Digital Zoom, 95-Degree Viewing, Quad HD Business USB Camera for Online Class, Zoom Skype Facetime OBS Teams",$ 53.00
 ,B07VTLWGQZ,819216024072,"Cube by Rockville Pair of 3.5"" White Commercial 70V Swivel Wall Mount Speakers",$ 53.00
 ,B09GK3LTVC,810056146689,Razer DeathAdder V2 X HyperSpeed: Award-Winning Ergonomic Design - Ultra-Fast HyperSpeed Wireless - 235hr Battery Life - 7 Programmable Buttons - Gen 2 Mechanical Switches - 5G 14K DPI Optical Sensor,$ 53.00
-,B07NQBQB6Z,192876104798,ASUS Hyper M.2 X16 PCIe 3.0 X4 Expansion Card V2 Supports 4 NVMe M.2 (2242/2260/2280/22110) Upto 128 Gbps for Intel VROC and AMD Ryzen Threadripper NVMe Raid,$ 52.99
+PCIE Cards,B07NQBQB6Z,192876104798,ASUS Hyper M.2 X16 PCIe 3.0 X4 Expansion Card V2 Supports 4 NVMe M.2 (2242/2260/2280/22110) Upto 128 Gbps for Intel VROC and AMD Ryzen Threadripper NVMe Raid,52.99
 ,B08PZ74L12,95636105625,"Arctix Women's Insulated Snow Pants, Black, 1X/27"" Inseam",$ 52.99
 ,B09D7RR6NY,,"UCTRONICS Front Removable Raspberry Pi 1U Rack Mount, with 4 Mounting Brackets for Raspberry Pi 4B, 3B+/3B, and Other B Models",$ 52.99
 ,B08SCMXLCW,694318025376,Alesis Qmini - Portable 32 Key USB MIDI Keyboard Controller with Velocity Sensitive Synth Action Keys and Music Production Software Included,$ 52.95
@@ -8684,7 +8684,7 @@ Category,Asin,UPC,ItemDesc,Total Price
 ,B09G8DHF4L,194252781135,Apple iPhone 13 Pro Silicone Case with MagSafe - Abyss Blue,$ 52.65
 ,B09G8VMSV6,194252781289,Apple iPhone 13 Pro Max Silicone Case with MagSafe - Clover,$ 52.65
 ,B08L5N5Y2P,194252168974,Apple iPhone 12 and iPhone 12 Pro Silicone Case with MagSafe - Plum,$ 52.65
-,B09V3KGWSF,194253035312,Apple iPhone 13 Pro Max Silicone Case with MagSafe - Blue Fog,$ 52.65
+Phone/Tablet Cases,B09V3KGWSF,194253035312,Apple iPhone 13 Pro Max Silicone Case with MagSafe - Blue Fog,52.65
 ,B09V491DRW,194253035190,Apple iPhone 13 Pro Silicone Case with MagSafe - Blue Fog,$ 52.65
 ,B09G7F5WHM,194252781043,Apple iPhone 13 Pro Silicone Case with MagSafe - Clover,$ 52.65
 ,B09G96JFRL,194252781227,Apple iPhone 13 Pro Max Silicone Case with MagSafe - Marigold,$ 52.65
@@ -8762,7 +8762,7 @@ Category,Asin,UPC,ItemDesc,Total Price
 ,B098XTQFMC,619659186395,"SanDisk 32GB Clip Sport Plus MP3 Player, Red - Bluetooth, LCD Screen, FM Radio - SDMX32-032G-G46R",$ 51.14
 ,B01LW2F237,619659151270,"SanDisk 16GB Clip Sport Plus MP3 Player, Black - Bluetooth, LCD Screen, FM Radio - SDMX28-016G-G46K",$ 51.14
 ,B09HR7JV24,840168505265,Speck Presidio Perfect Clear Impact Geometry Case for Apple iPhone 13 Pro Black Compatible w Mag Safe,$ 51.02
-,B09JR24YYW,194252897300,Apple 67W USB-C Power Adapter,$ 51.00
+under75,B09JR24YYW,194252897300,Apple 67W USB-C Power Adapter,51.0
 ,B09DK2646Z,85896340324,Kensington Apple Watch Charger for StudioDock (K34032WW),$ 51.00
 ,B09GB4FNCJ,85896975823,Kensington Surface Pro 8 Rugged Case - Blackbelt Rugged Case with Shoulder Strap - Platinum (K97582WW),$ 51.00
 ,B09GDZM25Q,85896975809,Kensington Surface Pro 8 Rugged Case - Blackbelt Rugged Case with Shoulder Strap - Black (K97580WW),$ 51.00
@@ -8821,7 +8821,7 @@ Category,Asin,UPC,ItemDesc,Total Price
 ,B00JKMYVU4,88591201020,"Netis ST3124GS 24 port Unmanaged 10/100/1000M Gigabit Switch, Desktop Ethernet Splitter, Ethernet Hub, Plug and Play, Fanless Quite, Traffic Optimization, Sturdy Metal Desktop size, expandable to standard 19 inch rack mount with included mounting bracket, Gigabit 1000Mbps",$ 50.00
 ,B00N2RO63U,802534928740,"TP-Link 5GHz N300 Long Range Outdoor CPE for PtP and PtMP Transmission | Point to Point Wireless Bridge | 13dBi, 15km+ | Passive PoE Powered w/ Free PoE Injector | Pharos Control (CPE510) White",$ 49.99
 ,B09Q9B9KSV,840171714319,"Case-Mate – Twinkle – Clear Case for iPhone 13 Pro, Built-in Twinkle Magnet, Compatible with Magnetic Charging and Accessories - 10ft Drop Protection",$ 49.99
-,B09D3RNRJQ,85896726753,Kensington Orbit Wireless Trackball with Scroll Ring - Space Gray (K72675WW),$ 49.99
+under75,B09D3RNRJQ,85896726753,Kensington Orbit Wireless Trackball with Scroll Ring - Space Gray (K72675WW),49.99
 ,B0B16GMLGN,843368065966,"EVGA 450 W3, 80+ White 450W, 3 Year Warranty, Power Supply, 100-W3-0450-K1",$ 49.99
 ,B07CRG7BBH,763649127292,"Seagate Portable 1TB External Hard Drive HDD – USB 3.0 for PC, Mac, PlayStation, & Xbox, 1-Year Rescue Service (STGX1000400) , Black",$ 49.99
 ,B082YMRJJ1,95636051083,"Arctix Women's Essential Insulated Bib Overalls, Bluebird, Small",$ 49.99
@@ -8843,7 +8843,7 @@ Category,Asin,UPC,ItemDesc,Total Price
 ,B07PWPKH34,,"MOSISO Women Laptop Tote Bag (15-16 inch) 3 Layer Compartments, Black",$ 49.98
 ,B098HD3B4L,857199008597,"iOttie Velox Magnetic Wireless Charging Car Mount Air Vent Phone Holder. Compatible with MagSafe iPhones including iPhone 12, iPhone 13, iPhone 12/13 Mini, Pro, Pro Max (Power Supply Included)",$ 49.95
 ,B08M47CM2L,857199008467,"iOttie iON Wireless Duo CERTIFIED BY GOOGLE 10W Stand + 5W Pad Qi-Certified Charger | MADE FOR GOOGLE | Compatible with Google, Google Pixel, Pixel Buds | Includes Power Cable & Adapter | Dark Grey",$ 49.95
-,B09Q6CZDNY,857199008573,"iOttie Aivo Boost Dual Port USB-A/USB-C Car Charger with Alexa Built-in, High-Speed USB-C PD 3.0/QC 4.0+, and USB-A QC 3.0 car Adapter for Apple, Android, and Google Phones and Tablets",$ 49.95
+under75,B09Q6CZDNY,857199008573,iOttie Aivo Boost Dual Port USB-A/USB-C Car Charger with Alexa Built-in High-Speed USB-C PD 3.0/QC 4.0+ and USB-A QC 3.0 car Adapter for Apple Android and Google Phones and Tablets,49.95
 ,B09N9QNZ66,840104296103,OTTERBOX SYMMETRY SERIES Case for Galaxy S22 Ultra - REST PURPLE,$ 49.95
 ,B0B4XVG6SG,840304715206,OtterBox SYMMETRY SERIES+ GRAPHICS Antimicrobial Case with MagSafe for iPhone 14 Pro Max (ONLY) - FEATHERS AND FERNS (Green),$ 49.95
 ,B08FNYM6T2,840006619338,Corsair VS Series™ VS500 80 PLUS Certified Non-Modular ATX Power Supply,$ 49.95
@@ -9218,7 +9218,7 @@ Category,Asin,UPC,ItemDesc,Total Price
 ,B09RBBS565,840262375894,OtterBox Otter + POP Symmetry Series Case for iPhone 13 - Day Trip (Graphic),$ 43.92
 ,B07CHKWNKC,736900376869,"HUANUO Monitor Wall Mount Bracket–Articulating Adjustable Gas Spring Single Arm Stand with VESA Extension Kit for 13 to 42 Inch LCD Computer Screens - VESA 75x75,100x100, 200x100, 200x200",$ 43.92
 ,B07NNXQQ7X,783335351817,"Wireless EM7455 for Dell DW5811e 3P10Y Qualcomm 4G LTE WWAN NGFF Card Module, LTE Support (North America / EMEA) -B1 (2100 MHz), B2 (1900 MHz), B3 (1800 MHz), B4 (1700 MHz AWS), B7 (800 MHz-DD)",$ 43.86
-,B07YPBQSCK,811659035806,"Razer Basilisk X HyperSpeed Wireless Gaming Mouse: Bluetooth & Wireless Compatible, 16K DPI Optical Sensor, 6 Programmable Buttons, 450 Hr Battery, Classic Black",$ 43.80
+under75,B07YPBQSCK,811659035806,Razer Basilisk X HyperSpeed Wireless Gaming Mouse: Bluetooth & Wireless Compatible 16K DPI Optical Sensor 6 Programmable Buttons 450 Hr Battery Classic Black,43.8
 ,B073WHV11Z,608119111350,"AboveTEK Retail Kiosk iPad Stand, 360° Rotating Commercial Tablet Stand, 6.6""-13.5"" iPad Mini Pro-Business Tablet Holder, Swivel Design for Store POS Office Showcase Reception Kitchen Desktop (Black)",$ 43.79
 ,B07KK7P9NV,603849906634,"Wuloo Intercoms Wireless for Home 5280 Feet Range 10 Channel 3 Code, Wireless Intercom System for Home House Business Office, Room to Room Intercom, Home Communication System (2 Packs, White)",$ 43.78
 ,B089KH21FN,,"Havit Mechanical Keyboard and Mouse Combo RGB Gaming 104 Keys Blue Switches Wired USB Keyboards with Detachable Wrist Rest, Programmable Mouse, RGB Large Gaming Mouse Pad for PC Gamer Computer Desktop",$ 43.71
@@ -9282,7 +9282,7 @@ Category,Asin,UPC,ItemDesc,Total Price
 ,B07GC6PFYD,17229125742,"Poly (Plantronics + Polycom) Plantronics - Electronic Hook Switch APU-76 (Poly) - Cable for DECT and 900 MHz Headset - One Touch Call Control, Black (211076-01)",$ 42.84
 ,B01NAI2TXC,,"Redragon K556 RGB LED Backlit Wired Mechanical Gaming Keyboard, Aluminum Base, 104 Standard Keys",$ 42.83
 ,B07KFC6LMV,840637168045,S-Union F255E-01 N249M 255W Power Supply Replacement for Dell Optiplex 580 760 780 960 980 DT PSU AC255AD-00 L255P-01 D255P-00 V6V76 RM110,$ 42.82
-,B09LP9ZZVR,840262372572,OtterBox SYMMETRY SERIES+ CLEAR Antimicrobial Case with MagSafe for iPhone 12/13 Pro Max - Stardust,$ 42.77
+Phone/Tablet Cases,B09LP9ZZVR,840262372572,OtterBox SYMMETRY SERIES+ CLEAR Antimicrobial Case with MagSafe for iPhone 12/13 Pro Max - Stardust,42.77
 ,B07DK3NCM2,723466649636,WINGONEER TL866II Plus USB High Performance EEPROM Flash BIOS Programmer for ATMEL AVR ATMEGA AT90 PIC GAL SRAM CMOS,$ 42.76
 ,B00X6CLGNE,746856940854,YEECHUN 300W Power Supply Replacement for Dell 3847 MT L300PM-00 Power Supply/PS-6301-06D G9MTY 0G9MTY,$ 42.70
 ,B07VV8XQ7S,97855147417,Logitech Slim Folio PRO iPad Pro 11-inch Keyboard case with Integrated Backlit Bluetooth Keyboard (only for iPad Pro 11-inch),$ 42.70
@@ -9445,11 +9445,11 @@ Category,Asin,UPC,ItemDesc,Total Price
 ,B08L5NS72V,194252169179,Apple iPhone 12 and iPhone 12 Pro Silicone Case with MagSafe - Black,$ 39.99
 ,B09C19TV1Y,840171706031,"Rifle Paper Co. iPhone 13 Pro Max Case - Garden Party Blue - 10ft Drop Protection, MagSafe Compatible iPhone Case with Wireless Charging - Floral Print Design with Anti Scratch Technology",$ 39.99
 ,B0977L7J7Y,887276574424,"Samsung Electronics Galaxy Z Fold 3 Phone Case, Silicone Protective Cover, Heavy Duty, Shockproof Smartphone Protector, US Version, Black,EF-PF926TBEGUS",$ 39.99
-,B09G9B9WH5,194252781524,Apple iPhone 13 Pro Clear Case with MagSafe,$ 39.99
+Phone/Tablet Cases,B09G9B9WH5,194252781524,Apple iPhone 13 Pro Clear Case with MagSafe,39.99
 ,B09F8RLBQY,745883828746,"Belkin MagSafe Compatible Car Phone Magnetic Charging Mount, Air Vent Phone Holder and Charger for iPhone 13, 12, Pro, Pro Max, Mini (power supply not included)",$ 39.99
 ,B09G98BMV9,194252780688,Apple iPhone 13 Mini Silicone Case with MagSafe - Midnight,$ 39.99
 ,B07XJ8CMQX,810154018697,Dual 2.5 Gigabit Ethernet PCI-E Network Expansion Card RJ45 LAN Adapter Low Profile Bracket SD-PEX24066,$ 39.99
-,B0B17BFCGS,195553463836,"ASUS AX1800 PCIe WiFi Adapter (PCE-AX1800) - WiFi 6, Bluetooth 5.2, Ultra-Low Latency Wireless, 2 External Antenna, Supporting Total Data Rate up to 1800Mbps, WPA3 Network Security, OFDMA and MU-MIMO",$ 39.99
+PCIE Cards,B0B17BFCGS,195553463836,ASUS AX1800 PCIe WiFi Adapter (PCE-AX1800) - WiFi 6 Bluetooth 5.2 Ultra-Low Latency Wireless 2 External Antenna Supporting Total Data Rate up to 1800Mbps WPA3 Network Security OFDMA and MU-MIMO,39.99
 ,B008968L6M,163120474677,"Western Digital 500GB WD Black Performance Internal Hard Drive HDD - 7200 RPM, SATA 6 Gb/s, 64 MB Cache, 3.5"" - WD5003AZEX",$ 39.99
 ,B012T634SM,856915005155,"Magic Bullet Blender, Small, Silver, 11 Piece Set",$ 39.99
 ,B0B1N5RVDQ,195892053262,Lenovo Digital Pen 2,$ 39.99
@@ -9545,9 +9545,9 @@ Category,Asin,UPC,ItemDesc,Total Price
 ,B09G8GV78W,194252780862,Apple iPhone 13 Silicone Case with MagSafe - Chalk Pink,$ 39.00
 ,B09G8WV2F2,194252780923,Apple iPhone 13 Silicone Case with MagSafe - Midnight,$ 39.00
 ,B09G92XWLG,194252780770,Apple iPhone 13 Silicone Case with MagSafe - Pink Pomelo,$ 39.00
-,B0BDHQZQMR,194253416982,Apple iPhone 14 Pro Clear Case with MagSafe ​​​​​​​,$ 39.00
+Phone/Tablet Cases,B0BDHQZQMR,194253416982,Apple iPhone 14 Pro Clear Case with MagSafe ​​​​​​​,39.0
 ,B0BDHF6MYK,194253417019,Apple iPhone 14 Pro Max Clear Case with MagSafe ​​​​​​​,$ 39.00
-,B0BDJ4H6T7,194253416807,Apple iPhone 14 Pro Max Silicone Case with MagSafe - Lilac,$ 39.00
+Phone/Tablet Cases,B0BDJ4H6T7,194253416807,Apple iPhone 14 Pro Max Silicone Case with MagSafe - Lilac,39.0
 ,B0BDJDGXMT,194253416685,Apple iPhone 14 Pro Max Silicone Case with MagSafe - Midnight,$ 39.00
 ,B0BDHT5CL8,194253416715,Apple iPhone 14 Pro Max Silicone Case with MagSafe - Storm Blue,$ 39.00
 ,B0BDJ5R7TS,194253416562,Apple iPhone 14 Pro Silicone Case with MagSafe - Lilac,$ 39.00
@@ -9560,7 +9560,7 @@ Category,Asin,UPC,ItemDesc,Total Price
 ,B0B9HN6TMK,,tech21 iPhone 14 Pro Evo Tint Compatible with MagSafe® – Shock-Absorbing & Scratch-Resistant Tinted Phone Case with 12ft Multi-Drop Protection,$ 39.00
 ,B0B9HKL2GJ,,tech21 iPhone 14 Pro Max Evo Check Compatible with MagSafe® – Shock-Absorbing & Slim Protective Phone Case with 16ft FlexShock Multi-Drop Protection & Extra Buttons,$ 39.00
 ,B0B9HM9RFL,,"tech21 iPhone 14 Pro Max Evo Clear Compatible with MagSafe® – Scratch-Resistant, Shock-Absorbing Clear Phone Case with 12ft Multi-Drop Protection",$ 39.00
-,B0B9HNK34J,,tech21 iPhone 14 Pro Max Evo Crystal Compatible with MagSafe® – Shock-Absorbing & Scratch-Resistant Clear Phone Case with 16ft FlexShock Multi-Drop Protection,$ 39.00
+Phone/Tablet Cases,B0B9HNK34J,,tech21 iPhone 14 Pro Max Evo Crystal Compatible with MagSafe® – Shock-Absorbing & Scratch-Resistant Clear Phone Case with 16ft FlexShock Multi-Drop Protection,39.0
 ,B0B9HN3GQK,,tech21 iPhone 14 Pro Max Evo Tint Compatible with MagSafe® – Shock-Absorbing & Scratch-Resistant Tinted Phone Case with 12ft Multi-Drop Protection,$ 39.00
 ,B00XP5KLLK,667562773935,Apple MD826 / MD826ZMA Lightning to HDMI Adaptor,$ 39.00
 ,B07XQS2VSS,190199269149,Apple iPhone 11 Silicone Case - White,$ 39.00
@@ -9666,7 +9666,7 @@ Category,Asin,UPC,ItemDesc,Total Price
 ,B075MXXM6P,858743007158,ZUGU CASE - 2019 iPad Air 3 10.5/2017 iPad Pro 10.5 inch Case Prodigy X - Very Protective But Thin + Convenient Magnetic Stand + Sleep/Wake Cover (Black),$ 37.35
 ,B09D5PC48C,840104273098,OTTERBOX DEFENDER SERIES SCREENLESS EDITION Case for iPhone 13 Pro (ONLY) - HAPPY PURPLE,$ 37.31
 ,B093BGV46Q,795930682128,"Waterproof Hard Case for DJI Mini 2, Compatible DJI Mini2/Mini / DJI Mini SE, Compact Portable Carrying Case for Mavic Mini 2 Fly More Combo , Professional Drone Accessories (Only Case)",$ 37.26
-,B09LPJ53PJ,840262372466,OtterBox SYMMETRY SERIES+ CLEAR Antimicrobial Case with MagSafe for iPhone 13 - Stardust,$ 37.23
+Phone/Tablet Cases,B09LPJ53PJ,840262372466,OtterBox SYMMETRY SERIES+ CLEAR Antimicrobial Case with MagSafe for iPhone 13 - Stardust,37.23
 ,B01GDN1T4S,616469145857,"Nooelec RTL-SDR v5 Bundle - NESDR Smart HF/VHF/UHF (100kHz-1.75GHz) Software Defined Radio. Premium RTLSDR w/ 0.5PPM TCXO, SMA Input, Aluminum Enclosure & 3 Antennas. RTL2832U & R820T2-Based Radio",$ 37.21
 ,B08T95LBMF,,"[Fast Charging] andobil 15in Wireless Car Charger, [Upgraded Secure Chip] Qi Car Cup Phone Mount with Adapter Adjustable Gooseneck Cup Holder Charger Compatible with iPhone 14 13 12 Pro Max S22 S21",$ 37.18
 ,B0B7CCWQ1Q,840262388641,OtterBox SYMMETRY SERIES+ CLEAR Antimicrobial Case with MagSafe for iPhone 14 Pro (ONLY) - STARDUST (Clear/Glitter),$ 37.15
@@ -9718,7 +9718,7 @@ Category,Asin,UPC,ItemDesc,Total Price
 ,B07KY879BR,,Hengwin Belt Holster for iPhone 13 Pro Max 11 Pro Max 6s Plus Samsung Galaxy Note 20 Ultra S21+ S20+ S10+ S9+ S8 Plus Leather Cell Phone Belt Case Pouch with Belt Loop Men Purse Waist Bag (Brown),$ 36.44
 ,B08XDRB8FJ,,"2021 WiFi Extender, WiFi Booster,1200Mbps Wireless Signal Repeater Booster, Dual Band 2.4G and 5G Expander, 4 Antennas 360° Full Coverage, Extend WiFi Signal to Smart Home & Alexa Devices",$ 36.39
 ,B0759567JT,819921013699,"SABRENT USB 3.0 to SATA I/II/III Dual Bay External Hard Drive Docking Station for 2.5 or 3.5in HDD, SSD with Hard Drive Duplicator/Cloner Function [10TB Support] (EC-HD2B)",$ 36.36
-,B0B7C9KMGX,840262381765,OtterBox STRADA FOLIO SERIES for iPhone 14 Pro (ONLY) - ESPRESSO (Brown),$ 36.33
+Phone/Tablet Cases,B0B7C9KMGX,840262381765,OtterBox STRADA FOLIO SERIES for iPhone 14 Pro (ONLY) - ESPRESSO (Brown),36.33
 ,B09HY3DV9B,,"Mefon Genuine Leather Folio Wallet Case for iPhone 13 Pro 6.1"", Wireless Charging Compatible, RFID Card Protection, Magnetic Detachable, Luxury Flip Phone Cases Cover, Tempered Glass Included (Grey)",$ 36.32
 ,B07Q3XYXWF,634769648649,"USB C Hub, 8 in 1 Multiport USB Type C Adapter with Ethernet Adapter, 4K HDMI Output, Type C Charging Port, 3 USB 3.0 Ports, SD/Micro Card Reader for MacBook Pro 2016/2017, Chromebook Pixel, XPS",$ 36.27
 ,B00DMFFL2W,738435984793,"Cable Matters Active USB Extension Cable 32.8 ft / 10m (USB 3.0 Extension Cable Male to Female) with Signal Booster for Hard Drive, Webcam and More",$ 36.27
@@ -9827,7 +9827,7 @@ Category,Asin,UPC,ItemDesc,Total Price
 ,B07WQVP89Z,767912458755,Original Pro Charger 44W 15V 2.58A Power Supply Compatible with Microsoft Surface Pro 6 Pro 5 Fits Model 1796 1800 Power Cord with 5V 1A USB Charging Port,$ 34.77
 ,B084P8KHMH,723172895594,EDUP PCI-E WiFi 6 Network Card AX1800Mbps Bluetooth 5.2 Heat Sink 802.11AX 2.4Ghz/5.8Ghz Wireless PCIe Network Wi-Fi 6 Card PCI Express WiFi Adapters 6dBi Dual Band Antenna for Windows 11/10 64-bit,$ 34.75
 ,B08Y681W3X,840006637707,"CORSAIR K55 RGB PRO-Dynamic RGB Backlighting - Six Macro Keys with Elgato Stream Deck Software Integration-IP42 Dust and Spill Resistant-Detachable Palm Rest-Dedicated Media and Volume Keys, Black",$ 34.66
-,B09D57WPSC,840104274385,OTTERBOX DEFENDER SERIES SCREENLESS EDITION Case for iPhone 13 Pro (ONLY) - HUNTER GREEN,$ 34.64
+Phone/Tablet Cases,B09D57WPSC,840104274385,OTTERBOX DEFENDER SERIES SCREENLESS EDITION Case for iPhone 13 Pro (ONLY) - HUNTER GREEN,34.64
 ,B07QLCHZW1,741416155969,"Cat8 Ethernet Cable, Outdoor&Indoor, 50FT High Speed 26AWG Cat8 LAN Network Cable 40Gbps, 2000Mhz with Gold Plated RJ45 Connector, Heavy Duty Weatherproof S/FTP UV Resistant for Router/Gaming/IP Cam",$ 34.62
 ,B07W7F529G,660543512714,OtterBox STRADA SERIES Case for iPhone 11 Pro Max - ESPRESSO (DARK BROWN/WORN BROWN LEATHER),$ 34.61
 ,B09D521G6V,840104289488,OtterBox STRADA FOLIO SERIES Case for iPhone 13 Pro (ONLY) - Retail Packaging - SHADOW,$ 34.60
@@ -9923,7 +9923,7 @@ Category,Asin,UPC,ItemDesc,Total Price
 ,B07DLRG9VH,738598670830,External CD Drive USB 3.0 Portable CD DVD +/-RW Drive DVD/CD ROM Rewriter Burner Writer Compatible with Laptop Desktop PC Windows Mac Pro MacBook,$ 33.00
 ,B09DSXPZM7,,"TORRO Leather Flip Cell Phone Case Compatible with iPhone 13 Mini - Quality, Genuine Leather Cover with Card Slots and Vertical Flip Down Cover [MagSafe Compatible] (Dark Brown)",$ 33.00
 ,B07GW2DFJ1,815671014474,NZXT AER RGB 2 - HF-28140-B1 - 140mm - Advanced Lighting Customizations - Winglet Tips - Fluid Dynamic Bearing - LED RGB PWM Fan for Hue 2 - Single (HUE2 Lighting Controller Not Included),$ 32.99
-,B0872M3BZG,85896332725,Kensington Wireless Presenter with Red Laser Pointer (K33272WW),$ 32.99
+under75,B0872M3BZG,85896332725,Kensington Wireless Presenter with Red Laser Pointer (K33272WW),32.99
 ,B079VYG3VL,33991067820,"Scosche MPWD2PK-UB Pro MagicMount Magnetic Suction Cup Mount Holder Phone Mount for Car, Black (Pack of 2)",$ 32.99
 ,B098KJQQGY,,SAMSUNG Galaxy S Pen Fold Edition - Black,$ 32.98
 ,B00EKKM6MG,683405466536,Sandisk Ultra II 2GB 15mb/s Compactflash Card,$ 32.96
@@ -9961,7 +9961,7 @@ Category,Asin,UPC,ItemDesc,Total Price
 ,B08GR2K8WH,,"ELECOM EX-G Left-Handed Trackball Mouse, 2.4GHz Wireless, Thumb Control, 6-Button Function, Ergonomic Design, Optical Gaming Sensor, Smooth Red Ball, Windows11, macOS (M-XT4DRBK-G)",$ 32.04
 ,B07KYJ5GCR,794419820907,"Updated Version USB Floppy Drive Emulator for BARUDAN BENS Embroidery Machine, SSD Simulation Floppy Disk Drive Emulator, 720KB Built in Flash Memory",$ 32.01
 ,B09C18JPNV,840171709636,"Case-Mate - Twinkle Ombre - Case for iPhone 13 Pro - Reflective Foil Elements - 10 ft Drop Protection - 6.1 Inch - Gold, Ombre Gold",$ 32.00
-,B078L496ZV,94664043701,Nite Ize Steelie Windshield Mount Kit Plus - Magnetic Car Windshield Mount for Smartphones with 2x Holding Power and Restickable Magnet Adapter,$ 32.00
+under75,B078L496ZV,94664043701,Nite Ize Steelie Windshield Mount Kit Plus - Magnetic Car Windshield Mount for Smartphones with 2x Holding Power and Restickable Magnet Adapter,32.0
 ,B07L73CW6T,610825557841,"ASTARRY Wireless Controller Compatible with Xbox 360, 2.4GHZ Game Controller Gamepad Joystick Compatible with Xbox & Slim 360 PC Windows 7, 8, 10 (Black)",$ 32.00
 ,B00JYCJJNY,808113016389,"Netis N2 Wireless AC1200 Gigabit Router, Access Point and Repeater All in One, Advanced QoS, WPS Setup, 5 dBi High Gain Antenna - Replacement of WF2780",$ 32.00
 ,B09C16S113,840171708998,Case-Mate - Karat Marble - Case for iPhone 13 Mini - Marble Design - 10 ft Drop Protection - 5.4 Inch - Karat Marble,$ 31.99
@@ -10002,7 +10002,7 @@ Category,Asin,UPC,ItemDesc,Total Price
 ,B09C18N5NQ,840171706505,Rifle Paper Co - Case for iPhone 13 Pro - 10 ft Drop Protection - Raised Cabochon Accents - 6.1 Inch - Willow,$ 31.99
 ,B09C18RCL8,840171706000,Case-Mate - Sheer Crystal - Case for iPhone 13 Pro Max - Slim - 10 ft Drop Protection - 6.7 Inch - Crystal Clear,$ 31.99
 ,B09C199F3H,840171706451,Case-Mate - Sheer Crystal - Case for iPhone 13 Pro - Slim - 10 ft Drop Protection - 6.1 Inch - Crystal Clear,$ 31.99
-,B0916TKFF2,829610004624,"Roku Express 4K+ | Streaming Media Player HD/4K/HDR with Smooth Wireless Streaming and Roku Voice Remote with TV Controls, Includes Premium HDMI® Cable",$ 31.97
+under75,B0916TKFF2,829610004624,Roku Express 4K+ | Streaming Media Player HD/4K/HDR with Smooth Wireless Streaming and Roku Voice Remote with TV Controls Includes Premium HDMI® Cable,31.97
 ,B00FAY0S08,765441605237,TEAMGROUP Elite DDR3 16GB Kit (2x8GB) 1600MHz (PC3-12800) CL11 Unbuffered Non-ECC 1.5V UDIMM 240 Pin PC Computer Desktop Memory Module Ram Upgrade - TED316G1600C11DC01,$ 31.93
 ,B0BGYHMZC1,840262398985,OtterBox Defender Series case for Google Pixel 7 - Black,$ 31.92
 ,B0BGYDKN2X,840262398589,OtterBox Defender Series case for Google Pixel 7 Pro - Black,$ 31.92
@@ -10021,7 +10021,7 @@ Category,Asin,UPC,ItemDesc,Total Price
 ,B09KZX23DW,786562808475,DDR3 Ram for JUHOR 8GB (4GBx2) 1600MHz (PC3 12800) 240-pin CL11 1.5V UDIMM Desktop Dual Channel PC Computer Memory Module SDRAM with Heatsink,$ 31.91
 ,B07F2KSY9Q,675663208300,New 19V 6.32A 120W Laptop Adapter A15-120P1A PA-1121-28 AC Power Charger for Asus FX504 UX510UW N56J N56VM N56VZ N750 N500 G50 N53S N55 Laptop,$ 31.91
 ,B071P3HMNK,736561686338,RGEEK 1106 DC to DC ATX PSU 12V 300W Pico ATX Switch PSU 24pin Mini ITX PC Power Supply for Computer,$ 31.90
-,B08DN9K2ZG,779288609259,"RETROFLAG NESPi 4 CASE, Raspberry Pi 4 Case with SSD CASE, HDMI Cable & Cooling Fan & Heatsinks for Raspberry Pi 4 Model/Pi 4B (Pi 4 Case)",$ 31.87
+under75,B08DN9K2ZG,779288609259,RETROFLAG NESPi 4 CASE Raspberry Pi 4 Case with SSD CASE HDMI Cable & Cooling Fan & Heatsinks for Raspberry Pi 4 Model/Pi 4B (Pi 4 Case),31.87
 ,B09M2SRJ9P,650728512059,"WiFi 6E AX210 Card WiFi Module Expands WiFi into 6GHz with BT 5.2, 11AX Tri-Band MU-MIMO 160MHz 5400Mbps WPA3, Internal Wireless Network Card M.2/ NGFF for Laptop and PC Support Windows 10/11 64bit",$ 31.86
 ,B07HBKJWKX,810003940131,"GUNNAR - Blue Light Reading Glasses - Blocks 35% Blue Light - Vertex, Onyx, Clear Tint, Pwr +2.0",$ 31.85
 ,B07BSSX9Z6,811127019260,"GUNNAR - Gaming and Computer Glasses - Blocks 65% Blue Light - Riot, Onyx, Amber Tint",$ 31.85
@@ -10090,7 +10090,7 @@ Category,Asin,UPC,ItemDesc,Total Price
 ,B07HDBZN7Q,829610002880,"Roku Premiere | HD/4K/HDR Streaming Media Player, Simple Remote and Premium HDMI Cable, Black",$ 30.99
 ,B06X9RY5T3,,"VRS Design QuickStand Pro for Galaxy Z Fold 3, Durable Kickstand Case Compatible with Galaxy Z Fold 3 5G (2021)",$ 30.97
 ,B09Q6HDCBS,840981121550,"Vena Wallet Case Compatible with Apple iPhone 13 Pro Max (6.7""-inch), vCommute (Military Grade Drop Protection) Flip Leather Cover Card Slot Holder with Kickstand (Slate Black)",$ 30.97
-,B09RBDDV8Y,840262375979,OtterBox Otter + POP Symmetry Clear Series Case for iPhone 13 Pro - MELONDRAMTIC (Clear/Orange),$ 30.91
+Phone/Tablet Cases,B09RBDDV8Y,840262375979,OtterBox Otter + POP Symmetry Clear Series Case for iPhone 13 Pro - MELONDRAMTIC (Clear/Orange),30.91
 ,B01N20JXZM,768674335087,Satchel and Fable Handmade Women Vintage Style Genuine Brown Leather Cross Body Shoulder Bag Handmade Purse,$ 30.87
 ,B09DGLXWN2,,Tech21 Evo Tint (MagSafe) for iPhone 13 – Carbon-Tinted MagSafe Phone Case with 12ft Multi-Drop Protection,$ 30.86
 ,B09JYW35DY,840104232330,OTTERBOX SYMMETRY SERIES DISNEY'S 50th Case for iPhone 11 Pro/iPhone X/XS - PLAYATTHEPARKS,$ 30.83
@@ -10101,9 +10101,9 @@ Category,Asin,UPC,ItemDesc,Total Price
 ,B0B7CBLFK3,840262396400,OtterBox OTTER + POP SYMMETRY CLEAR SERIES for iPhone 14 & iPhone 13 - YOU CYAN THIS (Blue),$ 30.81
 ,B0B7CCV49R,840262384223,OtterBox OTTER + POP SYMMETRY CLEAR SERIES for iPhone 14 Pro (ONLY) - STARDUST POP (Clear/Glitter),$ 30.81
 ,B0B7CB1F3L,840262384179,OtterBox OTTER + POP SYMMETRY CLEAR SERIES for iPhone 14 Pro (ONLY) - YOU CYAN THIS (Blue),$ 30.81
-,B0B7CD5DHQ,840262384285,OtterBox OTTER + POP SYMMETRY CLEAR SERIES for iPhone 14 Pro Max (ONLY) - CLEAR,$ 30.81
+Phone/Tablet Cases,B0B7CD5DHQ,840262384285,OtterBox OTTER + POP SYMMETRY CLEAR SERIES for iPhone 14 Pro Max (ONLY) - CLEAR,30.81
 ,B0B7CCXF9D,840304711833,OtterBox OTTER + POP SYMMETRY SERIES for iPhone 14 Pro (ONLY) - PERIWINK (Purple),$ 30.81
-,B0B7CBZQZT,840262383820,OtterBox OTTER + POP SYMMETRY SERIES for iPhone 14 Pro Max (ONLY) - BLACK,$ 30.81
+Phone/Tablet Cases,B0B7CBZQZT,840262383820,OtterBox OTTER + POP SYMMETRY SERIES for iPhone 14 Pro Max (ONLY) - BLACK,30.81
 ,B0897ZCBPF,745883784714,"Linksys Mesh Wifi 6 Router, Dual-Band, 1,700 Sq. ft Coverage, 25+ Devices, Speeds up to (AX1800) 1.8Gbps - MR7350",$ 30.80
 ,B08KBDV8L5,745883816675,"Belkin 20W USB C Car Charger, Power Delivery Fast PD Car Port Charger with USB-C to Lightning Cable for iPhone 12, 12 Pro, 12 Pro Max, 12 Mini and More",$ 30.80
 ,B092R4DLSF,303276766718,"Wall Mount for eero Pro 6, Screwless VHB Holder for Mounting eero Pro 6 Tri-Band mesh Wi-Fi 6 Without Drilling (Strongly Adhesive, 3 Pack)",$ 30.79
@@ -10167,7 +10167,7 @@ Category,Asin,UPC,ItemDesc,Total Price
 ,B007QCIBX8,1910338634,"Diamond Multimedia VC500MAC USB 2.0 One Touch Vhs to DVD Video Capture Device with Easy to Use Software, Convert, Edit and Save to Digital Files for MacOS",$ 30.00
 ,B083LNWXDM,884102053146,"Cooler Master MWE White 450 80+ White 450W PSU with HDB Silent 120mm Fan, Single +12V Rail, Flat Black Cables",$ 30.00
 ,B09T5SDSYX,810075650419,AORUS 120mm Sleeve Bearing ARGB Computer Case Fan,$ 30.00
-,B07GVHSSWR,815671014467,"NZXT AER RGB 2 - HF-28120-B1 - 120mm - Advanced Lighting Customizations - Winglet Tips - Fluid Dynamic Bearing - LED RGB PWM Fan for Hue 2 - Single (HUE2 Lighting Controller Not Included) , Black",$ 29.99
+under75,B07GVHSSWR,815671014467,NZXT AER RGB 2 - HF-28120-B1 - 120mm - Advanced Lighting Customizations - Winglet Tips - Fluid Dynamic Bearing - LED RGB PWM Fan for Hue 2 - Single (HUE2 Lighting Controller Not Included)  Black,29.99
 ,B0B4SJ9S8B,,Lian Li UNI FAN SL-INFINITY 120 RGB Single Pack Black(No controller included)- UF-SLIN120-1B,$ 29.99
 ,B00KESSUDW,,"Noctua NF-A14 industrialPPC-2000 PWM Fan (140x140x25mm 4-pin PWM, 2000rpm max., IP52)",$ 29.99
 ,B09D16TXJN,840056146785,"Gear4 ZAGG Vancouver Snap Case - MagSafe Compatible Case with Ergonomic Design and Cooling Vents - for Apple iPhone 13 Pro - Black/Blue,702008225",$ 29.99
@@ -10175,7 +10175,7 @@ Category,Asin,UPC,ItemDesc,Total Price
 ,B08P2G5JW7,887276475721,"Samsung Galaxy S21 Case, S-View Flip Cover - Violet (US Version)",$ 29.99
 ,B08P2DZWRK,887276509037,"Samsung Galaxy S21 Ultra Case, Leather Back Cover - Black (US Version)",$ 29.99
 ,B08FQM9NPM,846127197212,Rifle Paper Co - Case for iPhone 12 and iPhone 12 Pro (5G) - 10 ft Drop Protection - 6.1 inch - Garden Party Rose,$ 29.99
-,B08FR5KJLG,846127196246,Rifle Paper Co - Case for iPhone 12 and iPhone 12 Pro (5G) - 10 ft Drop Protection - 6.1 inch - Wildflowers,$ 29.99
+Phone/Tablet Cases,B08FR5KJLG,846127196246,Rifle Paper Co - Case for iPhone 12 and iPhone 12 Pro (5G) - 10 ft Drop Protection - 6.1 inch - Wildflowers,29.99
 ,B0B2ZY5918,889028178904,"Monoprice USB-C to Dual 4K HDMI Adapter (Dual 4K@60Hz) for Samsung Galaxy S9/S9+, MacBook Air2020-2018, MacBook/MacBook Pro2020 2019 2018 2017, iPad Pro 2018, Dell XPS13/15",$ 29.99
 ,B00C8C5I8M,735343676543,"Elite Gourmet EDB-302BF Countertop Double Cast Iron Burner, 1500 Watts Electric Hot Plate, Temperature Controls, Power Indicator Lights, Easy to Clean, Black",$ 29.99
 ,B09LPKXFQR,840262372442,OtterBox SYMMETRY SERIES+ CLEAR Antimicrobial Case with MagSafe for iPhone 13 - Clear/Blue,$ 29.99
@@ -10221,7 +10221,7 @@ Category,Asin,UPC,ItemDesc,Total Price
 ,B09N9S3ND7,840104295670,OTTERBOX COMMUTER SERIES Case for Galaxy S22 Ultra - MAVEN WAY,$ 29.49
 ,B08NCLJYMB,840104247150,OTTERBOX COMMUTER SERIES Case for Galaxy S21 Ultra 5G (ONLY - DOES NOT FIT non-Plus or Plus sizes) - BESPOKE WAY (BLAZER BLUE/STORMY SEAS BLUE),$ 29.48
 ,B00U0QN4KC,,"Cisco Power Supply Adapter for Power Cube 4 8800 8900 9900 Series Unified IP Phones with 6 Feet Power Cord, UL Listed",$ 29.47
-,B08NCS4T6Z,840104247020,OTTERBOX DEFENDER SERIES SCREENLESS EDITION Case for Galaxy S21+ 5G (ONLY - DOES NOT FIT non-Plus size or Ultra) - BLACK,$ 29.41
+Phone/Tablet Cases,B08NCS4T6Z,840104247020,OTTERBOX DEFENDER SERIES SCREENLESS EDITION Case for Galaxy S21+ 5G (ONLY - DOES NOT FIT non-Plus size or Ultra) - BLACK,29.41
 ,B09D5KF7CN,840104288405,LifeProof SEE SERIES Case with MagSafe for iPhone 13 (ONLY) - SOFISHTICATED,$ 29.40
 ,B09D4ZVPBG,840104278017,LifeProof SEE SERIES Case with MagSafe for iPhone 13 Pro (ONLY) - SOFISHTICATED,$ 29.40
 ,B074NR1SW2,614961950887,waveshare 4.2inch E-Ink Display Module Compatible with Raspberry Pi 4B/3B+/3B/2B/B+/A+/Zero/Zero W/WH/Zero 2W Series Boards 400x300 Resolution SPI Interface,$ 29.39
@@ -10308,13 +10308,13 @@ Category,Asin,UPC,ItemDesc,Total Price
 ,B07B8X2B7V,33991064287,"Scosche MAGPCUP MagicMount PowerHub Magnetic Cup Holder Phone Mount for Car, Charge Multiple Devices, Adjustable to Fit Most Cupholders, Black",$ 28.11
 ,B07B51Z8LP,600434894314,Londo Top Grain Leather Macbook Bag Laptop Sleeve for MacBook Pro and MacBook Air Case Compatible with 14 Inch - 13.3 Inch (M2) - 13 Inch - iPad Pro 12.9 Inch - M1 2020 2021 and 2022 Models,$ 28.11
 ,B08DY6RN7K,840104236338,OtterBox DEFENDER SERIES SCREENLESS EDITION Case for iPhone 12 mini - BLACK,$ 28.10
-,B08DY7SQMF,840104221501,OTTERBOX DEFENDER SERIES SCREENLESS EDITION Case for iPhone 12 Pro Max - TEAL ME ABOUT IT (GUACAMOLE/CORSAIR),$ 28.10
+Phone/Tablet Cases,B08DY7SQMF,840104221501,OTTERBOX DEFENDER SERIES SCREENLESS EDITION Case for iPhone 12 Pro Max - TEAL ME ABOUT IT (GUACAMOLE/CORSAIR),28.1
 ,B08DY8VJRB,840104221495,OTTERBOX DEFENDER SERIES SCREENLESS EDITION Case for iPhone 12 Pro Max - BERRY POTION (RASPBERRY WINE/BOYSENBERRY),$ 28.10
 ,B07YMLHPBP,660543514077,OtterBox Defender Series SCREENLESS Edition Case for Google Pixel 4 XL - Purple Nebula (Winsome Orchid/Night Purple),$ 28.10
 ,B07VS47RQZ,719209006996,SX1262 LoRa HAT Covers 915MHz Frequency Band with Spread Spectrum Modulation Supports Raspberry Pi 1 2 3 4 Series Boards with UART Interface for STM32 @XYGStudy,$ 28.07
 ,B09NHSYZS7,,"Breclar for Samsung Galaxy Z Fold 3 Case with S-Pen Pocket, S Pen Holder Case Luxury Plating Glass Hybrid Leather All-Inclusive Flip Cover for Samsung Galaxy Z Fold 3 5G (Lion)",$ 28.05
 ,B08NCK9F32,612797667092,Karaoke Machine for Adults and Kids,$ 28.04
-,B09V3J6D79,194253035466,Apple iPhone SE Silicone Case - Abyss Blue,$ 28.00
+Phone/Tablet Cases,B09V3J6D79,194253035466,Apple iPhone SE Silicone Case - Abyss Blue,28.0
 ,B08T2GTBGW,85896623168,Kensington Universal 3-in-1 Combination Laptop Lock - resettable version (K62316WW),$ 28.00
 ,B0875S6DKR,190199610408,Apple iPhone SE Silicone Case - Black,$ 28.00
 ,B08P81134Y,656777018665,Double VESA Wedge - CTA Double VESA Wedge and Outlet with Power Over Ethernet (PoE) Cover Add-On for Tablets – Compatible with CTA's Paragon Enclosures and Other Device Cases (ADD-VESAWB) – Black,$ 28.00
@@ -12690,7 +12690,7 @@ Category,Asin,UPC,ItemDesc,Total Price
 ,B0832YR7WQ,701851277633,"HWAYO 1.5TB Portable External Hard Drive Ultra Slim 2.5'' USB 3.0 HDD Storage for PC, Desktop, Laptop, MacBook, Chromebook, Xbox One",$ 63.21
 ,B07PBZJ4SH,712317097313,"RK ROYAL KLUDGE RK61 2.4Ghz Wireless/Bluetooth/Wired 60% Mechanical Keyboard, 61 Keys RGB Hot Swappable Red Switch Gaming Keyboard with Software for Win/Mac",$ 60.86
 ,B08KSLRYMV,745883808236,"Belkin USB-PD GaN Charger 68W (USB-C iPhone Fast Charger, MacBook Pro Charger, iPad Pro, Pixel, Galaxy, More), USB-C Power Delivery with 2M (6.6ft) PVC USB-C to USB-C Charging Cable (WCH003dq)",$ 60.81
-,B09QT6T1XX,840262369077,OTTERBOX Trusty Case for iPad Mini (6TH GEN) - Slinky,$ 59.95
+Phone/Tablet Cases,B09QT6T1XX,840262369077,OTTERBOX Trusty Case for iPad Mini (6TH GEN) - Slinky,59.95
 ,B0829B483S,819216025550,"Rockville RockMix 5 Channel Pro Mixer w/USB Interface, Bluetooth, Echo, EQ",$ 59.95
 ,B091Z2523R,816311012089,Alto Professional Bluetooth Total 2 - XLR Equipped Rechargeable Bluetooth Receiver For Mixing Desk / Audio Mixer Setups and Active PA systems,$ 59.00
 ,B092M1TGQP,54114605033,Sipeed Maix-II Dock Deep Learning AI+IOT Linux 1080P Vision Development Kit,$ 56.74
@@ -13327,7 +13327,7 @@ Category,Asin,UPC,ItemDesc,Total Price
 ,B09FPFN78X,840064407724,EPOS Audio H6PRO Open Acoustic Gaming Headset (Racing Green),$ 127.54
 ,B0B72HWWXH,195174040386,"LG TONE Free True Wireless Bluetooth Earbuds T90 - Adaptive Active Noise Cancelling Earbuds with Dolby Atmos, Black",$ 166.19
 ,B08VD9BMZW,97855163455,Logitech Folio Touch iPad Keyboard Case with Trackpad and Smart Connector for iPad Air (4th and 5th Generation) – Graphite,$ 142.39
-,B0B75WBM1P,840056155633,"Halo Power Station 100, Portable 110VAC/100Watt w/AC Outlet, USB Ports, Wireless Phone Charging Station, Floodlight, Carry-on Approved, Anchor Blue ",$ 135.85
+over75,B0B75WBM1P,840056155633,Halo Power Station 100 Portable 110VAC/100Watt w/AC Outlet USB Ports Wireless Phone Charging Station Floodlight Carry-on Approved Anchor Blue ,135.85
 ,B0BPB484K5,824142305973,"MSI PRO B760M-A WiFi DDR4 ProSeries Motherboard (Supports 12th/13th Gen Intel Processors, LGA 1700, DDR4, PCIe 5.0, M.2, 2.5Gbps LAN, USB 3.2 Gen2, Wi-Fi 6E, mATX)",$ 155.00
 ,B08S5CV7FS,840025250178,SABRENT Tool Free USB Type C Dual Docking Station for PCIe NVMe M.2 SSDs with Offline Cloning Function (EC-SSD2),$ 110.80
 ,B00L9VA1O4,885347575127,"Technics Professional DJ Headphones with 40mm CCAW Voice Coil Drivers, 270° Swivel Housing and Locking Detachable Cord; Lightweight, Foldable High Input - EAH-DJ1200 (Black)",$ 149.99
@@ -13377,7 +13377,7 @@ Category,Asin,UPC,ItemDesc,Total Price
 ,B09D76KQ8W,,"Firstrend Wireless NVR Only for Firstrend Wireless Security Camera System, Only for Model: FTUS-W883M3TA-XM, FTUS-W843M2TA-XM,FTUS-W843M1TA-XM,FTUS-W843MA-XM",$ 85.39
 ,B09DGGLNW2,767729291972,"Nuoenx Wireless Backup Camera, Wireless License Plate Camera with 5 Inch HD Monitor, IR Night Vision Car Rear View Camera, Waterproof Backup Camera for Cars, Truck, RV, Trailer",$ 85.39
 ,B0981Y1FLG,734172141949,"P.L.Z Upgrade Car Stereo System Compatible with iOS or Android Phones for Mirror Link, 7 Inch Double Din HD Touchscreen Car Radio Supporting Bluetooth 5.1, Rear/Front View Camera, MP3, USB, AUX",$ 85.12
-,B0BFFZGTCR,74101207828,Fujifilm Instax Mini 40 Bundle 2022,$ 84.96
+Cameras,B0BFFZGTCR,74101207828,Fujifilm Instax Mini 40 Bundle 2022,84.96
 ,B08QFZRVKV,,"SAMSUNG Galaxy A12 Black, 64GB, 4 GB Ram, 5,000 Battery, 6.5 inches Display, 48 Camera, Factory Unlocked 4G",$ 84.68
 ,B091G75MKL,850929008010,GRADO SR80x Prestige Series Wired Open Back Stereo Headphones,$ 83.75
 ,B08HS3NYVQ,,BOSTANTEN Women Leather Laptop Tote Office Shoulder Handbag Vintage Briefcase 15.6 inch Computer Work Purse Grey,$ 83.03
@@ -13474,14 +13474,14 @@ Category,Asin,UPC,ItemDesc,Total Price
 ,B08KH625DG,840056125933,"HALO Portable Phone Charger Power Cube 10,000mAh - Innovative Car Charger Power Bank with Dual USB Compatible Charging Ports, Built-in Charging Adapters - White (801105858)",$ 49.19
 ,B09RDS9HKW,85896583714,Kensington MagPro Elite Magnetic Privacy Screen for MacBook Pro 16” 2021 (K58371WW),$ 48.75
 ,B016PE1X5K,612572210727,"ARRIS SURFboard SB6190 DOCSIS 3.0 Cable Modem, Approved for Cox, Spectrum, Xfinity & others (White)",$ 48.76
-,B09MQH22F2,,Akko Dracula Castle 198-Key ASA Profile PBT Double-Shot Keycap Set for Mechanical Keyboards with Collection Box,$ 48.21
+under75,B09MQH22F2,,Akko Dracula Castle 198-Key ASA Profile PBT Double-Shot Keycap Set for Mechanical Keyboards with Collection Box,48.21
 ,B07TBPLR2V,710931180183,"TRENDnet USB-C 3.1 to 5GBASE-T Ethernet Adapter, 2.5GBASE-T RJ-45, Integrated 12.6cm (4.9 in) USB Type C Cable, Compatible with Cat5e Or Better Cabling, Windows Compatible, Black, TUC-ET5G",$ 55.55
 ,B0B7CF739X,840262380140,OtterBox DEFENDER SERIES SCREENLESS EDITION for iPhone 14 Pro Max (ONLY) - RAIN CHECK (Blue),$ 31.92
 ,B0BBH6SK8Y,840262399807,OtterBox SYMMETRY FOLIO SERIES case for iPad 10th Gen (ONLY) - COASTAL EVENING (Clear/Black/Blue) (Non-Retail Packaging),$ 34.02
 ,B09DPHMPS2,810046112007,"STM Dux Shell Magic Folio for iPad Pro 12.9"" (6th/5th/4th/3rd Gen) - Ultra Protective Case with Apple Pencil Storage - Black (stm-222-295LZ-01)",$ 48.96
 ,B07XS99XCP,660543528562,LifeProof NEXT SERIES Case for iPhone 11 - RASPBERRY ICE (CLEAR/RED DAHLIA),$ 42.88
 ,B0043M6668,747192120900,"Polk Audio Blackstone TL1 Speaker Center Channel with Time Lens Technology | Compact Size, High Performance, Powerful Bass | Hi-Gloss Blackstone Finish | Create your own Home Entertainment System",$ 55.00
-,B01N7S1TZO,603983760093,Genuine Original US Layout Backlit Laptop Keyboard with Trackpoint for ThinkPad X1 Carbon 2013 Gen 1 MT 3443 3444 3446 3448 3460 3462 3463 Series 04Y2983 4Y2983 04Y0786 4Y0786 No Frame,$ 46.18
+keyboards_mice_auction,B01N7S1TZO,603983760093,Genuine Original US Layout Backlit Laptop Keyboard with Trackpoint for ThinkPad X1 Carbon 2013 Gen 1 MT 3443 3444 3446 3448 3460 3462 3463 Series 04Y2983 4Y2983 04Y0786 4Y0786 No Frame,46.18
 ,B00B5ZX9FM,,"Audio-Technica AT2020USB+ Cardioid Condenser USB Microphone, With Built-In Headphone Jack & Volume Control, Perfect for Content Creators (Black)",$ 43.15
 ,B09N9T24Z8,840104296462,OtterBox Strada Series Case for Galaxy S22 - Shadow (Black/Pewter),$ 34.60
 ,B09NVVFXND,610840128002,"Wireless Charger,ZECHIN 5-in-1 Wireless Charging Station,Fast Wireless Charger Stand for iPhone 14/13/12/11/Pro/Max/XS/XR/X/8/Plus, for Apple Watch 7/6/5/4/3/2/SE, for AirPods 3/2/Pro(White)",$ 45.59
@@ -13530,16 +13530,16 @@ Category,Asin,UPC,ItemDesc,Total Price
 ,B00LBYTMOY,675904140819,"Cocoon MCP3401BK Slim 15"" Backpack with Built-in Grid-IT!® Accessory Organizer (Black)",$ 41.50
 ,B09S3YS5BP,840262377126,OtterBox Defender Series Case for Samsung Galaxy Tab A8 - Black (Non-Retail/Ships in Polybag),$ 36.45
 ,B015MQH59A,,EagleTec KG011 Mechanical Keyboard Wired Ergonomic Clicky Blue Switch Equivalent for Office PC Home or Business (White Keyboard Blue LED Backlit),$ 38.63
-,B01DM7AF5C,748091000812,"Motorola T200 Talkabout Radio, 2 Pack",$ 49.59
-,B08S46F1YK,840104241813,"OTTERBOX UnlimitEd SERIES Case with Folio + Screen Protector for iPad 7th, 8th & 9th Gen (10.2"" Display - 2019, 2020 & 2021 version) - Non-retail/Ships in Polybag - Clear/Red",$ 30.45
+under75,B01DM7AF5C,748091000812,Motorola T200 Talkabout Radio 2 Pack,49.59
+Phone/Tablet Cases,B08S46F1YK,840104241813,"OTTERBOX UnlimitEd SERIES Case with Folio + Screen Protector for iPad 7th 8th & 9th Gen (10.2"" Display - 2019 2020 & 2021 version) - Non-retail/Ships in Polybag - Clear/Red",30.45
 ,B07Y6DS1G2,,[Upgraded] Vintage Canvas Messenger Bag Large Book Laptop Shoulder School Bag Women Men New,$ 38.29
 ,B09HXCCPVF,,Sumgsn 169 Keys Double Shot Keycaps Cherry Profile Arctic Keycaps Set Compatible with 61/64/87/104/108 Cherry Mx Switches Mechanical Keyboard,$ 38.17
 ,B088KR3V31,812451035278,URBAN ARMOR GEAR UAG Compatible for Dell Chromebook 3100 Case Plyo [Ice] Feather-Light Rugged Military Drop Tested Protective Laptop Cover,$ 37.80
 ,B08MKVP2HL,194866150099,"iTouch SmartWatch Fitness Tracker for Men Women with Heart Rate Tracker, Step Counter, Notifications, Sleep Monitor",$ 37.55
 ,B0B78C1STN,840262384049,OtterBox OTTER + POP SYMMETRY CLEAR SERIES for iPhone 14 Plus - STARDUST POP (Clear/Glitter),$ 30.81
-,B0B7CG74W6,840262384414,OtterBox OTTER + POP SYMMETRY CLEAR SERIES for iPhone 14 Pro Max (ONLY) - STARDUST POP (Clear/Glitter),$ 30.81
+Phone/Tablet Cases,B0B7CG74W6,840262384414,OtterBox OTTER + POP SYMMETRY CLEAR SERIES for iPhone 14 Pro Max (ONLY) - STARDUST POP (Clear/Glitter),30.81
 ,B07Q13NFPF,,"MOSISO Women Laptop Tote Bag (15-16 inch) 3 Layer Compartments,Rose Quartz",$ 37.34
-,B08F2Z1G6H,811659039842,"Razer Goliathus Extended Chroma Gaming Mousepad: Customizable RGB Lighting - Soft, Cloth Material - Balanced Control & Speed - Non-Slip Rubber Base - Halo Infinte Edition",$ 68.30
+under75,B08F2Z1G6H,811659039842,Razer Goliathus Extended Chroma Gaming Mousepad: Customizable RGB Lighting - Soft Cloth Material - Balanced Control & Speed - Non-Slip Rubber Base - Halo Infinte Edition,68.3
 ,B084H58WN2,790069449307,"D-Link WiFi Router AC1750 Mesh Smart Internet Home Network System, High Speed Performance WP3 MU-MIMO Dual Band Gigabit Gaming (DIR-1750-US) Black",$ 45.52
 ,B0B3Y7TFX8,195892059288,Lenovo USI Pen 2,$ 37.49
 ,B0BFZNZMN2,810074840200,NZXT T120 RGB CPU Air Cooler - RC-TN120-B1 - RGB CPU Liquid Cooler - Conductive Copper Pipes - Fluid Dynamic Bearings - AMD and Intel Compatibility - Black,$ 43.00
@@ -13606,18 +13606,18 @@ Category,Asin,UPC,ItemDesc,Total Price
 ,B09674F2X6,812887019569,JLab Go Work Wireless Headsets with Microphone - 45+ Playtime PC Bluetooth Headset and Multipoint Connect to Laptop Computer and Mobile - Wired or Wireless Headphones with Microphone,$ 28.74
 ,B09D5MVYJQ,840104278031,LifeProof SEE SERIES Case with MagSafe for iPhone 13 Pro Max & iPhone 12 Pro Max - LETS CUDDLEFISH,$ 30.50
 ,B07J4LN95V,,"Tablet Floor Stand with Pencil Holder - Klearlook Height Adjustable iPad Stand(360°Rotating,62.9"" Tall,Stable Base,Strong Ball Joint)Swivel iPad Floor Holder,Tablet Mount for all 4.7-13"" Tablet,Phone",$ 28.53
-,B07J41DT3K,761345775199,Antec Mod Sleeved Power Supply Cable Extension Kit ATX/EPS 8-pin PCI-E/6-pin w/Combs Purple UV,$ 28.52
+under75,B07J41DT3K,761345775199,Antec Mod Sleeved Power Supply Cable Extension Kit ATX/EPS 8-pin PCI-E/6-pin w/Combs Purple UV,28.52
 ,B08T6LXTJX,840104224373,OtterBox Defender Series Rugged Case for Apple iPhone 12 & iPhone 12 Pro - Black (with Microbial Defense),$ 28.43
 ,B07MWF1842,761345109215,"Antec CPU Cooler, A400 RGB, 4-Pin Connector PWM Silent Fan for Intel LGA 775/1150 / 1151/1155 / 1156/1366 / 2011/2066 & AMD Socket FM2 / FM1 / AM3+ / AM3 / AM2 + / AM2 / AM4",$ 28.10
 ,B08BCHBJ2M,848475004600,"ZEUS GAMDIAS RGB Computer Case Cooling Fans 120mm 4 Pack, Four Silent Trio-Ring PC Fans, Addressable RGB Fan Hub Supports Up to 8 Fans & 2 Strips, Supports Motherboard Sync, Hydraulic Bearing Design",$ 32.00
 ,B09C181TFX,840171707045,Pelican Ranger Series - iPhone 13 Case [15FT Military Grade Drop Protection] [Compatible with MagSafe] Magnetic Phone Case with Anti Yellowing - Rugged Bumper Cover for Apple iPhone 13 - Clear,$ 29.99
-,B0977KYPG4,887276574400,"Samsung Electronics Galaxy Z Fold 3 Phone Case, Silicone Protective Cover, Heavy Duty, Shockproof Smartphone Protector, US Version, Green (EF-PF926TGEGUS)",$ 27.93
+Phone/Tablet Cases,B0977KYPG4,887276574400,Samsung Electronics Galaxy Z Fold 3 Phone Case Silicone Protective Cover Heavy Duty Shockproof Smartphone Protector US Version Green (EF-PF926TGEGUS),27.93
 ,B08V57P1DQ,,"Samsung Galaxy Tab S8 Plus 2022/S7 FE/S7 Plus 5G 12.4"" Case [with 9H Tempered Glass Screen Protector],BASE MALL Full Body Protective Case,Rotating Kickstand/S Pen Holder/Shoulder & Hand Strap (Orange)",$ 27.91
 ,B096P9LMHB,,"Timecity iPad Pro 12.9 Case 3rd/ 4th/ 5th/ 6th Generation 2018/2020/ 2021/2022, Protection Case with Screen Protector, Kickstand, Handle and Shoulder Strap, Support Pencil 2 Charging - Light Blue",$ 27.80
 ,B09HJZLNPT,,"Foluu Galaxy Z Fold 3 5G Case, Galaxy Z Fold 3 Metal Phone Case, Aluminum Shockproof Frame Case Soft Rubber Silicone Military Heavy Duty Hard Case for Samsung Galaxy Z Fold 3 5G 2021 (Black)",$ 27.69
 ,B09R5HJG59,,Tech21 Evo Clear for Samsung Galaxy S22 Plus – Clear and Protective Phone Case with 12ft Multi-Drop Protection,$ 31.20
 ,B096PB6M9Q,,"Timecity iPad Pro 12.9 Case 3rd/ 4th/ 5th/ 6th Generation 2018/2020/ 2021/2022, Protection Case with Screen Protector, Kickstand, Handle and Shoulder Strap, Support Pencil 2 Charging - Dark Blue",$ 27.54
-,B096RBSVVQ,,"OCYCLONE iPad Pro 12.9 Case 2021/2020/2018, 7 Viewing Angles Magnetic Stand + Pencil Holder + Auto Wake/Sleep Protective Case for iPad Pro 12.9 inch 5th /4th/3rd Gen - Blue",$ 27.52
+Phone/Tablet Cases,B096RBSVVQ,,OCYCLONE iPad Pro 12.9 Case 2021/2020/2018 7 Viewing Angles Magnetic Stand + Pencil Holder + Auto Wake/Sleep Protective Case for iPad Pro 12.9 inch 5th /4th/3rd Gen - Blue,27.52
 ,B087CC885Z,,"Mount-It! Anti-Theft Tablet Kiosk | Locking Tablet Enclosure with Counter Top and Wall Mount Base | Compatible with 9.7”,10.2” iPad, 10.5” iPad Pro, 10.5” iPad Air (Gen 3), 10.1"" Galaxy Tab A (2019)",$ 27.41
 ,B09PNTLBHS,,"ORIbox Massage Gun Deep Tissue, Muscle Massage Gun, Portable Muscle Massage Gun for Back Neck Muscle Relieve, M01 Carbon",$ 79.45
 ,B07RTZ5JPC,,"Stash7 Waterpocket Premium Waterproof Phone Pouch | The Only Adventure Grade Phone Case for iPhone 14, 14 Pro Max, 13, 13 Pro Max, 8, 8 Plus, XS, XS Max, XR, 13, 13 Pro Max, Galaxy S9+, S10+ (Black)",$ 27.14
@@ -13653,7 +13653,7 @@ Category,Asin,UPC,ItemDesc,Total Price
 ,B07ZYVG9VX,,"Timecity Case for iPad 9th/ 8th/ 7th Generation 2021/2020/ 2019, iPad 10.2 Case for Kids with Built-in Screen Protector Hand Strap, Kickstand, Pencil Holder, Heavy Duty Protective Cases - Purple",$ 23.51
 ,B08G4K8CY8,194644046231,"Soundcore Anker Liberty Air 2 Pro, True Wireless Earbuds Headphones, Targeted Active Noise Cancelling, PureNote Technology, LDAC (Black)",$ 23.44
 ,B08RVC6F9Y,840025251694,SABRENT USB 3.2 10Gbps Type C Tool Free Enclosure for M.2 PCIe NVMe and SATA SSDs (EC-SNVE),$ 23.44
-,B08FR1GW44,846127196307,Pelican Ranger Series - iPhone 12 / iPhone 12 Pro Case [15ft Military Grade Drop Protection] [Wireless Charging Comaptible] Anti-Yellow & Heavy-Duty Case Cover For iPhone 12 Pro / 12 6.1 Inch - Clear,$ 30.39
+Phone/Tablet Cases,B08FR1GW44,846127196307,Pelican Ranger Series - iPhone 12 / iPhone 12 Pro Case [15ft Military Grade Drop Protection] [Wireless Charging Comaptible] Anti-Yellow & Heavy-Duty Case Cover For iPhone 12 Pro / 12 6.1 Inch - Clear,30.39
 ,B0BDHTRJKG,194253345398,Apple iPhone 14 Plus Leather Case with MagSafe - Midnight,$ 47.00
 ,B09YYD9RBV,,tech21 Evo Art iPhone 13 Pro Floral Bouquet – Magsafe Integrated Protective Phone Case with 12ft Multi-Drop Protection,$ 39.00
 ,B0992DN8P1,,Miesherk STOCK iPad Pro 12.9 Case 2022 6th Generation/2021 5th Gen: Military Grade Silicone Protective Cover for iPad 12.9 Inch 4th Gen w/Pencil Holder - Stand - Handle - Shoulder Strap Black,$ 23.10
@@ -13926,4 +13926,4 @@ Category,Asin,UPC,ItemDesc,Total Price
 ,B001VPKKRQ,844660021131,Monoprice 1FT 24AWG Cat6 550MHz UTP Ethernet Bare Copper Network Cable - Blue,$ 0.76
 ,B001UWN81A,844660048688,Monoprice 6ft USB 2.0 A Male to Micro 5pin Male 28/28AWG Cable,$ 0.82
 ,B09LM4LZVJ,767229512386,for iPhone 13 Pro Phone Case 6.1 Inch Crystal Clear Soft Silicone Shockproof TPU Cover Protective Slim Thin Transparent Fine Hole Anti-Drop Full Body Protection Case-Silver,$ 0.58
-,
+,Graphics Cards,B07DQL13CM,N/A,MSI GAMING GeForce GT 1030 2GB GDRR4 64-bit HDCP Support DirectX 12 ITX OC Graphics Card (GT 1030 AERO ITX 2GD4 OC),$134.99

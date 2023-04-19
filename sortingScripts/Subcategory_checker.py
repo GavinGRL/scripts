@@ -16,7 +16,6 @@ class Checker:
         pallet_names = all_pallet_names
         manifested_pallet_name = label_names
         category_names = categories
-        self.sorting_specifics_folder = '../sorting_specifics/'
         return
 
     # TODO: finish function that finds what category the product belongs in
@@ -43,9 +42,10 @@ class Checker:
         elif not self.modems(name, price) == "":
             return self.modems(name, price)
 
+        elif not self.case(name) == "":
+            return self.case(name)
+
         return ''
-
-
 
     def keyboard(self, name, price):
         name = name.upper()
@@ -54,11 +54,21 @@ class Checker:
         if any(word in name for word in keyboard_key_words) and \
                 not any(word in name for word in not_keyboard_key_words):
             if price < 150:
-                return "keyboards_mice_under"
+                return "keyboards_mice_auction"
             else:
-                return "keyboards_mice_g_headphones"
+                return "keyboards/mice/ gaming headset"
 
         return ""
+
+    def case(self, name):
+        name = name.upper()
+        case_words = ['CASE']
+        not_case_words = ['COMPUTER', 'DESKTOP', 'WATCH', 'KEYBOARD', 'CHARGING']
+
+        if any(word in name for word in case_words) and not any(word in name for word in not_case_words):
+            return "Phone/Tablet Cases"
+        else:
+            return ""
 
     def mice(self, name):
         name = name.upper()
@@ -71,7 +81,7 @@ class Checker:
 
     def earbuds(self, name):
         name = name.upper()
-        earbuds_file = self.sorting_specifics_folder
+        earbuds_file = '../sorting_specifics/' + 'selected_earbuds.csv'
         earbud_words = ['EARBUD', 'EARPHONE', 'IN-EAR']
         not_earbud_words = ['POCKETALKER', 'AIRPODS', 'RADIO', 'WALKIE TALKIE']
 
@@ -82,19 +92,20 @@ class Checker:
                 for row in reader:
 
                     if row[0] in name:
-                        return "earbuds_selected"
+                        return "earbuds_to_test"
                     else:
-                        return "earbuds_not_selected"
+                        end = "other_earbuds"
+                return end
         else:
             return ""
 
     def airpods(self, name):
         name = name.upper()
-        airpod_words = ["AIRPOD"]
+        airpod_words = ["APPLE AIRPOD"]
         not_airpod_words = ["BELKIN"]
 
         if any(word in name for word in airpod_words) and not any(word in name for word in not_airpod_words):
-            return "AirPods"
+            return "airpods"
         else:
             return ""
 
@@ -104,10 +115,10 @@ class Checker:
         not_headphone_words = ["APPLE"]
 
         if any(word in name for word in headphone_words):
-            if(price > 150):
-                return "keyboard_mice_g_headphones"
+            if (price > 150):
+                return "keyboards/mice/ gaming headset"
             else:
-                return "g_headphones_under"
+                return "g_headphones_auction"
         else:
             return ""
 
@@ -129,6 +140,6 @@ class Checker:
 
         if any(word in name for word in router_words) and price < 75 \
                 or any(word in name for word in modem_words) and not any(word in name for word in not_modem_words):
-            return "modems"
+            return "Modems"
         else:
             return ""
